@@ -1,0 +1,131 @@
+{
+  "topic": "Elisa Lam Case",
+  "materials": [
+    {
+      "filename": "01_elevator_surveillance_footage.mp4",
+      "source_url": "https://www.youtube.com/watch?v=3TjVBpyTeZM",
+      "description": "Full elevator surveillance footage of Elisa Lam at the Cecil Hotel on January 31, 2013 — the last known images of her alive. Originally released by LAPD to the public. Viral video with ~30 million views.",
+      "visual_type": "video",
+      "content_type": "surveillance",
+      "source": "real",
+      "quality": "medium"
+    },
+    {
+      "filename": "02_elisa_lam_portrait.png",
+      "source_url": "https://allthatsinteresting.com/wordpress/wp-content/uploads/2019/04/elisa-lam.png",
+      "description": "Portrait photo of Elisa Lam, 21-year-old Canadian student from Vancouver who disappeared at the Cecil Hotel.",
+      "visual_type": "photo",
+      "content_type": "person",
+      "source": "real",
+      "quality": "high"
+    },
+    {
+      "filename": "03_elisa_lam_student_photo.jpg",
+      "source_url": "https://allthatsinteresting.com/wordpress/wp-content/uploads/2019/04/elisa-lam-portrait.jpg",
+      "description": "Student photo of Elisa Lam, showing her as a UBC student prior to her trip to Los Angeles.",
+      "visual_type": "photo",
+      "content_type": "person",
+      "source": "real",
+      "quality": "medium"
+    },
+    {
+      "filename": "04_cecil_hotel_exterior.jpg",
+      "source_url": "https://allthatsinteresting.com/wordpress/wp-content/uploads/2019/04/cecil-hotel-la.jpg",
+      "description": "Exterior photo of the Cecil Hotel (also known as Stay on Main) in downtown Los Angeles where Elisa Lam stayed and her body was found.",
+      "visual_type": "photo",
+      "content_type": "location",
+      "source": "real",
+      "quality": "high"
+    },
+    {
+      "filename": "05_elisa_lam_water_tank.jpg",
+      "source_url": "https://allthatsinteresting.com/wordpress/wp-content/uploads/2019/04/elisa-lam-water-tank.jpg",
+      "description": "Rooftop water tank at the Cecil Hotel where Elisa Lam's body was discovered on February 19, 2013, after 19 days missing.",
+      "visual_type": "photo",
+      "content_type": "evidence",
+      "source": "real",
+      "quality": "medium"
+    },
+    {
+      "filename": "06_elisa_lam_graduation.jpg",
+      "source_url": "https://allthatsinteresting.com/wordpress/wp-content/uploads/2019/04/elisa-lam-graduation.jpg",
+      "description": "Graduation photo of Elisa Lam, one of the personal photos widely circulated after her disappearance.",
+      "visual_type": "photo",
+      "content_type": "person",
+      "source": "real",
+      "quality": "medium"
+    },
+    {
+      "filename": "07_cecil_hotel_los_angeles.jpg",
+      "source_url": "https://allthatsinteresting.com/wordpress/wp-content/uploads/2019/04/cecil-hotel-los-angeles.jpg",
+      "description": "Second angle of the Cecil Hotel exterior in downtown Los Angeles, showing the building facade and signage.",
+      "visual_type": "photo",
+      "content_type": "location",
+      "source": "real",
+      "quality": "high"
+    },
+    {
+      "filename": "08_nbc_news_body_found.mp4",
+      "source_url": "https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/a_3k_brown_tank_130220/1/index.m3u8?format=redirect",
+      "description": "NBC News broadcast report from February 20, 2013, covering the discovery of a tourist's body in the LA hotel water tank. Original news segment (~54 seconds).",
+      "visual_type": "video",
+      "content_type": "event",
+      "source": "real",
+      "quality": "medium"
+    },
+    {
+      "filename": "09_elisa_lam_lapd_photo.jpg",
+      "source_url": "https://hips.hearstapps.com/hmg-prod/images/elisa-lam-.jpg?crop=1xw:1.0xh;center,top&resize=1200:*",
+      "description": "Official LAPD-released photo of Elisa Lam used during the missing persons investigation in February 2013.",
+      "visual_type": "photo",
+      "content_type": "person",
+      "source": "real",
+      "quality": "medium"
+    },
+    {
+      "filename": "10_elevator_cctv_archive.mp4",
+      "source_url": "https://archive.org/download/elisa-lam/Elisa%20Lam%20CCTV.mp4",
+      "description": "Archive.org copy of the Elisa Lam elevator CCTV footage. Same surveillance footage as released by LAPD, preserved on the Internet Archive.",
+      "visual_type": "video",
+      "content_type": "surveillance",
+      "source": "real",
+      "quality": "medium"
+    },
+    {
+      "filename": "11_elevator_surveillance_still.jpg",
+      "source_url": "https://assets2.cbsnewsstatic.com/hub/i/r/2013/02/20/3d43cb62-1c51-11e3-9918-005056850598/thumbnail/1200x630/f56a217ff9042b9d2d3f55eaad8e5591/elevator-FINAL.jpg",
+      "description": "Still frame from the elevator surveillance footage showing Elisa Lam inside the Cecil Hotel elevator. Published by CBS News in February 2013.",
+      "visual_type": "screenshot",
+      "content_type": "surveillance",
+      "source": "real",
+      "quality": "medium"
+    },
+    {
+      "filename": "12_elevator_hiding_still.jpg",
+      "source_url": "https://assets2.cbsnewsstatic.com/hub/i/r/2013/02/20/3d40ea86-1c51-11e3-9918-005056850598/thumbnail/1200x630/5649b6f2621992196413bf1ccaa39979/elevator-HIDING-FINAL.jpg",
+      "description": "Still frame from elevator surveillance footage showing Elisa Lam hiding in the corner of the elevator — one of the most discussed moments from the viral video. Published by CBS News.",
+      "visual_type": "screenshot",
+      "content_type": "surveillance",
+      "source": "real",
+      "quality": "medium"
+    },
+    {
+      "filename": "13_elisa_lam_cbs_portrait.jpg",
+      "source_url": "https://assets2.cbsnewsstatic.com/hub/i/r/2013/02/20/3d47cec6-1c51-11e3-9918-005056850598/thumbnail/1200x630/32b5a97ea33885e3d2bf0f3ac7eb8f53/elisa-lam-2nd-photo-FINAL.jpg",
+      "description": "Photo of Elisa Lam published by CBS News as part of their February 2013 coverage of the case.",
+      "visual_type": "photo",
+      "content_type": "person",
+      "source": "real",
+      "quality": "low"
+    },
+    {
+      "filename": "14_cecil_hotel_cbs_exterior.jpg",
+      "source_url": "https://assets2.cbsnewsstatic.com/hub/i/r/2013/02/20/3d3834df-1c51-11e3-9918-005056850598/thumbnail/1200x630/f4d281c3a6f49239df986316b1fe6b08/HOTEL-FINAL.jpg",
+      "description": "Exterior photo of the Cecil Hotel published by CBS News in February 2013 at the time of the Elisa Lam investigation.",
+      "visual_type": "photo",
+      "content_type": "location",
+      "source": "real",
+      "quality": "medium"
+    }
+  ]
+}

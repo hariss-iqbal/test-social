@@ -1,0 +1,13 @@
+{
+  "iteration": 1,
+  "iter_dir": "topics/elisa_lam/video/iter_1",
+  "video_path": "topics/elisa_lam/video/iter_1/final.mp4",
+  "latest_link": "topics/elisa_lam/video/latest/final.mp4",
+  "status": "complete",
+  "duration_s": 156.5,
+  "resolution": "1080x1920",
+  "aspect_ratio": "9:16",
+  "voice": "en-US-ChristopherNeural",
+  "scenes": 8,
+  "tts_method": "edge-tts CLI direct"
+}

@@ -1,0 +1,105 @@
+[Script Info]
+Title: Karaoke Subtitles - Elisa Lam
+ScriptType: v4.00+
+WrapStyle: 0
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Default,Arial,56,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,1,2,40,40,100,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:00.10,0:00:01.71,Default,,0,0,0,,{\kf32}For {\kf32}nineteen {\kf32}days, {\kf32}guests {\kf32}at
+Dialogue: 0,0:00:01.71,0:00:03.33,Default,,0,0,0,,{\kf32}the {\kf32}Cecil {\kf32}Hotel {\kf32}in {\kf32}downtown
+Dialogue: 0,0:00:03.33,0:00:04.94,Default,,0,0,0,,{\kf32}Los {\kf32}Angeles {\kf32}drank {\kf32}the {\kf32}water,
+Dialogue: 0,0:00:04.94,0:00:06.55,Default,,0,0,0,,{\kf32}showered {\kf32}in {\kf32}it, {\kf32}and {\kf32}made
+Dialogue: 0,0:00:06.55,0:00:08.17,Default,,0,0,0,,{\kf32}their {\kf32}morning {\kf32}coffee {\kf32}with {\kf32}it
+Dialogue: 0,0:00:08.17,0:00:09.78,Default,,0,0,0,,{\kf32}— {\kf32}without {\kf32}knowing {\kf32}a {\kf32}decomposing
+Dialogue: 0,0:00:09.78,0:00:11.39,Default,,0,0,0,,{\kf32}body {\kf32}was {\kf32}floating {\kf32}in {\kf32}the
+Dialogue: 0,0:00:11.39,0:00:12.36,Default,,0,0,0,,{\kf32}tank {\kf32}above {\kf32}them.
+Dialogue: 0,0:00:12.31,0:00:14.78,Default,,0,0,0,,{\kf49}That {\kf49}body {\kf49}belonged {\kf49}to {\kf49}Elisa
+Dialogue: 0,0:00:14.78,0:00:15.28,Default,,0,0,0,,{\kf49}Lam.
+Dialogue: 0,0:00:15.28,0:00:17.53,Default,,0,0,0,,{\kf45}Elisa {\kf45}was {\kf45}twenty-one, {\kf45}a {\kf45}University
+Dialogue: 0,0:00:17.53,0:00:19.78,Default,,0,0,0,,{\kf45}of {\kf45}British {\kf45}Columbia {\kf45}student {\kf45}from
+Dialogue: 0,0:00:19.78,0:00:22.04,Default,,0,0,0,,{\kf45}Vancouver {\kf45}traveling {\kf45}solo {\kf45}down {\kf45}the
+Dialogue: 0,0:00:22.04,0:00:22.94,Default,,0,0,0,,{\kf45}California {\kf45}coast.
+Dialogue: 0,0:00:22.94,0:00:25.05,Default,,0,0,0,,{\kf42}She {\kf42}called {\kf42}her {\kf42}parents {\kf42}every
+Dialogue: 0,0:00:25.05,0:00:25.90,Default,,0,0,0,,{\kf42}single {\kf42}day.
+Dialogue: 0,0:00:25.90,0:00:27.64,Default,,0,0,0,,{\kf34}She {\kf34}kept {\kf34}a {\kf34}Tumblr {\kf34}blog
+Dialogue: 0,0:00:27.64,0:00:29.37,Default,,0,0,0,,{\kf34}where {\kf34}she {\kf34}wrote {\kf34}honestly {\kf34}about
+Dialogue: 0,0:00:29.37,0:00:30.76,Default,,0,0,0,,{\kf34}her {\kf34}struggles {\kf34}with {\kf34}depression.
+Dialogue: 0,0:00:30.76,0:00:32.38,Default,,0,0,0,,{\kf32}She {\kf32}was {\kf32}buying {\kf32}gifts {\kf32}for
+Dialogue: 0,0:00:32.38,0:00:33.99,Default,,0,0,0,,{\kf32}her {\kf32}family {\kf32}at {\kf32}a {\kf32}downtown
+Dialogue: 0,0:00:33.99,0:00:35.61,Default,,0,0,0,,{\kf32}bookstore {\kf32}on {\kf32}the {\kf32}last {\kf32}day
+Dialogue: 0,0:00:35.61,0:00:36.90,Default,,0,0,0,,{\kf32}anyone {\kf32}saw {\kf32}her {\kf32}alive.
+Dialogue: 0,0:00:36.90,0:00:38.66,Default,,0,0,0,,{\kf35}She {\kf35}was {\kf35}staying {\kf35}at {\kf35}the
+Dialogue: 0,0:00:38.66,0:00:40.41,Default,,0,0,0,,{\kf35}Cecil {\kf35}Hotel {\kf35}— {\kf35}a {\kf35}fifteen-story
+Dialogue: 0,0:00:40.41,0:00:42.17,Default,,0,0,0,,{\kf35}building {\kf35}on {\kf35}Skid {\kf35}Row {\kf35}with
+Dialogue: 0,0:00:42.17,0:00:43.93,Default,,0,0,0,,{\kf35}a {\kf35}documented {\kf35}history {\kf35}of {\kf35}at
+Dialogue: 0,0:00:43.93,0:00:45.68,Default,,0,0,0,,{\kf35}least {\kf35}sixteen {\kf35}non-natural {\kf35}deaths, {\kf35}and
+Dialogue: 0,0:00:45.68,0:00:47.44,Default,,0,0,0,,{\kf35}a {\kf35}former {\kf35}address {\kf35}of {\kf35}both
+Dialogue: 0,0:00:47.44,0:00:49.20,Default,,0,0,0,,{\kf35}Richard {\kf35}Ramirez {\kf35}and {\kf35}serial {\kf35}killer
+Dialogue: 0,0:00:49.20,0:00:49.90,Default,,0,0,0,,{\kf35}Jack {\kf35}Unterweger.
+Dialogue: 0,0:00:49.90,0:00:53.15,Default,,0,0,0,,{\kf64}On {\kf64}January {\kf65}31st, {\kf64}2013, {\kf64}hotel
+Dialogue: 0,0:00:53.15,0:00:56.40,Default,,0,0,0,,{\kf64}surveillance {\kf64}captured {\kf64}Elisa {\kf65}inside {\kf64}an
+Dialogue: 0,0:00:56.40,0:00:57.05,Default,,0,0,0,,{\kf64}elevator.
+Dialogue: 0,0:00:57.05,0:00:58.50,Default,,0,0,0,,{\kf28}For {\kf28}two {\kf28}and {\kf28}a {\kf28}half
+Dialogue: 0,0:00:58.50,0:00:59.95,Default,,0,0,0,,{\kf28}minutes {\kf28}she {\kf28}pressed {\kf28}every {\kf28}button,
+Dialogue: 0,0:00:59.95,0:01:01.40,Default,,0,0,0,,{\kf28}hid {\kf28}in {\kf28}the {\kf28}corner, {\kf28}and
+Dialogue: 0,0:01:01.40,0:01:02.84,Default,,0,0,0,,{\kf28}peered {\kf28}around {\kf28}the {\kf28}door {\kf28}frame
+Dialogue: 0,0:01:02.84,0:01:04.29,Default,,0,0,0,,{\kf28}as {\kf28}if {\kf28}watching {\kf28}for {\kf28}someone
+Dialogue: 0,0:01:04.29,0:01:05.16,Default,,0,0,0,,{\kf28}who {\kf28}wasn't {\kf28}there.
+Dialogue: 0,0:01:05.16,0:01:07.08,Default,,0,0,0,,{\kf38}The {\kf38}doors {\kf38}stayed {\kf38}open {\kf38}for
+Dialogue: 0,0:01:07.08,0:01:09.00,Default,,0,0,0,,{\kf38}an {\kf38}unexplained {\kf38}amount {\kf38}of {\kf38}time.
+Dialogue: 0,0:01:09.00,0:01:10.54,Default,,0,0,0,,{\kf30}Tens {\kf30}of {\kf30}millions {\kf30}of {\kf30}people
+Dialogue: 0,0:01:10.54,0:01:12.09,Default,,0,0,0,,{\kf30}have {\kf30}studied {\kf30}this {\kf30}footage {\kf30}and
+Dialogue: 0,0:01:12.09,0:01:13.63,Default,,0,0,0,,{\kf30}no {\kf30}one {\kf30}agrees {\kf30}on {\kf30}what
+Dialogue: 0,0:01:13.63,0:01:14.25,Default,,0,0,0,,{\kf30}it {\kf30}means.
+Dialogue: 0,0:01:14.25,0:01:16.08,Default,,0,0,0,,{\kf36}Here {\kf36}is {\kf36}the {\kf36}detail {\kf36}that
+Dialogue: 0,0:01:16.08,0:01:17.92,Default,,0,0,0,,{\kf36}doesn't {\kf36}fit: {\kf36}that {\kf36}same {\kf36}afternoon,
+Dialogue: 0,0:01:17.92,0:01:19.75,Default,,0,0,0,,{\kf36}a {\kf36}bookstore {\kf36}manager {\kf36}half {\kf36}a
+Dialogue: 0,0:01:19.75,0:01:21.58,Default,,0,0,0,,{\kf36}block {\kf36}away {\kf36}described {\kf36}Elisa {\kf36}as
+Dialogue: 0,0:01:21.58,0:01:23.41,Default,,0,0,0,,{\kf36}outgoing {\kf36}and {\kf36}cheerful, {\kf36}buying {\kf36}gifts
+Dialogue: 0,0:01:23.41,0:01:24.51,Default,,0,0,0,,{\kf36}for {\kf36}her {\kf36}family.
+Dialogue: 0,0:01:24.51,0:01:26.77,Default,,0,0,0,,{\kf45}Two {\kf45}versions {\kf45}of {\kf45}the {\kf45}same
+Dialogue: 0,0:01:26.77,0:01:29.03,Default,,0,0,0,,{\kf45}person, {\kf45}same {\kf45}day, {\kf45}same {\kf45}hour.
+Dialogue: 0,0:01:29.03,0:01:31.47,Default,,0,0,0,,{\kf48}The {\kf48}LAPD {\kf48}searched {\kf48}the {\kf48}Cecil
+Dialogue: 0,0:01:31.47,0:01:33.42,Default,,0,0,0,,{\kf48}multiple {\kf48}times {\kf48}with {\kf48}dogs.
+Dialogue: 0,0:01:33.42,0:01:35.54,Default,,0,0,0,,{\kf42}She {\kf42}was {\kf42}fifteen {\kf42}floors {\kf42}above
+Dialogue: 0,0:01:35.54,0:01:37.22,Default,,0,0,0,,{\kf42}them {\kf42}the {\kf42}entire {\kf42}time.
+Dialogue: 0,0:01:37.22,0:01:38.99,Default,,0,0,0,,{\kf35}To {\kf35}reach {\kf35}the {\kf35}rooftop {\kf35}tank
+Dialogue: 0,0:01:38.99,0:01:40.76,Default,,0,0,0,,{\kf35}herself, {\kf35}she {\kf35}would {\kf35}have {\kf35}had
+Dialogue: 0,0:01:40.76,0:01:42.53,Default,,0,0,0,,{\kf35}to {\kf35}bypass {\kf35}an {\kf35}alarmed {\kf35}door,
+Dialogue: 0,0:01:42.53,0:01:44.30,Default,,0,0,0,,{\kf35}climb {\kf35}a {\kf35}ten-foot {\kf35}ladder, {\kf35}and
+Dialogue: 0,0:01:44.30,0:01:46.07,Default,,0,0,0,,{\kf35}lift {\kf35}a {\kf35}twenty-pound {\kf35}hatch {\kf35}—
+Dialogue: 0,0:01:46.07,0:01:47.84,Default,,0,0,0,,{\kf35}during {\kf35}what {\kf35}investigators {\kf35}believe {\kf35}was
+Dialogue: 0,0:01:47.84,0:01:49.60,Default,,0,0,0,,{\kf35}a {\kf35}severe {\kf35}episode {\kf35}of {\kf35}untreated
+Dialogue: 0,0:01:49.60,0:01:50.31,Default,,0,0,0,,{\kf35}bipolar {\kf35}disorder.
+Dialogue: 0,0:01:50.31,0:01:52.01,Default,,0,0,0,,{\kf33}Police {\kf33}say {\kf33}the {\kf33}hatch {\kf33}was
+Dialogue: 0,0:01:52.01,0:01:53.71,Default,,0,0,0,,{\kf33}closed {\kf33}when {\kf33}the {\kf33}body {\kf33}was
+Dialogue: 0,0:01:53.71,0:01:54.05,Default,,0,0,0,,{\kf33}found.
+Dialogue: 0,0:01:54.05,0:01:55.78,Default,,0,0,0,,{\kf34}The {\kf34}maintenance {\kf34}worker {\kf34}who {\kf34}found
+Dialogue: 0,0:01:55.78,0:01:57.50,Default,,0,0,0,,{\kf34}her {\kf34}says {\kf34}it {\kf34}was {\kf34}open.
+Dialogue: 0,0:01:57.50,0:01:59.51,Default,,0,0,0,,{\kf40}Discovery {\kf40}only {\kf40}came {\kf40}because {\kf40}guests
+Dialogue: 0,0:01:59.51,0:02:01.53,Default,,0,0,0,,{\kf40}complained {\kf40}about {\kf40}the {\kf40}water {\kf40}pressure
+Dialogue: 0,0:02:01.53,0:02:03.14,Default,,0,0,0,,{\kf40}and {\kf40}a {\kf40}strange {\kf40}taste.
+Dialogue: 0,0:02:03.14,0:02:04.97,Default,,0,0,0,,{\kf36}Nineteen {\kf36}days {\kf36}after {\kf36}she {\kf36}vanished,
+Dialogue: 0,0:02:04.97,0:02:06.79,Default,,0,0,0,,{\kf36}a {\kf36}maintenance {\kf36}worker {\kf36}climbed {\kf36}to
+Dialogue: 0,0:02:06.79,0:02:08.62,Default,,0,0,0,,{\kf36}the {\kf36}roof {\kf36}and {\kf36}found {\kf36}her
+Dialogue: 0,0:02:08.62,0:02:10.45,Default,,0,0,0,,{\kf36}— {\kf36}naked, {\kf36}floating {\kf36}face-up, {\kf36}approximately
+Dialogue: 0,0:02:10.45,0:02:12.28,Default,,0,0,0,,{\kf36}twelve {\kf36}inches {\kf36}from {\kf36}the {\kf36}top
+Dialogue: 0,0:02:12.28,0:02:13.38,Default,,0,0,0,,{\kf36}of {\kf36}the {\kf36}tank.
+Dialogue: 0,0:02:13.38,0:02:16.36,Default,,0,0,0,,{\kf59}The {\kf59}coroner {\kf59}ruled {\kf59}accidental {\kf59}drowning.
+Dialogue: 0,0:02:16.36,0:02:19.26,Default,,0,0,0,,{\kf58}No {\kf57}trauma, {\kf58}no {\kf57}foul {\kf58}play.
+Dialogue: 0,0:02:19.26,0:02:20.78,Default,,0,0,0,,{\kf30}But {\kf30}Elisa's {\kf30}Tumblr {\kf30}kept {\kf30}posting
+Dialogue: 0,0:02:20.78,0:02:22.30,Default,,0,0,0,,{\kf30}for {\kf30}weeks {\kf30}after {\kf30}her {\kf30}death
+Dialogue: 0,0:02:22.30,0:02:23.82,Default,,0,0,0,,{\kf30}— {\kf30}scheduled {\kf30}entries {\kf30}she {\kf30}had
+Dialogue: 0,0:02:23.82,0:02:25.33,Default,,0,0,0,,{\kf30}written {\kf30}herself, {\kf30}words {\kf30}from {\kf30}a
+Dialogue: 0,0:02:25.33,0:02:26.85,Default,,0,0,0,,{\kf30}woman {\kf30}who {\kf30}could {\kf30}not {\kf30}have
+Dialogue: 0,0:02:26.85,0:02:28.37,Default,,0,0,0,,{\kf30}known {\kf30}they {\kf30}would {\kf30}be {\kf30}her
+Dialogue: 0,0:02:28.37,0:02:28.68,Default,,0,0,0,,{\kf30}last.
+Dialogue: 0,0:02:28.68,0:02:31.39,Default,,0,0,0,,{\kf54}The {\kf54}case {\kf54}was {\kf54}officially {\kf54}closed
+Dialogue: 0,0:02:31.39,0:02:32.47,Default,,0,0,0,,{\kf54}in {\kf54}2013.
+Dialogue: 0,0:02:32.47,0:02:34.85,Default,,0,0,0,,{\kf47}The {\kf47}questions {\kf47}have {\kf47}never {\kf47}been.

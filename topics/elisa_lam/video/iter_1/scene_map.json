@@ -1,0 +1,80 @@
+[
+  {
+    "index": 0,
+    "visuals": [
+      "02_elisa_lam_portrait.png",
+      "09_elisa_lam_lapd_photo.jpg"
+    ],
+    "start": 0.1,
+    "end": 15.275,
+    "duration": 15.175
+  },
+  {
+    "index": 1,
+    "visuals": [
+      "03_elisa_lam_student_photo.jpg",
+      "06_elisa_lam_graduation.jpg"
+    ],
+    "start": 15.275,
+    "end": 36.9,
+    "duration": 21.625
+  },
+  {
+    "index": 2,
+    "visuals": [
+      "04_cecil_hotel_exterior.jpg",
+      "07_cecil_hotel_los_angeles.jpg",
+      "14_cecil_hotel_cbs_exterior.jpg"
+    ],
+    "start": 36.9,
+    "end": 49.9,
+    "duration": 13.0
+  },
+  {
+    "index": 3,
+    "visuals": [
+      "01_elevator_surveillance_footage.mp4"
+    ],
+    "start": 49.9,
+    "end": 74.25,
+    "duration": 24.35
+  },
+  {
+    "index": 4,
+    "visuals": [
+      "11_elevator_surveillance_still.jpg",
+      "12_elevator_hiding_still.jpg"
+    ],
+    "start": 74.25,
+    "end": 89.025,
+    "duration": 14.775
+  },
+  {
+    "index": 5,
+    "visuals": [
+      "05_elisa_lam_water_tank.jpg",
+      "10_elevator_cctv_archive.mp4"
+    ],
+    "start": 89.025,
+    "end": 117.5,
+    "duration": 28.475
+  },
+  {
+    "index": 6,
+    "visuals": [
+      "08_nbc_news_body_found.mp4"
+    ],
+    "start": 117.5,
+    "end": 133.375,
+    "duration": 15.875
+  },
+  {
+    "index": 7,
+    "visuals": [
+      "13_elisa_lam_cbs_portrait.jpg"
+    ],
+    "start": 133.375,
+    "end": 154.85,
+    "duration": 21.475
+  }
+]

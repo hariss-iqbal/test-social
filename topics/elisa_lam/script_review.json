@@ -1,0 +1,138 @@
+{
+  "mode": "rank",
+  "winner": "draft_1.md",
+  "rankings": [
+    {
+      "draft": "draft_1.md",
+      "rank": 1,
+      "score": 9,
+      "strengths": [
+        "Opens with the most viscerally disturbing detail in the entire case — guests unknowingly consuming contaminated water — and names Elisa in the same breath, creating immediate stakes",
+        "Humanizes Elisa before the horror: daily calls home, Tumblr blog, gift shopping — makes her a person, not a case file",
+        "The 'two versions of the same person, same day, same hour' framing of the bookstore contradiction is the strongest single sentence across all three drafts",
+        "Uses the physical access problem (alarmed door, 10-foot ladder, 20-pound hatch, bipolar episode) as a single compacted challenge — lands as a genuine 'wait, what?' moment",
+        "The hatch contradiction (police said closed, maintenance worker says open) is specifically named and attributed, making it feel like evidence rather than rumor",
+        "Closes with the posthumous Tumblr entries — the most emotionally resonant detail in the research — and ends on 'The case was officially closed in 2013. The questions have never been.' which is punchy and lingers",
+        "Strongest word budget efficiency: almost no filler, every sentence adds a new specific fact or reframes an existing one",
+        "Covers 5 of 6 compelling details from research.json"
+      ],
+      "weaknesses": [
+        "Misses the LAM-ELISA tuberculosis test coincidence — the one genuinely surreal detail that makes the internet conspiracy angle click; could have replaced 1-2 words in Scene 6",
+        "Scene 3 (Cecil Hotel history) is the weakest scene — listing 'sixteen non-natural deaths, Richard Ramirez, Jack Unterweger' is close to a Wikipedia list. Framing it as a question or leading with the most specific detail (Ramirez lived on the TOP FLOOR during his killing spree) would hit harder",
+        "The word 'undetermined' is never used re: the hatch — mentioning that this contradiction was 'never officially resolved' would close the loop explicitly"
+      ]
+    },
+    {
+      "draft": "draft_2.md",
+      "rank": 2,
+      "score": 7,
+      "strengths": [
+        "Opens with the same contaminated-water hook as Draft 1 and adds the sensory detail 'discolored, foul-smelling' — a stronger sensory layer",
+        "Santiago Lopez is named — grounds the discovery in a specific person rather than an anonymous 'maintenance worker,' which is more credible and humanizing",
+        "Includes the LAM-ELISA tuberculosis coincidence — the one detail Draft 1 misses, and Draft 2 lands it perfectly with 'That coincidence is completely real — and it explains absolutely nothing'",
+        "The 'new name hadn't changed what it was' line for the Cecil Hotel rebranding is concise and effective",
+        "The hatch contradiction and dog-search failure are both present and correctly attributed"
+      ],
+      "weaknesses": [
+        "Misses the bookstore contradiction entirely — the single most powerful 'two versions of the same person' detail in the research. This is a high-priority omission that directly weakens the middle of the script",
+        "Misses the posthumous Tumblr blog detail — which is the most emotionally resonant element in the research and would give the script its human center",
+        "The elevator scene underuses the footage: 'instead, it went viral' tells rather than shows; the visual description 'makes fluid gestures toward something no one else can see' is evocative but the scene needs the weight of the word count behind the 'millions studied it' line that Draft 1 carries",
+        "Closing is the weakest of all three drafts: 'That coincidence is completely real — and it explains absolutely nothing' is clever but leaves the viewer with a shrug rather than an emotional resonance or unanswered question that lingers",
+        "Covers only 4 of 6 compelling details"
+      ]
+    },
+    {
+      "draft": "draft_3.md",
+      "rank": 3,
+      "score": 6,
+      "strengths": [
+        "The opening line 'For nineteen days, guests had been drinking her' is the most viscerally shocking sentence across all three drafts — a genuinely scroll-stopping opener",
+        "Includes the bookstore contradiction and Tumblr posthumous posting",
+        "The closing scene — 'She once wrote about wanting a life that felt like her own. The tank was fifteen floors above where her parents would eventually stand, waiting.' — is the most emotionally resonant closing across all three drafts and genuinely lingers",
+        "The fragmented, staccato structure creates a distinctive rhythm that mirrors the disjointed facts of the case"
+      ],
+      "weaknesses": [
+        "The fragmented sentence style ('She kept a blog about her depression. After she died, it kept posting, entries she had scheduled herself.') creates choppy audio — the storytelling guidelines explicitly warn against 'choppy 5-6 word phrases.' Several scenes read as bullet points set in prose, not narration",
+        "Scene 5 ('Police searched the Cecil with dogs and never found her. The rooftop's alarmed door never triggered.') is the most underdeveloped in all three drafts — it burns two critical facts in 18 words with zero framing. No 'wait, what?' moment established — just two plain statements",
+        "Scene 6 ('To enter the tank, someone had to lift a twenty-pound hatch. Police said it was closed when found. The maintenance worker said it was open. Never resolved.') is again staccato bullet points. 'Never resolved' as a standalone non-sentence is particularly weak for TTS — it will sound abrupt and anticlimactic when read aloud",
+        "Misses the LAM-ELISA coincidence entirely",
+        "Misses the Cecil Hotel serial killer history entirely — no context for why this particular hotel matters",
+        "The elevator scene ('no one agrees on what they're seeing') is slightly weaker framing than Draft 1's 'no one agrees on what it means' — 'what they're seeing' implies a visual ambiguity, whereas 'what it means' captures the true interpretive debate",
+        "Covers only 4 of 6 compelling details, and the TTS-unfriendly fragmentation partially undermines the strong details it does include"
+      ]
+    }
+  ],
+  "winner_review": {
+    "verdict": "PASS",
+    "score": 9,
+    "missed_compelling_details": [
+      {
+        "detail": "At the same time investigators were searching for a Canadian woman named Elisa Lam, a tuberculosis outbreak in Skid Row — near the Cecil Hotel — was being diagnosed using a test commercially named 'LAM-ELISA.' This coincidence fueled elaborate conspiracy theories online about a cover-up.",
+        "priority": "medium",
+        "suggested_scene": "Scene 7 (closing) — replace or extend the Tumblr closing with a one-sentence mention of the LAM-ELISA coincidence before the final line, to show how the internet built narratives around the case"
+      }
+    ],
+    "scene_reviews": [
+      {
+        "scene": 1,
+        "curiosity_spike": true,
+        "issue": null,
+        "suggestion": null
+      },
+      {
+        "scene": 2,
+        "curiosity_spike": true,
+        "issue": null,
+        "suggestion": null
+      },
+      {
+        "scene": 3,
+        "curiosity_spike": false,
+        "issue": "The Cecil Hotel history scene lists three facts (16 deaths, Ramirez, Unterweger) as a Wikipedia roll-call without framing any of them as a contradiction or question. It reads as background context rather than a 'wait, what?' moment.",
+        "suggestion": "Lead with the most specific detail: Ramirez lived on the TOP FLOOR during his 1985 killing spree — that precision makes it visceral. E.g., 'The Cecil Hotel had seen at least sixteen non-natural deaths. Richard Ramirez — the Night Stalker — lived on the top floor here while he was killing. It had been rebranded Stay on Main to attract budget travelers. The name changed. Nothing else did.'"
+      },
+      {
+        "scene": 4,
+        "curiosity_spike": true,
+        "issue": null,
+        "suggestion": null
+      },
+      {
+        "scene": 5,
+        "curiosity_spike": true,
+        "issue": null,
+        "suggestion": null
+      },
+      {
+        "scene": 6,
+        "curiosity_spike": true,
+        "issue": null,
+        "suggestion": null
+      },
+      {
+        "scene": 7,
+        "curiosity_spike": true,
+        "issue": null,
+        "suggestion": null
+      },
+      {
+        "scene": 8,
+        "curiosity_spike": true,
+        "issue": null,
+        "suggestion": null
+      }
+    ],
+    "opening_assessment": {
+      "strength": "strong",
+      "alternative": null
+    },
+    "closing_assessment": {
+      "impact": "strong",
+      "circles_back": true,
+      "suggestion": null
+    },
+    "word_budget_waste": [
+      "Scene 3: 'a fifteen-story building on Skid Row' — the physical description of the building is low-value context. The word count is better spent on a specific detail (e.g., Ramirez living on the top floor) that adds a 'wait, what?' beat rather than geography."
+    ]
+  }
+}

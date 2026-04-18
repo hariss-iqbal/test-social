@@ -1,0 +1,112 @@
+{
+  "iteration": 1,
+  "timestamp": "2026-03-15T08:56:14.621261",
+  "tts_task_id": "edge-tts-direct (MoneyPrinterTurbo API bug workaround)",
+  "voice": "en-US-ChristopherNeural",
+  "aspect_ratio": "9:16",
+  "resolution": "1080x1920",
+  "script_word_count": 355,
+  "audio_duration_s": 154.92,
+  "final_duration_s": 156.5,
+  "scenes": [
+    {
+      "index": 0,
+      "materials": [
+        "02_elisa_lam_portrait.png",
+        "09_elisa_lam_lapd_photo.jpg"
+      ],
+      "sub_duration": 7.588,
+      "start": 0.1,
+      "end": 15.275,
+      "duration": 15.175
+    },
+    {
+      "index": 1,
+      "materials": [
+        "03_elisa_lam_student_photo.jpg",
+        "06_elisa_lam_graduation.jpg"
+      ],
+      "sub_duration": 10.812,
+      "start": 15.275,
+      "end": 36.9,
+      "duration": 21.625
+    },
+    {
+      "index": 2,
+      "materials": [
+        "04_cecil_hotel_exterior.jpg",
+        "07_cecil_hotel_los_angeles.jpg",
+        "14_cecil_hotel_cbs_exterior.jpg"
+      ],
+      "sub_duration": 4.333,
+      "start": 36.9,
+      "end": 49.9,
+      "duration": 13.0
+    },
+    {
+      "index": 3,
+      "materials": [
+        "01_elevator_surveillance_footage.mp4"
+      ],
+      "sub_duration": 24.35,
+      "start": 49.9,
+      "end": 74.25,
+      "duration": 24.35
+    },
+    {
+      "index": 4,
+      "materials": [
+        "11_elevator_surveillance_still.jpg",
+        "12_elevator_hiding_still.jpg"
+      ],
+      "sub_duration": 7.388,
+      "start": 74.25,
+      "end": 89.025,
+      "duration": 14.775
+    },
+    {
+      "index": 5,
+      "materials": [
+        "05_elisa_lam_water_tank.jpg",
+        "10_elevator_cctv_archive.mp4"
+      ],
+      "sub_duration": 14.238,
+      "start": 89.025,
+      "end": 117.5,
+      "duration": 28.475
+    },
+    {
+      "index": 6,
+      "materials": [
+        "08_nbc_news_body_found.mp4"
+      ],
+      "sub_duration": 15.875,
+      "start": 117.5,
+      "end": 133.375,
+      "duration": 15.875
+    },
+    {
+      "index": 7,
+      "materials": [
+        "13_elisa_lam_cbs_portrait.jpg"
+      ],
+      "sub_duration": 21.475,
+      "start": 133.375,
+      "end": 154.85,
+      "duration": 21.475
+    }
+  ],
+  "subtitle_style": "karaoke word-by-word, 56pt Helvetica Neue, white-to-yellow fill, 3px black outline, lower-third (130px margin), PIL frame compositing",
+  "tts_method": "edge-tts CLI (direct, MoneyPrinterTurbo audio endpoint had video_concat_mode AttributeError bug)",
+  "timestamp_method": "edge-tts SRT sentence-level, word timing estimated proportionally within sentences",
+  "output": {
+    "final": "final.mp4",
+    "with_audio": "with_audio.mp4",
+    "combined": "combined.mp4",
+    "audio": "audio.mp3",
+    "subtitle_srt": "subtitle.srt",
+    "subtitle_ass": "subtitle.ass",
+    "scene_map": "scene_map.json"
+  },
+  "changes_from_previous": "First iteration - full FFmpeg scene-synced pipeline with PIL karaoke subtitles. Used edge-tts CLI directly due to MoneyPrinterTurbo API bug."
+}

@@ -1,0 +1,23 @@
+{
+  "title": "The Mystery of the Cecil Hotel",
+  "scenes": [
+    {
+      "narration": "In February 2013, a young woman checked into one of LA's most infamous hotels.",
+      "image": "scene1.jpg",
+      "durationInSeconds": 6,
+      "audio": "scene1_audio.mp3"
+    },
+    {
+      "narration": "Surveillance footage showed her behaving erratically in the elevator, pressing every button.",
+      "image": "scene2.jpg",
+      "durationInSeconds": 5,
+      "audio": "scene2_audio.mp3"
+    },
+    {
+      "narration": "Weeks later, guests complained about the water. What they found in the rooftop tank changed everything.",
+      "image": "scene3.jpg",
+      "durationInSeconds": 7,
+      "audio": "scene3_audio.mp3"
+    }
+  ]
+}
