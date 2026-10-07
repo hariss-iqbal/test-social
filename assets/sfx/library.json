@@ -1,0 +1,146 @@
+{
+  "elevator_ding": {
+    "file": "assets/sfx/elevator_ding.mp3",
+    "prompt": "single old hotel elevator arrival chime, slightly detuned bell, small reverberant hallway, no music",
+    "seconds": 2.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "elevator_doors": {
+    "file": "assets/sfx/elevator_doors.mp3",
+    "prompt": "old elevator doors sliding open with mechanical rumble and clunk, hotel, close mic",
+    "seconds": 3.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "elevator_hum": {
+    "file": "assets/sfx/elevator_hum.mp3",
+    "prompt": "low mechanical hum of an idle old elevator car, fluorescent buzz, room tone",
+    "seconds": 6.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "water_drip": {
+    "file": "assets/sfx/water_drip.mp3",
+    "prompt": "slow single water drips into a metal tank echoing, dark, sparse",
+    "seconds": 4.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "water_tank_slosh": {
+    "file": "assets/sfx/water_tank_slosh.mp3",
+    "prompt": "water sloshing inside a large metal rooftop water tank, hollow resonance",
+    "seconds": 4.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "tap_trickle": {
+    "file": "assets/sfx/tap_trickle.mp3",
+    "prompt": "bathroom faucet turned on, water only trickles and sputters, pipes knock",
+    "seconds": 3.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "hatch_clank": {
+    "file": "assets/sfx/hatch_clank.mp3",
+    "prompt": "heavy metal hatch lid dragged and dropped on a steel water tank, loud clank",
+    "seconds": 2.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "ladder_climb": {
+    "file": "assets/sfx/ladder_climb.mp3",
+    "prompt": "footsteps climbing a metal ladder, slow, rooftop wind",
+    "seconds": 3.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "roof_wind": {
+    "file": "assets/sfx/roof_wind.mp3",
+    "prompt": "rooftop wind at night in downtown city, distant traffic and siren, bleak",
+    "seconds": 6.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "door_alarm_silent": {
+    "file": "assets/sfx/door_alarm_silent.mp3",
+    "prompt": "heavy metal fire door push bar clack then silence, stairwell reverb",
+    "seconds": 2.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "heartbeat": {
+    "file": "assets/sfx/heartbeat.mp3",
+    "prompt": "slow deep human heartbeat, cinematic, low thumps",
+    "seconds": 4.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "camera_shutter": {
+    "file": "assets/sfx/camera_shutter.mp3",
+    "prompt": "single vintage film camera shutter click",
+    "seconds": 1.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "typewriter_stamp": {
+    "file": "assets/sfx/typewriter_stamp.mp3",
+    "prompt": "rubber stamp slammed on paper document, single hit",
+    "seconds": 1.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "cinematic_boom": {
+    "file": "assets/sfx/cinematic_boom.mp3",
+    "prompt": "deep cinematic trailer boom hit with long tail, dark",
+    "seconds": 3.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "gavel_strike": {
+    "file": "assets/sfx/gavel_strike.mp3",
+    "prompt": "single wooden judge gavel strike on sound block, courtroom reverb",
+    "seconds": 2.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "paper_slide": {
+    "file": "assets/sfx/paper_slide.mp3",
+    "prompt": "sheet of paper slid across a wooden desk",
+    "seconds": 1.5,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "clock_tick": {
+    "file": "assets/sfx/clock_tick.mp3",
+    "prompt": "slow old wall clock ticking, sparse, close",
+    "seconds": 4.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "reverse_swell": {
+    "file": "assets/sfx/reverse_swell.mp3",
+    "prompt": "reverse cymbal swell rising into a hit, dark, cinematic riser",
+    "seconds": 2.5,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "lab_beep": {
+    "file": "assets/sfx/lab_beep.mp3",
+    "prompt": "forensic lab computer analysis complete beep, two soft electronic tones, quiet lab room tone",
+    "seconds": 1.5,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "pin_drop": {
+    "file": "assets/sfx/pin_drop.mp3",
+    "prompt": "single push pin pressed into a cork map board, small tick",
+    "seconds": 0.8,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "poster_slap": {
+    "file": "assets/sfx/poster_slap.mp3",
+    "prompt": "paper poster slapped onto a wall and smoothed, single",
+    "seconds": 1.2,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "police_radio": {
+    "file": "assets/sfx/police_radio.mp3",
+    "prompt": "short german police radio static burst and squelch, no voice",
+    "seconds": 2.0,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "tube_seal": {
+    "file": "assets/sfx/tube_seal.mp3",
+    "prompt": "plastic sample tube cap snapped shut, crisp click",
+    "seconds": 0.8,
+    "source": "ElevenLabs sound-generation (own asset)"
+  },
+  "glitch_hit": {
+    "file": "assets/sfx/glitch_hit.mp3",
+    "prompt": "short digital data glitch stutter hit, dark, cinematic",
+    "seconds": 1.2,
+    "source": "ElevenLabs sound-generation (own asset)"
+  }
+}

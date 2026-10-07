@@ -4,3 +4,7 @@ out/
 dist/
 topics/*
 !topics/elisa_lam/
+tools/
+__pycache__/
+*.pyc
+.DS_Store

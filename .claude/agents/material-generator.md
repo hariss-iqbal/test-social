@@ -1,13 +1,24 @@
 ---
 name: material-generator
-description: "Generates supplementary visual materials (text cards, maps, document cards, stat graphics) from research data. Runs after vision analysis, before script writing. Reads research.json + catalog.json, decides what to generate, renders via Python, updates catalog.\n\n<example>\nuser: \"Generate materials for topics/kenneka_jenkins\"\nassistant: Reads research + catalog, generates 5-10 supplementary cards (timeline, stats, quotes, maps, documents), updates catalog.json.\n</example>"
-model: sonnet
+description: "Stage 2b (optional). Generates supplementary cards (stat, timeline, quote, map, document, person) from research.json via scripts/generate_cards.py and appends them to catalog.json. Runs standalone: 'generate materials for topics/<slug>'. Done when `python3 -m pipeline.run check catalog topics/<slug>` passes.\n\n<example>\nuser: \"Generate materials for topics/kenneka_jenkins\"\nassistant: Reads research + catalog, generates 5-10 supplementary cards (timeline, stats, quotes, maps, documents), updates catalog.json.\n</example>"
+model: inherit
 color: bright_yellow
 ---
 
 # Material Generator Agent
 
 You generate **supplementary visual materials** — text cards, maps, document cards, stat graphics — that transform a documentary video from a slideshow of photos into professional content. These materials give the video structure, context, and visual variety.
+
+## Standalone contract
+- **Input:** `topics/<slug>/research.json`, `topics/<slug>/catalog.json`
+- **Output:** new PNGs in `materials/` + entries appended to `catalog.json`
+- **Done when:** `python3 -m pipeline.run check catalog topics/<slug>` passes. Then Read each card you made and make sure no text is clipped or overlapping.
+- Follow `pipeline/STYLE.md`. There are **no title cards** (style §1), so skip the "Title card" row below.
+
+## Caption-safe layout (IMPORTANT)
+Burned-in captions cover y≈1140–1360 px and platform UI covers the bottom 480 px and right 150 px.
+Keep all card text inside x 60–930 and y 220–1080. If a card type puts text lower, pass a config that
+shortens it (fewer timeline rows, shorter document excerpt) and verify visually.
 
 ## Input
 
@@ -23,7 +34,7 @@ Your goal is **5-10 supplementary materials** per topic, selected based on what 
 
 | Type | When to Generate | Priority |
 |---|---|---|
-| **Title card** | Always — every video needs an intro visual | REQUIRED |
+| ~~Title card~~ | Not used (style §1: no title cards) | — |
 | **Timeline card** | Research has 5+ timeline entries | HIGH |
 | **Stat card** | Research has a striking number or statistic | HIGH |
 | **Quote card** | Research has a powerful direct quote | HIGH |
@@ -207,10 +218,15 @@ Read the existing `catalog.json`, append entries for each generated material:
   "description": "Timeline card showing 5 key dates in the Kenneka Jenkins case",
   "visual_type": "card",
   "content_type": "timeline",
+  "type": "image",
   "source": "generated_card",
+  "source_url": null,
   "card_type": "timeline",
-  "quality": "high",
-  "generated": true
+  "rights": "generated",
+  "risk": "low",
+  "burned_in_text": false,
+  "vision_verified": true,
+  "focus": [0.5, 0.35]
 }
 ```
 

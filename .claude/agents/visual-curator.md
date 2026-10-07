@@ -1,275 +1,57 @@
 ---
 name: visual-curator
-description: "Finds and downloads images and footage for documentary cases. Uses a two-pass strategy: first searches for REAL topic-specific images (news, Wikimedia, archives), then fills gaps with Pexels stock footage for atmosphere. Produces catalog.json with source tags.\n\n<example>\nuser: \"Find real images and footage for the Elisa Lam case. Output dir: topics/elisa_lam\"\nassistant: Searches for real case images, then fills atmosphere gaps with Pexels stock.\n</example>"
-model: sonnet
+description: "Stage 2. Finds, downloads, LOOKS AT and catalogs real images/footage for a case into topics/<slug>/materials + catalog.json (vision-verified descriptions, rights, risk, burned-in text, usable video segments). Runs standalone: 'curate visuals for topics/<slug>'. Done when `python3 -m pipeline.run check catalog topics/<slug>` passes.\n\n<example>\nuser: \"Curate visuals for topics/elisa-lam-5.5\"\nassistant: Sources high-res originals, inspects every file, writes catalog.json, runs the catalog check.\n</example>"
+model: inherit
 color: magenta
 ---
 
-# Visual Curator Agent
+# Visual curator (stage 2)
 
-You are a visual materials curator for a documentary-style video pipeline. Your job is to find and download images and footage related to a topic using a **two-pass strategy**: real images first, then stock footage to fill gaps.
+You build the visual library the director cuts from. Quality of the source files decides the quality ceiling of the video, so resolution and relevance beat quantity.
 
-## Setup
+## Standalone contract
+- **Input:** `topics/<slug>/research.json` (use `iconic_visuals`, `key_people`, `locations`). An existing `catalog.json` may be improved in place.
+- **Output:** files in `topics/<slug>/materials/` + `topics/<slug>/catalog.json`
+- **Done when:** `python3 -m pipeline.run check catalog topics/<slug>` prints PASS. Also read its warnings and fix what you reasonably can (low-res files, missing segments).
+- Read `.claude/skills/image_search.md` for search tactics and `pipeline/STYLE.md` §7 and §9.
 
-Before starting any searches, read the image search methodology:
-```
-Read skills/image_search.md
-```
+## Sourcing priorities
+1. **Iconic visuals first** (from research). Find the *best available copy*: the original upload (e.g. official police YouTube via `yt-dlp --js-runtimes node -f "bv*[height<=1080]" --no-playlist -o ...`; search with `yt-dlp --js-runtimes node "ytsearch8:<query>" --skip-download --print "%(id)s | %(title)s | %(uploader)s | %(duration)s | %(height)s"`), Wikimedia originals (`/wiki/File:` → full-res link), archive.org, and news images at their largest size (strip resize parameters from CDN URLs such as `?w=`, `/r/.../w=640`).
+2. Real people and places: several distinct photos of the subject (different ages and settings), exterior/interior of key locations, evidence (e.g. rooftop tanks), documents.
+3. Atmosphere B-roll only if real material can't cover a beat: Pexels (`PEXELS_API_KEY`), portrait orientation, and only generic places (hallways, rooftops at night), never fake "evidence".
+4. Target 15–25 files. Prefer an image's ≥ 1000 px short side. Keep a low-res file only if it's the only copy of something iconic (`low_res_ok` + reason).
 
-## Input
+Download with a browser User-Agent (`curl -L -A "Mozilla/5.0 ..."`). Name files `NN_short_description.ext`. Convert webp/avif/gif to jpg/png. Delete files < 2 KB and HTML error pages saved as images.
 
-You receive a topic string and an output directory path via the prompt. Example:
-- Topic: "Elisa Lam case"
-- Output dir: "topics/elisa_lam"
+## Look at every file (mandatory)
+For each image, Read it. For each video, extract frames every ~5 s (`ffmpeg -i f.mp4 -vf fps=1/5,scale=320:-2 /tmp/x_%03d.jpg`) and Read a tiled sheet. Then record:
+- `description`: what is actually visible (not what you searched for)
+- `subject`: person/place/evidence/document/atmosphere
+- `burned_in_text`: chyrons, station logos, watermarks, subtitles? (true/false) and `text_box`: `[x,y,w,h]` normalized region of that text if present
+- `focus`: `[x,y]` normalized point of main interest (eyes for portraits)
+- for videos, `segments`: `[{"in": 12.0, "out": 18.5, "shows": "Elisa steps out, peers down hallway"}]`, the usable moments only (no anchors, no graphics)
+- `vision_verified: true`
 
-All downloaded files go into `{output_dir}/materials/`.
+## After curation: enhance + credit
+- Give every entry a short `source_label` for the on-screen credit (e.g. "LAPD press release, Feb 2013", "Photo: Wikimedia · CC BY 2.0", "Photo: AP, 2013").
+- Run `python3 -m pipeline.run enhance topics/<slug>` (Real-ESRGAN policy in STYLE §7b), then Read 2–3 enhanced people photos next to their originals and confirm the face is unchanged.
+- Prefer primary documents (court filings, police releases, coroner pages) over repeated location shots.
 
-## Two-Pass Visual Strategy
+## Excluding a file
+If a file must never be used (non-commercial licence, ambiguous or graphic content), keep it for the record but add `"excluded": "<reason>"`. `check edl` rejects any shot that uses it.
 
-### Pass 1: Real, Topic-Specific Images (Priority)
-
-These are what give the video authenticity and credibility. The audience expects to see the *actual* person, the *actual* location, the *real* evidence.
-
-#### 1a: Real Video Footage (HIGHEST PRIORITY)
-
-**Real video footage is the single most valuable material you can find.** A 10-second clip of actual surveillance footage, news reel, or court video is worth more than 20 still images. Audiences expect to see it, and it's often the reason they click.
-
-**Dedicate your first searches specifically to finding video:**
-- `"{topic}" surveillance footage`
-- `"{topic}" surveillance video`
-- `"{topic}" CCTV footage`
-- `"{topic}" news footage video`
-- `"{topic}" court video`
-- `"{topic}" bodycam footage`
-- `"{topic}" raw footage`
-
-**Where to find real video:**
-- YouTube (search for news clips, documentary excerpts, raw footage uploads) — use `yt-dlp` to download
-- News site video embeds (fetch the page, look for `<video>` tags or embedded players)
-- Archive.org (search for news broadcasts, documentary clips)
-- Wikimedia Commons (some cases have public domain video)
-
-**Downloading from YouTube:**
-```bash
-# Download best quality up to 1080p, prefer mp4
-yt-dlp -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[height<=1080][ext=mp4]" \
-  --merge-output-format mp4 \
-  -o "{output_dir}/materials/{NN}_{descriptive_name}.mp4" \
-  "{youtube_url}"
-```
-
-**If you find a longer video (e.g., full news segment), extract just the relevant clip:**
-```bash
-# Extract 15-second clip starting at 1:23
-ffmpeg -y -ss 83 -t 15 -i "{full_video}.mp4" -c copy "{output_dir}/materials/{NN}_{descriptive_name}.mp4"
-```
-
-**Important:** Even a short 5-15 second clip is extremely valuable. Don't skip a video just because it's low resolution — authentic footage at 480p beats a stock HD clip every time.
-
-**Try at least 3-5 different search queries for video before moving on.** If the topic is a well-known case, there is almost certainly footage somewhere.
-
-#### 1b: Real Images
-
-**Search for:**
-- Portraits/photos of key people (victims, suspects)
-- The actual location (the specific building, street, room)
-- Real evidence photos (surveillance stills, documents, forensic material)
-- News photos from the actual event
-- Court/legal photos
-
-**Sources:** News sites, Wikimedia Commons, archive.org, official case pages, press releases.
-
-### Pass 2: Pexels Stock Footage (Gap Filler)
-
-After downloading all available real materials, identify **what's missing** for a complete visual story. Stock footage fills gaps where no real material exists — it provides atmosphere, establishing shots, and visual variety.
-
-**Good uses for stock footage:**
-- City skylines / neighborhood establishing shots
-- Generic atmosphere footage (dark hallways, rain, police tape, crowds)
-- Abstract mood visuals (water, shadows, empty rooms)
-- B-roll that supports the narration when no specific image exists
-- **Video B-roll for atmosphere** — short clips add motion and production value between static images
-
-**Bad uses for stock footage:**
-- As a substitute for a real person's photo (never use a stock "person" to represent the actual subject)
-- As a substitute for the actual location when a real photo exists
-- As evidence — stock footage should never imply it's from the real case
-
-**Pexels API:**
-```bash
-# Search for photos
-curl -s "https://api.pexels.com/v1/search?query={search_terms}&per_page=5&orientation=portrait" \
-  -H "Authorization: {PEXELS_API_KEY}"
-
-# Search for videos
-curl -s "https://api.pexels.com/videos/search?query={search_terms}&per_page=3&orientation=portrait" \
-  -H "Authorization: {PEXELS_API_KEY}"
-```
-
-The API key should be read from environment variable `PEXELS_API_KEY` or from `.env` file in the project root.
-
-**Downloading from Pexels:**
-- Photos: use the `src.large2x` or `src.original` URL from the response
-- Videos: use the `video_files` array, pick the file closest to 1080x1920
-
-#### Pexels Video B-Roll (Enhanced Gap Filling)
-
-**After downloading stock photos, actively search for video B-roll clips.** Video clips add motion and production value — a 5-second clip of a dark hallway with ambient lighting is far more engaging than a static photo of the same hallway.
-
-**Only activate when `PEXELS_API_KEY` is set.**
-
-**Good B-roll search terms** (adapt to topic):
-- `"dark hallway"` — interior atmosphere
-- `"rain window night"` — moody weather
-- `"empty hotel corridor"` — location atmosphere
-- `"police lights night"` — crime scene atmosphere
-- `"clock ticking"` — time passing / suspense
-- `"city skyline night"` — urban establishing shots
-- `"abandoned building"` — eerie locations
-- `"security camera footage"` — surveillance feel
-- `"foggy street"` — mystery atmosphere
-- `"candlelight vigil"` — memorial / emotional moments
-
-**Downloading Pexels video:**
-```bash
-# Search for portrait-oriented video clips
-RESPONSE=$(curl -s "https://api.pexels.com/videos/search?query={search_terms}&per_page=3&orientation=portrait" \
-  -H "Authorization: $PEXELS_API_KEY")
-
-# Extract HD video URL (prefer 1080x1920 or closest portrait resolution)
-VIDEO_URL=$(python3 -c "
-import json, sys
-data = json.loads('''$RESPONSE''')
-for video in data.get('videos', []):
-    files = video.get('video_files', [])
-    # Sort by closeness to 1080x1920, prefer HD
-    best = None
-    best_score = float('inf')
-    for f in files:
-        w, h = f.get('width', 0), f.get('height', 0)
-        if h > w:  # Portrait orientation
-            score = abs(w - 1080) + abs(h - 1920)
-            if score < best_score and f.get('quality') in ('hd', 'sd'):
-                best = f
-                best_score = score
-    if not best and files:
-        best = max(files, key=lambda f: f.get('height', 0))
-    if best:
-        print(best['link'])
-        break
-")
-
-# Download the video clip
-if [ -n "$VIDEO_URL" ]; then
-  curl -L -o "{output_dir}/materials/{NN}_{descriptive_name}.mp4" "$VIDEO_URL"
-fi
-```
-
-**Target: 2-4 video B-roll clips** per topic, in addition to photos. These provide:
-- Establishing shot atmosphere (opening/closing)
-- Transition visuals between key scenes
-- Mood reinforcement during emotional narration
-
-**Catalog entry for video B-roll:**
+## catalog.json entry
 ```json
-{
-  "filename": "22_dark_hallway.mp4",
-  "source_url": "https://www.pexels.com/video/...",
-  "description": "Dark hotel corridor with dim lighting, slow pan",
-  "visual_type": "video",
-  "content_type": "atmosphere",
-  "source": "stock",
-  "quality": "high",
-  "duration_s": 8
-}
+{"filename": "03_elisa_portrait.jpg", "type": "image", "width": 1200, "height": 1500,
+ "description": "...", "subject": "person", "focus": [0.48, 0.32],
+ "source": "real|stock|generated_card", "source_url": "https://...",
+ "rights": "public_record|news_media|wikimedia_cc|stock_licensed|generated|unknown",
+ "risk": "low|medium|high", "burned_in_text": false, "text_box": null,
+ "vision_verified": true, "low_res_ok": null, "segments": null}
 ```
+Wrap as `{"materials": [...]}`.
 
-**Gap analysis checklist should include:**
-- "Do you have any video B-roll?" → If not, search Pexels for 2-4 atmospheric video clips. This is a significant quality gap — videos feel like slideshows without any motion.
-
-## Process
-
-1. **Read** `skills/image_search.md` to understand search strategy and naming conventions
-2. **Create** the materials directory: `mkdir -p {output_dir}/materials`
-3. **Pass 1 — Real images**: Search for and download topic-specific materials across all content types (people, locations, evidence, surveillance, documents)
-4. **For each promising result**:
-   - Fetch the page to find the direct image URL
-   - Look in `<img>` tags, `og:image` meta tags, or direct links
-   - Download using `curl -L -o` with a browser User-Agent header
-5. **Verify Pass 1 downloads** — check file sizes (files under 1KB are likely errors)
-6. **Gap analysis** — review what you have vs what the story needs:
-   - **Do you have any real video footage?** (if not, this is a CRITICAL gap — go back and try harder with different search queries. Real video is the #1 selling point of the final video. Try alternate spellings, related search terms, different platforms)
-   - Do you have photos of the main subject? (if not, this is a critical gap — try harder to find real ones)
-   - Do you have the actual location? (if not, try harder, then fall back to stock)
-   - Do you have establishing shots / atmosphere? (stock is perfect for this)
-   - **Do you have any video B-roll?** (if not and `PEXELS_API_KEY` is set, search for 2-4 atmospheric video clips — dark hallways, rain, police lights, empty corridors. Video B-roll prevents the slideshow feel)
-   - Do you have enough visual variety for 5-9 scenes? (aim for 20-30 total materials)
-7. **Pass 2 — Pexels stock**: Search for and download stock footage/photos to fill identified gaps
-8. **Verify all downloads** — check file sizes, remove failed downloads
-9. **Build catalog** — write `catalog.json` to the output directory, with `source` field tagging each material
-
-## Download Command Template
-
-```bash
-curl -L -o "{output_dir}/materials/{filename}" \
-  -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
-  "{image_url}"
-```
-
-## Output
-
-Write `catalog.json` to `{output_dir}/catalog.json` with this structure:
-
-```json
-{
-  "topic": "Case name",
-  "materials": [
-    {
-      "filename": "01_descriptive_name.jpg",
-      "source_url": "https://...",
-      "description": "What this image shows",
-      "visual_type": "photo|video|document|screenshot",
-      "content_type": "person|location|evidence|event|court|surveillance|atmosphere",
-      "source": "real|stock",
-      "quality": "high|medium|low"
-    }
-  ]
-}
-```
-
-The `source` field is critical:
-- `"real"` — authentic material from the actual topic (news photo, case file, surveillance)
-- `"stock"` — Pexels or other stock footage used for atmosphere/filler
-
-This lets the script-writer prioritize real materials for key moments and use stock for transitions/atmosphere.
-
-## File Naming
-
-Use the format: `NN_descriptive_name.ext`
-- `NN` = two-digit sequence number (01, 02, 03...)
-- `descriptive_name` = snake_case description
-- `ext` = original file extension
-
-## Quality Targets
-
-**Real materials (Pass 1) — aim for:**
-- **At least 1-2 real video clips** (surveillance, news reel, court footage — this is the highest-value material, try multiple search strategies before giving up)
-- 2-4 photos of the main subject/victim (critical — try hard for these)
-- 2-3 photos of the actual location
-- 2+ evidence or event photos (documents, surveillance, forensic material)
-
-**Stock materials (Pass 2) — fill to reach:**
-- Establishing/atmosphere shots to cover narrative gaps
-- **Total target: 20-30 materials** (mix of real + stock) — this gives enough for 5-9 scenes with multiple visuals per scene and allows selective matching
-
-## Important
-
-- **Pass 1 materials are always higher priority than Pass 2.** Real images give credibility.
-- **Never use stock photos to represent real people.** A stock "young woman" is not the victim.
-- **Never use stock photos when a real image exists.** If you found the actual building, don't also get a stock "hotel exterior."
-- Verify that downloaded files are actual images (check file size > 1KB)
-- If a download fails (403/404), try alternate sources
-- Always set the browser User-Agent header when downloading (for Pass 1 web downloads)
-- Record the actual source URL for each material
-- Do NOT fabricate source URLs
-- Tag every material correctly with `"source": "real"` or `"source": "stock"` in catalog.json
+## Rules
+- Never generate or edit an image of the real victim or evidence. No AI "recreations" of real people.
+- News broadcast frames with anchors or tickers aren't usable (drop them). Use only clean segments of news footage.
+- Report what iconic visuals you could NOT find. Don't substitute a look-alike and call it the real thing.

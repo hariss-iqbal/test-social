@@ -8,7 +8,9 @@
   "dependencies": {
     "@remotion/bundler": "^4.0.445",
     "@remotion/cli": "^4.0.445",
+    "@remotion/google-fonts": "^4.0.445",
     "@remotion/player": "^4.0.445",
+    "@remotion/renderer": "^4.0.445",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",

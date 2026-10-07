@@ -12,6 +12,7 @@ Usage:
     python3 scripts/generate_cards.py --type document --config '{...}' --output path/to/output.png
     python3 scripts/generate_cards.py --type title --config '{...}' --output path/to/output.png
     python3 scripts/generate_cards.py --type person --config '{...}' --output path/to/output.png
+    python3 scripts/generate_cards.py --type ruling --config '{...}' --output path/to/output.png
 
 All cards share a consistent design system:
     - Background: near-black (#121218) with subtle radial gradient
@@ -433,7 +434,16 @@ def generate_quote(config, output_path):
     Config:
     {
         "quote": "I just want to know what happened to my daughter.",
-        "attribution": "Tereasa Martin, Mother"
+        "attribution": "Tereasa Martin, Mother",
+        # optional (caption-safe layout):
+        "lead": "Short non-quoted context line shown above the quote",
+        "center_y": 960,        # vertical centre of the quote block
+        "font_size": 42,        # quote font size
+        "margin_x": 80,         # left/right text margin
+        "highlight": "phrase",  # words of the quote drawn in gold
+        "decor": true,          # false: no big decorative marks (put curly quotes in the text)
+        "attribution_size": 28,
+        "quote_width": 740      # wrap width of the quote lines (default content width - 40)
     }
     """
     img = create_base_image()
@@ -441,43 +451,172 @@ def generate_quote(config, output_path):
 
     quote_text = config.get("quote", "")
     attribution = config.get("attribution", "")
-
-    # Large decorative opening quote mark (gold)
-    quote_mark_font = get_font("bold", 200)
-    draw.text((MARGIN_X - 20, HEIGHT // 2 - 320), "\u201C", font=quote_mark_font, fill=ACCENT_COLOR + (80,))
+    lead = config.get("lead", "")
+    center_y = int(config.get("center_y", HEIGHT // 2))
+    font_size = int(config.get("font_size", 42))
+    margin_x = int(config.get("margin_x", MARGIN_X))
+    content_w = WIDTH - 2 * margin_x
+    line_h = int(font_size * 1.3)      # fixed line pitch so spacing is even
 
     # Quote text (white, italic, centered)
-    quote_font = get_font("italic", 42)
-    quote_lines = wrap_text(draw, quote_text, quote_font, CONTENT_WIDTH - 40)
+    quote_font = get_font("italic", font_size)
+    wrap_w = int(config.get("quote_width", content_w - 40))
+    quote_lines = wrap_text(draw, quote_text, quote_font, wrap_w)
+    # avoid a one-word orphan on the last line
+    if len(quote_lines) > 1 and len(quote_lines[-1].split()) == 1:
+        quote_lines = wrap_text(draw, quote_text, quote_font, wrap_w - 100)
 
-    total_text_height = sum(
-        text_height(draw, line, quote_font) + 14 for line in quote_lines
-    )
-    quote_y = (HEIGHT - total_text_height) // 2
+    total_text_height = line_h * len(quote_lines)
+    quote_y = center_y - total_text_height // 2
+    top_y = quote_y
+    mark_y = top_y - 170
 
+    # Optional lead line (gray, non-quoted context) above the quote
+    if lead:
+        lead_font = get_font("regular", max(30, font_size // 2))
+        lead_lines = wrap_text(draw, lead, lead_font, content_w)
+        lh = [text_height(draw, l, lead_font) + 12 for l in lead_lines]
+        ly = mark_y + 20 - sum(lh)
+        for l, h in zip(lead_lines, lh):
+            bb = draw.textbbox((0, 0), l, font=lead_font)
+            draw.text(((WIDTH - (bb[2] - bb[0])) // 2, ly), l, font=lead_font, fill=SECONDARY_TEXT)
+            ly += h
+
+    # Large decorative opening quote mark (gold)
+    decor = config.get("decor", True)   # False: quote marks are inline in the text
+    if decor:
+        quote_mark_font = get_font("bold", 200)
+        draw.text((margin_x - 20, mark_y), "\u201C", font=quote_mark_font, fill=ACCENT_COLOR + (80,))
+
+    # Optional gold highlight: a phrase inside the quote, coloured word by word
+    hl = config.get("highlight", "")
+    all_words = quote_text.split()
+    hl_idx = set()
+    if hl:
+        hw = hl.split()
+        norm = lambda w: w.strip("\u201c\u201d\"'.,;:!?\u2026()").lower()
+        for i in range(len(all_words) - len(hw) + 1):
+            if [norm(w) for w in all_words[i:i + len(hw)]] == [norm(w) for w in hw]:
+                hl_idx = set(range(i, i + len(hw)))
+                break
+    space_w = draw.textlength(" ", font=quote_font)
+
+    last_end, last_y = 0, quote_y
+    wi = 0
     for line in quote_lines:
         line_bbox = draw.textbbox((0, 0), line, font=quote_font)
         line_w = line_bbox[2] - line_bbox[0]
         line_x = (WIDTH - line_w) // 2
-        draw.text((line_x, quote_y), line, font=quote_font, fill=PRIMARY_TEXT)
-        quote_y += line_bbox[3] - line_bbox[1] + 14
+        if hl_idx:
+            x = line_x - line_bbox[0]
+            for w in line.split():
+                draw.text((x, quote_y), w, font=quote_font,
+                          fill=ACCENT_COLOR if wi in hl_idx else PRIMARY_TEXT)
+                x += draw.textlength(w, font=quote_font) + space_w
+                wi += 1
+        else:
+            draw.text((line_x, quote_y), line, font=quote_font, fill=PRIMARY_TEXT)
+        last_end, last_y = line_x + line_w, quote_y
+        quote_y += line_h
+
+    # Closing quote mark (subtle): after the last word, or below it if no room
+    close_font = get_font("bold", 120)
+    if last_end + 70 <= WIDTH - margin_x:
+        close_xy = (last_end + 12, last_y - 20)
+    else:
+        close_xy = (WIDTH - margin_x - 60, last_y + line_h - 30)
+        quote_y += 30
 
     # Gold separator line
     sep_y = quote_y + 40
     draw.line([(WIDTH // 2 - 100, sep_y), (WIDTH // 2 + 100, sep_y)],
               fill=ACCENT_COLOR, width=2)
 
-    # Attribution (gray, right-aligned)
+    # Attribution (gray, right-aligned, wrapped)
     if attribution:
-        attr_font = get_font("regular", 28)
-        attr_bbox = draw.textbbox((0, 0), f"\u2014 {attribution}", font=attr_font)
-        attr_w = attr_bbox[2] - attr_bbox[0]
-        attr_x = WIDTH - MARGIN_X - attr_w
-        draw.text((attr_x, sep_y + 30), f"\u2014 {attribution}", font=attr_font, fill=SECONDARY_TEXT)
+        attr_font = get_font("regular", int(config.get("attribution_size", 28)))
+        attr_lines = wrap_text(draw, f"\u2014 {attribution}", attr_font, content_w)
+        ay = sep_y + 30
+        for l in attr_lines:
+            bb = draw.textbbox((0, 0), l, font=attr_font)
+            draw.text((WIDTH - margin_x - (bb[2] - bb[0]), ay), l, font=attr_font, fill=SECONDARY_TEXT)
+            ay += bb[3] - bb[1] + 12
 
-    # Closing quote mark (subtle)
-    draw.text((WIDTH - MARGIN_X - 80, quote_y - 40), "\u201D", font=get_font("bold", 120),
-              fill=ACCENT_COLOR + (40,))
+    if decor:
+        draw.text(close_xy, "\u201D", font=close_font, fill=ACCENT_COLOR + (40,))
+
+    img = finalize(img)
+    img.save(output_path, "PNG")
+    return output_path
+
+
+def generate_split(config, output_path):
+    """
+    Side-by-side contradiction card (two claims, left vs right).
+
+    Config:
+    {
+        "title": "THE HATCH",                  # optional kicker above
+        "left":  {"word": "OPEN",   "byline": "Santiago Lopez, maintenance worker", "note": "sworn declaration"},
+        "right": {"word": "CLOSED", "byline": "LAPD spokesperson", "note": "reportedly"},
+        "center_y": 650,                       # vertical centre of the big words
+        "footer": "optional question line below"
+    }
+    """
+    img = create_base_image()
+    draw = ImageDraw.Draw(img)
+    center_y = int(config.get("center_y", 650))
+    x0, x1 = 60, 930                 # caption/UI-safe horizontal band
+    mid = (x0 + x1) // 2
+    col_w = (x1 - x0) // 2 - 40
+
+    title = config.get("title", "")
+    if title:
+        tf = get_font("bold", 40)
+        bb = draw.textbbox((0, 0), title, font=tf)
+        tx = mid - (bb[2] - bb[0]) // 2
+        draw.text((tx, center_y - 260), title, font=tf, fill=ACCENT_COLOR)
+        draw.line([(mid - 60, center_y - 195), (mid + 60, center_y - 195)], fill=ACCENT_COLOR, width=2)
+
+    # Vertical divider
+    draw.line([(mid, center_y - 150), (mid, center_y + 260)], fill=ACCENT_COLOR + (160,), width=3)
+
+    def column(side, cx, color):
+        word = side.get("word", "")
+        wf_size = int(side.get("size", 96))
+        wf = get_font("bold", wf_size)
+        while draw.textbbox((0, 0), word, font=wf)[2] > col_w and wf_size > 40:
+            wf_size -= 4
+            wf = get_font("bold", wf_size)
+        bb = draw.textbbox((0, 0), word, font=wf)
+        wy = center_y - (bb[3] - bb[1]) // 2 - bb[1]
+        draw_text_with_shadow(draw, (cx - (bb[2] - bb[0]) // 2, wy), word, wf, color, offset=3)
+        y = center_y + (bb[3] - bb[1]) // 2 + 50
+        bf = get_font("regular", 30)
+        for l in wrap_text(draw, side.get("byline", ""), bf, col_w):
+            lb = draw.textbbox((0, 0), l, font=bf)
+            draw.text((cx - (lb[2] - lb[0]) // 2, y), l, font=bf, fill=PRIMARY_TEXT)
+            y += lb[3] - lb[1] + 12
+        note = side.get("note", "")
+        if note:
+            nf = get_font("italic", 28)
+            y += 6
+            for l in wrap_text(draw, note, nf, col_w):
+                lb = draw.textbbox((0, 0), l, font=nf)
+                draw.text((cx - (lb[2] - lb[0]) // 2, y), l, font=nf, fill=SECONDARY_TEXT)
+                y += lb[3] - lb[1] + 10
+
+    column(config.get("left", {}), (x0 + mid) // 2, PRIMARY_TEXT)
+    column(config.get("right", {}), (mid + x1) // 2, ACCENT_COLOR)
+
+    footer = config.get("footer", "")
+    if footer:
+        ff = get_font("italic", 34)
+        y = center_y + 330
+        for l in wrap_text(draw, footer, ff, x1 - x0):
+            lb = draw.textbbox((0, 0), l, font=ff)
+            draw.text((mid - (lb[2] - lb[0]) // 2, y), l, font=ff, fill=SECONDARY_TEXT)
+            y += lb[3] - lb[1] + 12
 
     img = finalize(img)
     img.save(output_path, "PNG")
@@ -920,6 +1059,90 @@ def generate_person(config, output_path):
     return output_path
 
 
+def generate_ruling(config, output_path):
+    """
+    Large-type official-finding card: an off-white paper panel with a header
+    and a few LABEL / VALUE rows in big type (readable on a phone, unlike a
+    scanned page). Everything stays inside the caption-safe box.
+
+    Config:
+    {
+        "header": "L.A. COUNTY CORONER",
+        "subheader": "AUTOPSY REPORT 2013-01364",
+        "rows": [
+            {"label": "CAUSE OF DEATH", "value": "DROWNING", "size": 100},
+            {"label": "MANNER OF DEATH", "value": "ACCIDENT", "size": 110, "stamp": true}
+        ],
+        "box": [60, 230, 930, 1070]      # paper panel (x0, y0, x1, y1)
+    }
+    """
+    img = create_base_image()
+    draw = ImageDraw.Draw(img)
+    x0, y0, x1, y1 = config.get("box", [60, 230, 930, 1070])
+    pad = 44
+    paper = (245, 240, 232, 255)
+    ink = (26, 24, 22)
+    label_ink = (110, 104, 96)
+    red = (178, 34, 34)
+
+    # paper panel with a soft shadow
+    shadow = Image.new("RGBA", (WIDTH, HEIGHT), (0, 0, 0, 0))
+    ImageDraw.Draw(shadow).rectangle([x0 + 8, y0 + 12, x1 + 8, y1 + 12], fill=(0, 0, 0, 150))
+    img = Image.alpha_composite(img, shadow.filter(ImageFilter.GaussianBlur(14)))
+    draw = ImageDraw.Draw(img)
+    draw.rectangle([x0, y0, x1, y1], fill=paper)
+    inner_w = (x1 - x0) - 2 * pad
+
+    def fit(text, style, size, min_size=40):
+        f = get_font(style, size)
+        while draw.textlength(text, font=f) > inner_w and size > min_size:
+            size -= 2
+            f = get_font(style, size)
+        return f
+
+    y = y0 + pad
+    header = config.get("header", "")
+    if header:
+        hf = fit(header, "bold", int(config.get("header_size", 52)))
+        draw.text((x0 + pad, y), header, font=hf, fill=ink)
+        y += text_height(draw, header, hf) + 18
+    sub = config.get("subheader", "")
+    if sub:
+        sf = fit(sub, "mono", int(config.get("subheader_size", 30)), 22)
+        draw.text((x0 + pad, y), sub, font=sf, fill=label_ink)
+        y += text_height(draw, sub, sf) + 22
+    draw.line([(x0 + pad, y), (x1 - pad, y)], fill=ink, width=4)
+    y += 34
+
+    row_gap = int(config.get("row_gap", 34))
+    for row in config.get("rows", []):
+        label, value = row.get("label", ""), row.get("value", "")
+        if label:
+            lf = get_font("mono", int(row.get("label_size", 32)))
+            draw.text((x0 + pad, y), label, font=lf, fill=label_ink)
+            y += text_height(draw, label, lf) + 14
+        vf = fit(value, "bold", int(row.get("size", 80)))
+        bb = draw.textbbox((0, 0), value, font=vf)
+        vx = x0 + pad
+        if row.get("stamp"):
+            sp = 16
+            y += sp
+            draw.rectangle([vx - bb[0], y - sp + 4, vx + bb[2] + 2 * sp, y + bb[3] + sp],
+                           outline=red, width=7)
+            draw.text((vx + sp, y), value, font=vf, fill=red)
+            y += bb[3] + sp
+        else:
+            draw.text((vx, y), value, font=vf, fill=red if row.get("red") else ink)
+            y += bb[3]
+        y += row_gap
+    if y > y1:
+        print(f"  Warning: ruling content overflows the panel ({y} > {y1})", file=sys.stderr)
+
+    img = finalize(img)
+    img.save(output_path, "PNG")
+    return output_path
+
+
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 GENERATORS = {
@@ -930,6 +1153,8 @@ GENERATORS = {
     "document": generate_document,
     "title": generate_title,
     "person": generate_person,
+    "split": generate_split,
+    "ruling": generate_ruling,
 }
 
 
