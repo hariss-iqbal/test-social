@@ -8,3 +8,6 @@ tools/
 __pycache__/
 *.pyc
 .DS_Store
+ready/
+assets/3d_src/
+assets/whatif_public/

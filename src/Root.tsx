@@ -3,6 +3,8 @@ import { MyComposition } from "./Composition";
 import { StoryVideo } from "./StoryVideo";
 import { ShortVideo } from "./short/ShortVideo";
 import { Cover } from "./short/Cover";
+import { WhatIfVideo } from "./whatif/WhatIfVideo";
+import type { WhatIfProps } from "./whatif/types";
 import type { CoverProps, ShortProps } from "./short/types";
 import type { Story } from "./types";
 import storyData from "../public/story.json";
@@ -23,6 +25,13 @@ const emptyTimeline: ShortProps = {
   },
 };
 
+const emptyWhatIf: WhatIfProps = {
+  timeline: {
+    fps: 30, width: 1080, height: 1920, durationInFrames: 30, kit: "city", seed: 1,
+    params: {}, camera: [], captions: [], hud: [], title: null, endCard: null, flashes: [],
+  },
+};
+
 const emptyCover: CoverProps = { src: "", srcW: 1080, srcH: 1920, focus: [0.5, 0.5], crop: null, text: "COVER TEXT", keyword: "text", circle: null };
 
 export const RemotionRoot: React.FC = () => {
@@ -36,6 +45,22 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
         durationInFrames={30}
         defaultProps={emptyTimeline}
+        calculateMetadata={({ props }) => ({
+          durationInFrames: props.timeline.durationInFrames,
+          fps: props.timeline.fps,
+          width: props.timeline.width,
+          height: props.timeline.height,
+        })}
+      />
+      {/* "whatif" profile: one continuous 3D world (src/whatif) */}
+      <Composition
+        id="WhatIf"
+        component={WhatIfVideo}
+        fps={30}
+        width={1080}
+        height={1920}
+        durationInFrames={30}
+        defaultProps={emptyWhatIf}
         calculateMetadata={({ props }) => ({
           durationInFrames: props.timeline.durationInFrames,
           fps: props.timeline.fps,
