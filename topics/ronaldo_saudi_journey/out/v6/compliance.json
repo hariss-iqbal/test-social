@@ -1,0 +1,291 @@
+{
+ "version": "v6",
+ "verdict": "FAIL",
+ "counts": {
+  "FAIL": 10,
+  "PASS": 27,
+  "N/A": 2
+ },
+ "items": [
+  {
+   "id": "C01",
+   "status": "FAIL",
+   "evidence": "236.5-237.1 s106: the SOURCE line (y 1000-1045, ends about x 590) covers the lower half of 'RO' in the shirt's RONALDO lettering; seen at 236.70 and 236.95, clear at 236.00 and 237.20. Burned-in score graphic from v5 is gone. No other text-on-text: hook lines, all 20 labels at mid-life, 4-line captions start y 1088.",
+   "owner": "edl.json s106",
+   "fix": "Replacing the s106 picture for the child finding clears this. Re-check the tag on the new picture."
+  },
+  {
+   "id": "C02",
+   "status": "FAIL",
+   "evidence": "SOURCE line on a face, both unchanged shots missed earlier. s088 193.03-195.70: across jaw and chin stubble, seen at 194.00, 195.00, 195.60. s090 199.50-201.13: across the chin below the lips, black and white close-up, seen at 199.90, 200.30. v5 cases fixed: s008 at 17.50 and s044 at 95.20 on the suit, s091 no face. Passing, near: s010/s012 tag on neck, chin above it; s106 235.47-235.57 tag just under the foreground man's chin; s021 pull touches only the top of the blurred background man's head, face clear.",
+   "owner": "edl.json s088, s090",
+   "fix": "s088: move to the wide part of its catalog segment (46, 268.95-274.5, try src_in 272.0, crop null) and check the chin ends above y 1000. The tag sits 35-80 px above the pinned panel bottom, so no crop of this close-up clears it. s090: crop [0,0,1,1] raises the chin about 90 px to about y 989; the catalog notes burned-in subtitles in this film, so check 0.13-1.77 s for them first; if present, add a per-shot tag position in src/short/ShortVideo.tsx line 175."
+  },
+  {
+   "id": "C03",
+   "status": "PASS",
+   "evidence": "Band centre about y 1250, no one-word page (timeline), shortest pages 0.30 s with 3 words. Readable on all sampled frames. Sampled at 0.4 s through video shots and at the start and end of stills, not at every page middle. Limit measured under C29.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C04",
+   "status": "FAIL",
+   "evidence": "20 labels plus the hook against the 16 in the ITERATIONS.md waiver; the waiver's density argument covers 16, so 20 needs a ruling. v5 recorded 23 as WAIVED with a note; this is stricter because the director has now asked the owner to rule. No frame stacks pull + label + SOURCE + captions. No word-for-word repeat, though s029 and s039 are close. Auditor's view: cut exactly four, reaching 16: (1) s131 CRISTIANO RONALDO, identifies nobody new, and s001 has no such label so the loop matches better without it; (2) s068 KING'S CUP FINAL · 31 MAY 2024, caption says 'the King's Cup final' at the same moment and the date follows from May 27 + 'four days later'; (3) s039 X POST · QUOTED IN NEWSWEEK, caption says 'One post quoted in Newsweek' at the same moment, which reverses the v3 reason for it; (4) s076 'This chapter is over.' — RONALDO, voice says 'this chapter was over'. Keep: money and claim tags (s006, s007, s021, s064, s066, s082, s097, s047), s103 (screen only), s054, s058, s105 (rulings), s002, s029, s077, s106. Optional trim: s064 to REPORTED SAR 10,000 FINE, since voice says the ban.",
+   "owner": "edl.json s131, s068, s039, s076 overlay; or owner ruling",
+   "fix": "Remove those four overlays, or the owner records 20 as the new ceiling in ITERATIONS.md."
+  },
+  {
+   "id": "C05",
+   "status": "PASS",
+   "evidence": "All non-card shots carry a tag matching the catalog picture credit. Changed shots: s007/s129 Al Nassr/Instagram for 53; s021 AFP for 16; s091 UR Cristiano/Visit Saudi for 70; s106 Saudi Pro League for 46. No stale tag. Truncation of the s007/s129 tag is under C27.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C06",
+   "status": "PASS",
+   "evidence": "s006 and s007 now read THE CLAIM: with no quotation marks. s029 is verbatim from research.json ('fits into a wider pattern of sportswashing') and names Amnesty. s076 and s103 unchanged from v5 verification.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C07",
+   "status": "PASS",
+   "evidence": "No conflict in voice, cards or labels. s066 trimmed to SEASON RECORD, PER GUINNESS; 35 goals still in voice. Script unchanged from v5, cards unchanged.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C08",
+   "status": "PASS",
+   "evidence": "No later-year label over an earlier event. s105 KING'S CUP FINAL, 2024 names its photo as earlier.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C09",
+   "status": "PASS",
+   "evidence": "v5 failure cleared: s007 is now photo 53, a portrait, no beach under the claim. s098 and s100 Red Sea film carry no label.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C10",
+   "status": "PASS",
+   "evidence": "v5 failure cleared: s021 has no place name. s029 is back on the skyline per the ruling, confirmed in timeline.json and frames (58.82, 59.93). s091 AlUla and balloons under 'on a tourism campaign' matches.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C11",
+   "status": "FAIL",
+   "evidence": "See BRIEF-no-child: s106 and s051. No excluded material; 17_georgina_mrsool_pitch unused. Note: s030's new crop makes three private fans fill the panel, faces clear; same picture passed earlier as a crowd, the owner may want to look.",
+   "owner": "edl.json s106, s051",
+   "fix": "See BRIEF-no-child."
+  },
+  {
+   "id": "C12",
+   "status": "PASS",
+   "evidence": "v5 failure cleared: s016 panel mean luma stays 60-67 across 29.87-31.37, contrast std 45-49, no flash. qc black and freeze lists empty. s010 and s102 dips are planned transitions. s131's flash tail lasts 0.10 s, under this rule's 0.3 s; reported separately as BRIEF-s131.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C13",
+   "status": "PASS",
+   "evidence": "v5 failures cleared: s106 no score panel at any sample 235.32-237.72; s058 no live bug at 125.03, 125.87, 126.30. No full-frame source under 480p: s082/s126 are 576 wide. Stadium boards in s106 and s126 are physical signage.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C14",
+   "status": "PASS",
+   "evidence": "Photos 08, 09 at two uses, 53 at two. Waived: photo 27 at three (s006, s029, s047, ruling), photo 26 at three, recap cards, video segments. Note: the v3 waiver's wording says 3 uses for video and doesn't list 15; 46 and 15 are at 4 uses in distinct segments. v5 treated both as waived and I have followed that.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C15",
+   "status": "PASS",
+   "evidence": "'The truth was' from 245.17 after the 1.10 s pause, captioned. Last line complete: 'at that press table.'",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C16",
+   "status": "PASS",
+   "evidence": "One ending. Last word ends 293.58, file 294.10: tail 0.52 s.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C17",
+   "status": "PASS",
+   "evidence": "Measured, not heard. v5 failure cleared: s036 stamp peak about 71.73, before 'Altered' at 71.87; s099 stamp peak about 215.00, before 'a' at 215.17; s060 stamp removed. Loudness -14.02 LUFS. Music bed floor -27.9 dB in any 1 s window (144.5 s), no silence.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C18",
+   "status": "PASS",
+   "evidence": "Attributions present in voice and on screen where spoken. Script unchanged. s021 pull keeps Al-Muammar's claim attributed.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C19",
+   "status": "PASS",
+   "evidence": "Frame 1 shows the hook only, 5 words. Clip moves in the first second. First words 'Cristiano Ronaldo sat'.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C20",
+   "status": "PASS",
+   "evidence": "Tail 0.52 s, s131 same clip as s001, loop_similarity 0.947 in qc.json.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C21",
+   "status": "PASS",
+   "evidence": "words_per_second 3.13. Largest gaps 0.59-0.60 s, inside the topic's PAUSE_MAX_MS 620; 15 gaps exceed the base 0.45 s. 1.10 s at 244.13 is the pre-reveal pause.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C22",
+   "status": "PASS",
+   "evidence": "Cover byte-identical to v5: one focal picture, 4 words, no SOURCE or captions, no answer, adults only. publish.md has 3 titles of 8 words or fewer, pinned comment, comment prompt. Notes: cover wording differs from the hook, no factual conflict; 'news/police material' boilerplate doesn't apply.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C23",
+   "status": "PASS",
+   "evidence": "s073 ring on ESTIMATE (156.50), s086 ring on $643,836 (189.60, 190.60). Longest static 4.63 s at 80.73 per qc. Card row reveals count as change per the waiver.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C24",
+   "status": "PASS",
+   "evidence": "Hook ends 2.60. s001 credit visible from about 2.8 and on s001b to 4.97.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C25",
+   "status": "PASS",
+   "evidence": "Cover circle null; nothing crosses the headline.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C26",
+   "status": "PASS",
+   "evidence": "s086 ring whole and clear of the caption at 189.60 and 190.60; s073 ring inside the card. Those cards have no SOURCE line.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C27",
+   "status": "FAIL",
+   "evidence": "SOURCE line truncated with an ellipsis, new in v6. s007 14.40-16.37 and s129 287.30-289.47 read 'SOURCE · AL NASSR / INSTAGRAM, VIA THE NATIONAL, …', losing the year; seen full-res at 15.50 and 288.50. Cause: at 44 characters + 9 the line is under the renderer's 55 threshold, so it keeps the 26 px font and overflows maxWidth 860. All other tags whole, including the 41-52 character ones.",
+   "owner": "edl.json s007, s129 source_tag",
+   "fix": "Set source_tag on both to 'Al Nassr/Instagram via The National, 2023' (41 characters, the longest length that already fits at 26 px). Renderer alternative: lower the threshold in src/short/ShortVideo.tsx line 176 from 55 to 49."
+  },
+  {
+   "id": "C28",
+   "status": "N/A",
+   "evidence": "No map pins.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C29",
+   "status": "PASS",
+   "evidence": "Full-res: 4-line pages end y 1413 (33.0 s) and y 1412 (105.0 s); hook page ends y 1392 (4.2 s).",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "BRIEF-no-child",
+   "status": "FAIL",
+   "evidence": "Top priority. Full film scanned, video every 0.4 s, stills at start and end plus zooms. APPEARS TO BE A CHILD, new finding: 235.35-237.75 s106, small figure in a yellow shirt at the stand rail, beside an adult in yellow who is far bigger; dark hair, face small but visible, seen at 235.35, 235.90, 236.20, 236.50, 236.80, 237.10, 237.60. The same footage was in v5's wider crop and the v5 audit missed it. CHILD'S HAND AND SLEEVE REMAIN: 111.40-113.13 s051, whole shot, top edge of the panel: the rail child's face is gone, but a hand on top of the yellow flag and a forearm with green sleeve to the left of it remain, about 10-15 px deep, blurred. Identified by matching against the same area of the v5 frame at 112.30, where the child is whole. Not recognisable alone, but the rule covers frame edges. CLEARED: s017 31.37-34.07 mascots out at every sample, blur fill clear (fill uses the crop, panel clamps to the crop in coverRect, so moves can't expose outside it). AGE UNCERTAIN, not failed: 59.97-62.30 s030, man in glasses and white scarf at right, has a moustache, reads young adult. 180.90-181.50 s082 crowd lower left, low-res phone video, no face reads as a child, but size can't exclude it. 119.33-120.90 s055 and 135.00-136.77 s062 dense crowds, no child distinguishable. RESOLVED: s082 'KNIGHT RONALDO' figure, 181.1-183.4, reads as Ronaldo himself: full kit, socks, boots and the same headband as s083. PASS: s032, s040 (adults only), s109, s107 squad, s108, s126 and all others.",
+   "owner": "edl.json s106, s051",
+   "fix": "s106: leave this footage, since no crop removes the stand behind him. Use catalog segment 547.5-554.5 (46, Ronaldo receiving the trophy), crop to suit, keep the date label; I did not inspect the source, so re-audit it for children and graphics. s051: crop [0.405, 0.152, 0.4, 0.598], bottom stays 0.75; this estimate removes the hand and sleeve but clips about 20 px of his hair, because his hair already reaches the panel top. If that's unacceptable, replace the shot. Check on composited frames."
+  },
+  {
+   "id": "BRIEF-s131",
+   "status": "FAIL",
+   "evidence": "Confirmed. 291.50-291.60 s131: first 3 frames catch the flash tail. Panel mean luma 104.7, 87.4, 69.8, then flat 52; contrast std 33.5, 37.1, 40.8, then 44.6. Visibly washed at the first frame, normal by the fourth.",
+   "owner": "edl.json s131 src_in",
+   "fix": "Set src_in to 9.65, same as s016."
+  },
+  {
+   "id": "BRIEF-s106-source",
+   "status": "FAIL",
+   "evidence": "Same finding as C01, about 236.5-237.1.",
+   "owner": "edl.json s106",
+   "fix": "Clears with the picture swap."
+  },
+  {
+   "id": "BRIEF-s017",
+   "status": "PASS",
+   "evidence": "No child. Soft foreground is real and large: a grey out-of-focus shape fills about the right third of the panel and covers half the face of the player in yellow, 31.37-34.07. No rule broken; for the critic. Also, nothing here shows Al-Muammar or Ronaldo's face under 'On Al-Nassr's side'. Not a mismatch, since the banner names the club.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "BRIEF-s007",
+   "status": "PASS",
+   "evidence": "Photo 53, crop reads cleanly: head and shoulders in the lower panel, THE CLAIM: A BEACH CLOSED / FOR A DAY wraps well above him and covers nothing. Face clear of the tag. Implies no beach, no conversion. Tag truncation under C27.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "BRIEF-s021",
+   "status": "PASS",
+   "evidence": "Picture: the centre man from photo 16, in black robe and red keffiyeh, same man as uncropped s018. Identity rests only on the AFP caption ('centre'), per the catalog; I can't confirm it independently, and s018's naming label was removed, so this is the only on-screen link. Text covers no face. Wrap is under BRIEF-pull-wrap.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "BRIEF-card-clipping",
+   "status": "FAIL",
+   "evidence": "All 8 v5 failures cleared, and no cut word at start or end of any card shot (34 card shots checked; moves are monotonic, so the ends bound them). Tightest: s046 '£250k' ends about 6 px from the frame edge at 101.78, whole. One remaining: 267.20 s120, first frame only (exact frame 8016): the punch transition pushes the card past the left edge, CLAIM CHECK loses its left edge and the NO EVIDENCE box its left side; clean from the next frame. s120 unchanged since v5. No next-row slivers; s124 and s087 end on a clean rule line.",
+   "owner": "edl.json s120 transition",
+   "fix": "Set transition to 'cut', or accept one frame by ruling."
+  },
+  {
+   "id": "BRIEF-pull-wrap",
+   "status": "FAIL",
+   "evidence": "Seen in the real font. Not a checklist rule; failed on your request. s021 42.07-44.80: AL-MUAMMAR'S ACCOUNT / ONLY, the qualifier alone on line two. s054 116.50-119.33: STATE FUND TAKES 75% · 5 / JUNE 2023, the date split. Minor, not failed: dash left hanging before the speaker in s029, s076, s103; s082 · NOT / CONTRACT DATA splits the phrase; s058 line one ends on a dot. Others wrap well: s006, s007, s039, s064, s066, s077.",
+   "owner": "edl.json s021, s054 overlay",
+   "fix": "s021: 'AL-MUAMMAR ONLY' (one line). s054: '5 JUNE 2023 · STATE FUND TAKES 75%'. Check both on composited frames."
+  },
+  {
+   "id": "BRIEF-money-labels",
+   "status": "PASS",
+   "evidence": "Tags stay whole on every pay card; highlights don't cover them. s064 says REPORTED, s082 FORBES ESTIMATE.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "QC-note",
+   "status": "N/A",
+   "evidence": "qc.json PASS, accepted warnings: video_kbps 7470, first cut 3.80 s. Shots changed against v5: 33, not 34; s029 is identical to v5 after the ruling reverted it. Audited from ffmpeg frames of out/v6/final.mp4 only; nothing rendered, no source edited. Audio checks are measurements, not listening. Sampling, not every frame. A seek at a shot's last frame can return the next shot's first frame, so end checks used 0.05 s earlier.",
+   "owner": null,
+   "fix": null
+  }
+ ],
+ "new_rules_suggested": [
+  "C30: card crops never cut a line of text or show a sliver of the next row, at any point of the camera move or transition. Origin: ronaldo_saudi_journey v5 s042 etc., v6 s120.",
+  "C31: qc's black and freeze checks miss white flashes; check every new src_in for flashes and dissolves. Origin: v5 s016, v6 s131.",
+  "C32: stands and background count for the no-child check, including limbs at frame edges and footage reused from an earlier version. Origin: v5 s017, s051; v6 s051, s106.",
+  "C33: check SOURCE line truncation on the composited frame; the 55-character font threshold still lets a 53-character line overflow. Origin: v6 s007, s129.",
+  "C34: pull labels never orphan a qualifier or split a date across lines, checked in the real font. Origin: v6 s021, s054."
+ ]
+}

@@ -11,3 +11,7 @@ __pycache__/
 ready/
 assets/3d_src/
 assets/whatif_public/
+# Ronaldo/Al-Nassr story: commit the project files as a reference, not the media
+!topics/ronaldo_saudi_journey/
+topics/ronaldo_saudi_journey/materials/
+topics/ronaldo_saudi_journey/build/

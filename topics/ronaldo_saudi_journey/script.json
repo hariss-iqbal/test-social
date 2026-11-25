@@ -1,0 +1,933 @@
+{
+  "title": "Did Saudi Arabia Change Its Law for Ronaldo?",
+  "on_screen_hook": "WHAT DID SAUDI DO FOR HIM?",
+  "story_spine": {
+    "character": "Cristiano Ronaldo, a forward of thirty-seven with no club when this starts, who cries in a dugout at thirty-nine and again at forty-one when he finally wins the league",
+    "character_names": [
+      "Ronaldo",
+      "Cristiano"
+    ],
+    "question": "What did Saudi Arabia really do for him, and what did he do for Saudi Arabia?",
+    "driving_question": "So what did Saudi Arabia really do for him, and what did he do for Saudi Arabia?",
+    "cold_open": "3 Jan 2023: he sits at the press table in Riyadh and says South Africa. It gains meaning at the last line, which returns to that table: this first ordinary, human moment is where every later claim about what the kingdom did for him began.",
+    "scenes": [
+      "Nov 2022 to Jan 2023: Morgan, United exit, Morocco; Al-Muammar's account of who moved first; the fireworks at Mrsool Park; Amnesty the next day",
+      "Jan to Feb 2023: Georgina, no conversion, 'bent the laws'; first money reports; the Four Seasons; the debut",
+      "June 2023 to Feb 2024: the state fund, the record spend; the 99 lashes rumour; a real ban",
+      "May 2024: thirty-five goals, then King's Cup tears, four days apart",
+      "May to Dec 2025: 'this chapter is over', the extension and every pay figure; our maths; tourism, White House, villas, the beach story",
+      "Feb to May 2026: the reported protest, a fourth lost final, then the title at forty-one",
+      "The answer: back to the law question; then Aug to Oct 2026, forward through the wedding to the record's one idea"
+    ],
+    "thesis": "The record shows reported money going one way and attention the other, and no law we could find rewritten for one man; why each side did it we can't prove.",
+    "climax_beat": "b42",
+    "payoff": "He did marry her, in Portugal; reported money went one way, attention the other, motives unproven, and we found no record of a law rewritten for him.",
+    "loop_line": "And we found no record of a law rewritten for the man who once sat at that press table.",
+    "fact_budget": [
+      "The contract was never published, so all pay is estimate",
+      "Al-Muammar's account of who approached first",
+      "CBS base vs package around EUR 200m; Forbes $200m, $225m, $235m; The Sun GBP 178m",
+      "Our division: month, week, day, game",
+      "No conversion on record; no statement from him on faith",
+      "No law change found; lawyers described a general blind eye",
+      "Beach story: no report found, untraced, not disproved",
+      "Instagram spike, $957m, tourism face, White House, 'Saudi', Amnesty's sportswashing (attributed)",
+      "35 goals, King's Cup tears, Feb 2026 reported protest, the title",
+      "Married Aug 2026; about 985 goals; Portugal suspension; deal ends June 2027; early sale talks"
+    ],
+    "on_screen_only": [
+      "Mendes vs Regufe dispute",
+      "Al-Muammar's 'two contracts' claim",
+      "Jet allowance, staff, goal bonuses (card 73)",
+      "PIF reportedly 100%; A Bola $100m consortium detail",
+      "20% priority clause (card 83)",
+      "Goal 982 dispute (card 86)",
+      "Forbes windows and off-field split (card 76)",
+      "Per-match table by season (card 75)",
+      "81 executions per Amnesty",
+      "SAR fines",
+      "25,000 capacity",
+      "Sujood note and conversion check (card 82)",
+      "World Cup clause denial (card 85)",
+      "Portugal out to Spain, July 2026",
+      "League's 'no individual' reply to the Feb 2026 protest",
+      "Shirt sales and tourism: no credible figure (card 87)",
+      "Riyadh park closure (card 80)",
+      "Founding Day thobe and sword, Feb 2023",
+      "Arab Club Champions Cup, Aug 2023",
+      "All-platform followers (card 87)",
+      "'Big project' quote (card 77)",
+      "South African Tourism reply",
+      "2019 hotel rule and UK FCDO advice (card 79)",
+      "NBC's excluded $468m (card 71)",
+      "Villa district (card 84)"
+    ]
+  },
+  "beats": [
+    {
+      "id": "b01",
+      "role": "hook",
+      "narration": "Cristiano Ronaldo sat at a press table in Riyadh and told the world he'd come to South Africa.",
+      "on_screen": "Hook text: WHAT DID SAUDI DO FOR HIM?",
+      "visual_intent": "15_south_africa_slip.mp4, segment 12.0-17.5: the slip itself on frame 1.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b02",
+      "role": "setup",
+      "narration": "He meant Saudi Arabia. He'd just signed for Al-Nassr, on a contract that has never been *published*.",
+      "on_screen": "Label: 3 Jan 2023, Riyadh. Small line: REPORTED FIGURES ONLY, CONTRACT NEVER PUBLISHED. Optional text: South African Tourism replied it was 'patiently waiting' (SBS).",
+      "visual_intent": "08_press_conf_earpiece.jpg, 11_billboard_hala_ronaldo_street.jpg.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b03",
+      "role": "setup",
+      "narration": "That silence filled up with pay figures, a rewritten law, and the closed beach story you may have heard.",
+      "on_screen": null,
+      "visual_intent": "Fast teaser: 71_card_table_pay_by_season.png, 79_card_claim_law_changed.png, 80_card_claim_beach.png (top halves only, verdicts cropped so the answer stays withheld).",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b04",
+      "role": "setup",
+      "narration": "So what did Saudi Arabia really do for him, and what did he do for Saudi Arabia?",
+      "on_screen": null,
+      "visual_intent": "06_unveil_thumbs_up.jpg, slow push.",
+      "pause_after_ms": 440,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b05",
+      "role": "context",
+      "narration": "Two months earlier he'd told TV host Piers Morgan he felt betrayed by Manchester United. His contract ended, and after the World Cup he was thirty-seven with no club.",
+      "on_screen": "Label: Nov-Dec 2022. Ended by mutual agreement (AP).",
+      "visual_intent": "05_piers_morgan_interview_2022.mp4 seg 16-23, 02_old_trafford_empty.jpg, 04_fifa_morocco_portugal_2022.mp4.",
+      "pause_after_ms": 380,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b06",
+      "role": "context",
+      "narration": "So who approached first? On Al-Nassr's side, the only first-hand account comes from its president then, Musalli Al-Muammar, three years later.",
+      "on_screen": "77_card_timeline_joining.png. Line: AL-MUAMMAR'S ACCOUNT ONLY, VIA SUMMARIES. Summer 2022: Al-Hilal also negotiated, per reports.",
+      "visual_intent": "16_muammar_arrives_mrsool.jpg, then card 77.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b07",
+      "role": "context",
+      "narration": "He said a Saudi prince proposed it in July twenty twenty-two, and that contacts led to a meeting in Lisbon overseen by the sports minister.",
+      "on_screen": "Card 77, July 2022 row. Pull-quote: 'wanted reassurance that it was a big project' (relayed summaries). Mendes vs Regufe dispute off the voice; on screen if room. Family-member contact stays OFF voice and OFF card.",
+      "visual_intent": "Card 77 punch-in; 09_press_conf_with_muammar_reuters.jpg.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b08",
+      "role": "turn",
+      "narration": "We found nothing from Ronaldo confirming that.",
+      "on_screen": "On screen: PIF 75%, 5 June 2023. No source gives PIF a role in the 2022 approach.",
+      "visual_intent": "23_pif_tower_night.jpg (no PIF logo in catalog).",
+      "pause_after_ms": 380,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b09",
+      "role": "context",
+      "narration": "On December thirtieth Al-Nassr announced him, with no transfer fee reported. Four days later he came through the fireworks at the club's sold-out stadium.",
+      "on_screen": "Label: Mrsool Park, Riyadh. 25,000 capacity per The National.",
+      "visual_intent": "14_alnassr_official_unveiling.mp4, 07_unveil_wave_fireworks.jpg.",
+      "pause_after_ms": 380,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b10",
+      "role": "turn",
+      "narration": "The next day, Amnesty International said his signing fit a wider pattern of sportswashing, polishing a reputation through sport.",
+      "on_screen": "Pull-quote: 'fits into a wider pattern of sportswashing', Amnesty, Dana Ahmed, 4 Jan 2023. Amnesty's characterisation; urged him to raise human rights. 81 executed in one day in 2022, per Amnesty.",
+      "visual_intent": "22_mbs_official_portrait.jpg, quote over 28_riyadh_night_from_iss.jpg.",
+      "pause_after_ms": 380,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b11",
+      "role": "tension",
+      "narration": "And he hadn't come alone. His partner Georgina Rodriguez came with him, both foreigners, unmarried, in a country where reports said living together outside marriage was forbidden.",
+      "on_screen": "On screen: reports cite no statute. 'Lived together unmarried until August 2026.'",
+      "visual_intent": "12_arrival_georgina_flowers.jpg, 27_riyadh_skyline_dusk.jpg. Adults only in frame; no framing on the children.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b12",
+      "role": "tension",
+      "narration": "Altered images claimed he'd converted to Islam. Fact-checkers found no record, so we won't label his faith.",
+      "on_screen": "82_card_claim_conversion.png: altered images, per fact-checkers. Sujood, May 2023: filmed, never explained by him; no sujood clip exists, so text only. Faith label stays off screen beyond 'no conversion, per fact-checkers'.",
+      "visual_intent": "Card 82.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b13",
+      "role": "tension",
+      "narration": "Headlines claimed special permission to live together. One post quoted in Newsweek said he made them bend their laws instead of just marrying her.",
+      "on_screen": "Pull-quote: 'He made them bend their laws instead of just marrying her.' X user, via Newsweek, Jan 2023.",
+      "visual_intent": "Text over 28_riyadh_night_from_iss.jpg (second use) or 17_georgina_mrsool_pitch.jpg cropped so the children aren't featured.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b14",
+      "role": "tension",
+      "narration": "Hold on to that one.",
+      "on_screen": null,
+      "visual_intent": "26_kingdom_centre_night.jpg, slow move.",
+      "pause_after_ms": 380,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b15",
+      "role": "context",
+      "narration": "On the money, CBS reported about seventy-five million dollars a year basic.",
+      "on_screen": "72_card_compare_original_deal_2022.png, top. Tag REPORTED.",
+      "visual_intent": "Card 72.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b16",
+      "role": "context",
+      "narration": "Other reports put the full package near two hundred million euros a year, with no published breakdown.",
+      "on_screen": "Card 72 lower half, then 85_card_quote_no_world_cup_clause.png.",
+      "visual_intent": "Card 72, card 85.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b17",
+      "role": "context",
+      "narration": "Home was a Four Seasons suite in Kingdom Tower, reported at up to three hundred thousand dollars a month.",
+      "on_screen": "84_card_list_where_he_lives.png, top. No hotel price published.",
+      "visual_intent": "26_kingdom_centre_night.jpg (no Four Seasons picture exists), card 84.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b18",
+      "role": "context",
+      "narration": "One later report says a villa in Riyadh, but we couldn't confirm where he lives now.",
+      "on_screen": "Card 84 bottom line, district on the card only (Robb Report).",
+      "visual_intent": "32_diplomatic_quarter_drive.mp4 seg 84-91 as generic Riyadh, never implied as his home.",
+      "pause_after_ms": 380,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b19",
+      "role": "turn",
+      "narration": "By January tenth the club's Instagram following was up more than a thousand percent.",
+      "on_screen": "87_card_list_what_saudi_got.png, first row: about 11m. All platforms, under 5.2m to over 57.5m, Football Benchmark, March 2025.",
+      "visual_intent": "Card 87.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b20",
+      "role": "context",
+      "narration": "He debuted as captain, and within three weeks scored all four in a four-nil.",
+      "on_screen": "Label: Debut, 22 Jan 2023. First goal 3 Feb, four v Al-Wehda 9 Feb on screen.",
+      "visual_intent": "33_debut_leads_out.jpg, 42_debut_espn_highlights.mp4.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b21",
+      "role": "turn",
+      "narration": "That June Saudi Arabia's state investment fund took control of his club. That summer Saudi clubs spent a record nine hundred fifty-seven million dollars, partly because of him, some argue.",
+      "on_screen": "PIF 75%, 5 June 2023. Card 87, third row (Deloitte). Benzema, Neymar on screen. Causation argued, not proven. 12 Aug 2023: Arab Club Champions Cup, both goals in the final, ESPN calls it unofficial; his only cup final win there, and the league title came in May 2026.",
+      "visual_intent": "23_pif_tower_night.jpg, card 87 punch-in, 49_arab_cup_final_goals_official.mp4.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b22",
+      "role": "tension",
+      "narration": "One rumour had Iran sentencing him to ninety-nine lashes for hugging a painter, until Iran's embassy in Spain denied any ruling.",
+      "on_screen": "81_card_claim_99_lashes.png.",
+      "visual_intent": "40_tehran_leads_team.jpg, card 81.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b23",
+      "role": "tension",
+      "narration": "But Saudi rules did reach him. In February twenty twenty-four, a gesture at fans chanting Messi cost him a one-match ban.",
+      "on_screen": "On screen: SAR 10,000 fine, non-appealable, via Al Jazeera.",
+      "visual_intent": "50_al_shabab_feb2024_match_official.mp4 (the gesture itself isn't in the listed segments).",
+      "pause_after_ms": 380,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b24",
+      "role": "context",
+      "narration": "He kept scoring, thirty-five league goals by May twenty-seventh, a Saudi record.",
+      "on_screen": "78_card_timeline_football.png row. Guinness.",
+      "visual_intent": "43_record_35_goals_alnassr_official.mp4.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b25",
+      "role": "tension",
+      "narration": "Four days later, the King's Cup final in Jeddah went to penalties. He scored his. Al-Nassr lost.",
+      "on_screen": "Label: King's Cup final, 31 May 2024.",
+      "visual_intent": "44_kings_cup_final_end_ssc.mp4, 35_kings_cup_head_in_hands.jpg.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b26",
+      "role": "tension",
+      "narration": "He sat in the dugout in *tears* while staff tried to comfort him.",
+      "on_screen": null,
+      "visual_intent": "51_kings_cup_dugout_tears.mp4 seg 10.0-12.81, hold.",
+      "pause_after_ms": 440,
+      "music": "normal",
+      "v3_tag": "quietly"
+    },
+    {
+      "id": "b27",
+      "role": "context",
+      "narration": "Forbes, which only estimates, put his football income at two hundred million dollars that season, then two hundred twenty-five million the next.",
+      "on_screen": "71_card_table_pay_by_season.png rows, 76_card_chart_forbes_on_off_field.png. Forbes windows differ from seasons. 2024/25: third in the league.",
+      "visual_intent": "Card 71, card 76.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b28",
+      "role": "turn",
+      "narration": "In May twenty twenty-five he posted that this chapter was over.",
+      "on_screen": "\"This chapter is over.\" 26 May 2025, after 3-2 at Al-Fateh.",
+      "visual_intent": "37_chapter_over_apr2025.jpg (April photo; no date claim on it).",
+      "pause_after_ms": 440,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b29",
+      "role": "turn",
+      "narration": "A month later he signed for two more years.",
+      "on_screen": "26 JUNE 2025. Contract to June 2027.",
+      "visual_intent": "45_the_story_continues_ur.mp4.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b30",
+      "role": "context",
+      "narration": "The Sun, from unnamed sources, printed a hundred seventy-eight million pounds a year plus a signing bonus, one tabloid, unconfirmed, the only breakdown we found.",
+      "on_screen": "73_card_list_extension_the_sun.png; card 71 row 2026/27. Card 71 line to add: NBC's $468m, unattributed, excluded.",
+      "visual_intent": "Card 73.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b31",
+      "role": "context",
+      "narration": "Forbes estimated two hundred thirty-five million dollars for the year to May twenty twenty-six.",
+      "on_screen": "74_card_breakdown_forbes_division.png top half: ESTIMATE.",
+      "visual_intent": "Card 74 top.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b32",
+      "role": "context",
+      "narration": "Our own maths on that *estimate* gives about nineteen point six million a month, four and a half million a week, six hundred forty-four thousand dollars a day.",
+      "on_screen": "Card 74 rows, OUR DIVISION tag always visible.",
+      "visual_intent": "Card 74, row by row on the words.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b33",
+      "role": "context",
+      "narration": "A per-match fee? We found none reported. Divide by his thirty-seven games that season and it's about six point three five million dollars a game, by our arithmetic.",
+      "on_screen": "75_card_table_per_match.png: NO APPEARANCE FEE HAS BEEN REPORTED. Stake: 83_card_claim_stake.png, reports only, on screen.",
+      "visual_intent": "Card 75, card 83.",
+      "pause_after_ms": 380,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b34",
+      "role": "turn",
+      "narration": "Saudi Arabia got his face on a tourism campaign. In November twenty twenty-five he sat at the White House dinner for its Crown Prince, and in Riyadh said he considered himself Saudi.",
+      "on_screen": "Source line: Visit Saudi, Sept 2025. Pull-quote: 'I consider myself Saudi', TOURISE, Nov 2025. No ambassador title found. Club denied a World Cup bid clause (card 85).",
+      "visual_intent": "70_stayed_for_more_visit_saudi.mp4, 57_wh_dinner_east_room.jpg.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b35",
+      "role": "context",
+      "narration": "That December he and Georgina bought two villas on a Red Sea island.",
+      "on_screen": "Card 84 Nujuma row; price is The Sun's, screen only. Bought, not a gift, as far as reported. Reached by boat or seaplane.",
+      "visual_intent": "24_nujuma_terrace_sunset.jpg, 25_nujuma_overwater_aerial.jpg.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b36",
+      "role": "tension",
+      "narration": "The story you may have heard goes further, a whole Saudi beach closed for a day for his family.",
+      "on_screen": "80_card_claim_beach.png claim line.",
+      "visual_intent": "29_red_sea_sand_island_aerial.jpg, card 80.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b37",
+      "role": "tension",
+      "narration": "We searched in English and Arabic and found no report, couldn't trace it, and can't disprove it.",
+      "on_screen": "Card 80: UNVERIFIED; nearest is the unconfirmed Riyadh park closure.",
+      "visual_intent": "Card 80.",
+      "pause_after_ms": 380,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b38",
+      "role": "tension",
+      "narration": "In February twenty twenty-six, ESPN's sources said he sat out a match, protesting the state fund's lack of signings.",
+      "on_screen": "ESPN sources. No comment from Ronaldo found. League to BBC Sport: \"no individual - however significant - determines decisions beyond their own club.\"",
+      "visual_intent": "Text panel with the league quote over 23_pif_tower_night.jpg.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b39",
+      "role": "tension",
+      "narration": "That May he lost another final, at home, his fourth at Al-Nassr by ESPN's count.",
+      "on_screen": "16 May 2026: 0-1 v Gamba Osaka, AFC Champions League Two.",
+      "visual_intent": "19_jesus_press_conf_acl2.jpg, 78_card_timeline_football.png.",
+      "pause_after_ms": 240,
+      "music": "normal",
+      "v3_tag": null
+    },
+    {
+      "id": "b40",
+      "role": "turn",
+      "narration": "Five days later he scored twice against Damac and won his first Saudi league, at forty-one, in tears again.",
+      "on_screen": "Label: 21 May 2026, 4-1 v Damac. Tears per reports. First league title for the club since 2018/19.",
+      "visual_intent": "46_title_damac_spl_official.mp4, 47_title_champions_ur.mp4, 39_title_confetti_trophy.png.",
+      "pause_after_ms": 440,
+      "music": "swell",
+      "v3_tag": null
+    },
+    {
+      "id": "b41",
+      "role": "tension",
+      "narration": "So what did each side get, and was a law bent for him?",
+      "on_screen": null,
+      "visual_intent": "Near-still on 28_riyadh_night_from_iss.jpg; riser ends on the reveal cut.",
+      "pause_after_ms": 950,
+      "music": "drop",
+      "v3_tag": null
+    },
+    {
+      "id": "b42",
+      "role": "reveal",
+      "narration": "The truth was, the reported money went to him, the attention went to Saudi Arabia, and nobody has shown a law bent. We found no *decree*, no regulation, no official statement either way. The story traces to two anonymous lawyers, who told the news agency EFE the ban on living together stood but authorities had stopped interfering with foreigners generally. That's a blind eye described for foreigners, not a law bent for one man.",
+      "on_screen": "79_card_claim_law_changed.png: NO EVIDENCE (sound-off match). Sources: EFE via Bio Bio; Al Jazeera 2019. Hotel rule (2019, general, predates him) on card. Card 79 line to add: UK FCDO advice, 'Sex outside of marriage and adultery are illegal, including for tourists'; it does not address cohabitation. No statute named. Keep this line away from the couple's names.",
+      "visual_intent": "Card 79, row by row on the words.",
+      "pause_after_ms": 450,
+      "music": "normal",
+      "v3_tag": "slowly"
+    },
+    {
+      "id": "b43",
+      "role": "closing",
+      "narration": "And he did marry her, on August eleventh, twenty twenty-six, in Portugal, not Saudi Arabia. He said in Vogue this is probably his last year playing. He's on about nine hundred eighty-five goals, short of a thousand, and his deal ends in June twenty twenty-seven. An investment firm says its interest in his club is at an early stage. Why each side did it, we can't prove. And we found no record of a law rewritten for the man who once sat at that press table.",
+      "on_screen": "Name card during the line: CRISTIANO RONALDO. Small lines: pay figures are estimates; Portugal out to Spain, July 2026; Portuguese FA suspension, Oct 2026, no final ruling; 86_card_stat_goals_985.png; RedBird: preliminary, no deal announced.",
+      "visual_intent": "58_wedding_bands_hands.jpg, 63_cascais_estoril_bay.jpg, card 86, 48_title_phone_angle_vertical.mp4, then 15_south_africa_slip.mp4 lead-in so the loop lands on b01.",
+      "pause_after_ms": 0,
+      "music": "normal",
+      "v3_tag": null
+    }
+  ],
+  "claims": [
+    {
+      "beat": "b01",
+      "type": "fact",
+      "text": "He said 'not the end of my career to come to South Africa' at the unveiling; reported wording varies slightly.",
+      "fact_id": "F005",
+      "source": "https://www.sbs.com.au/news/article/cristiano-ronaldo-confuses-saudi-arabia-with-south-africa-after-record-breaking-signing/p8aq2cjy2"
+    },
+    {
+      "beat": "b02",
+      "type": "fact",
+      "text": "Neither contract has been published.",
+      "fact_id": "F014",
+      "source": "https://www.skysports.com/football/news/13388595/cristiano-ronaldo-al-nassr-forward-close-to-agreeing-new-contract-to-stay-at-saudi-arabian-club"
+    },
+    {
+      "beat": "b05",
+      "type": "fact",
+      "text": "Nov 2022 TalkTV interview, felt betrayed; contract ended by mutual agreement that month; free agent; aged 37 (born 5 Feb 1985); Morocco eliminated Portugal.",
+      "fact_id": "F001",
+      "source": "https://twt-assets.washtimes.com/news/2022/dec/30/cristiano-ronaldo-signs-with-al-nassr-saudi-arabia"
+    },
+    {
+      "beat": "b06",
+      "type": "fact",
+      "text": "Only first-hand account is Al-Muammar's, Dec 2025.",
+      "fact_id": "F006",
+      "source": "https://onefootball.com/en/news/he-signed-two-contracts-al-muammar-reveals-the-behind-the-scenes-story-of-cristiano-ronaldo-signing-for-al-nassr-42046927"
+    },
+    {
+      "beat": "b07",
+      "type": "opinion",
+      "text": "Al-Muammar's one-sided account: July 2022 proposal by Prince Khalid bin Fahd.",
+      "fact_id": "F006",
+      "source": "https://onefootball.com/en/news/he-signed-two-contracts-al-muammar-reveals-the-behind-the-scenes-story-of-cristiano-ronaldo-signing-for-al-nassr-42046927"
+    },
+    {
+      "beat": "b07",
+      "type": "opinion",
+      "text": "Al-Muammar's account: a first direct meeting in Lisbon supervised by the sports minister. 'Big project' quote on screen only.",
+      "fact_id": "F007",
+      "source": "https://www.ysscores.com/en/news/13866494/Musalli-Al-Muammar-Reveals-the-Story-Behind-Al-Nassr's-Contract-with-Cristiano-Ronaldo"
+    },
+    {
+      "beat": "b08",
+      "type": "fact",
+      "text": "Neither Ronaldo nor Regufe has confirmed the account on record in what we found.",
+      "fact_id": "F006",
+      "source": "https://onefootball.com/en/news/he-signed-two-contracts-al-muammar-reveals-the-behind-the-scenes-story-of-cristiano-ronaldo-signing-for-al-nassr-42046927"
+    },
+    {
+      "beat": "b08",
+      "type": "fact",
+      "text": "On screen: no source gives PIF a role in the December 2022 approach.",
+      "fact_id": "F010",
+      "source": "https://www.ysscores.com/en/news/13866494/Musalli-Al-Muammar-Reveals-the-Story-Behind-Al-Nassr's-Contract-with-Cristiano-Ronaldo"
+    },
+    {
+      "beat": "b09",
+      "type": "fact",
+      "text": "Announced 30 Dec 2022; free agent, no fee reported.",
+      "fact_id": "F002",
+      "source": "https://twt-assets.washtimes.com/news/2022/dec/30/cristiano-ronaldo-signs-with-al-nassr-saudi-arabia"
+    },
+    {
+      "beat": "b09",
+      "type": "fact",
+      "text": "Unveiled 3 Jan 2023, sold out, per The National.",
+      "fact_id": "F004",
+      "source": "https://www.thenationalnews.com/sport/football/2023/01/03/cristiano-ronaldo-very-proud-to-be-taking-on-new-challenge-with-al-nassr-in-saudi-arabia/"
+    },
+    {
+      "beat": "b09",
+      "type": "fact",
+      "text": "Fireworks: shown in catalog item 07_unveil_wave_fireworks.jpg (Reuters, via The National, 2023) and the club's official unveiling film (14). Not in research.json text; the picture is the source.",
+      "fact_id": "F004",
+      "source": "https://www.thenationalnews.com/sport/football/2023/01/03/cristiano-ronaldo-very-proud-to-be-taking-on-new-challenge-with-al-nassr-in-saudi-arabia/"
+    },
+    {
+      "beat": "b10",
+      "type": "opinion",
+      "text": "Amnesty's characterisation of the signing as sportswashing; it urged him to raise human rights.",
+      "fact_id": "F045",
+      "source": "https://www.amnesty.org/en/latest/news/2023/01/saudi-arabia-at-al-nassr-cristiano-ronaldo-should-draw-attention-to-human-rights-issues/"
+    },
+    {
+      "beat": "b11",
+      "type": "fact",
+      "text": "Reports repeat that Saudi law forbids unmarried cohabitation; no outlet read names a statute.",
+      "fact_id": "F031",
+      "source": "https://www.gov.uk/foreign-travel-advice/saudi-arabia/safety-and-security"
+    },
+    {
+      "beat": "b11",
+      "type": "fact",
+      "text": "Unmarried until 11 Aug 2026.",
+      "fact_id": "F030",
+      "source": "https://www.espn.com/soccer/story/_/id/49584727/cristiano-ronaldo-marriage-wedding-georgina-rodriguez"
+    },
+    {
+      "beat": "b12",
+      "type": "fact",
+      "text": "No conversion to Islam per fact-checkers: altered images (PRNigeria), no statement or record (Lead Stories). No statement by him on his faith found; research says avoid labelling his faith beyond 'not a convert, per fact-checks'.",
+      "fact_id": "F038",
+      "source": "https://arabic.leadstories.com/hoax-alert/2023/05/fact-check-cristiano-ronaldo-did-not-announce-his-conversion-to-islam.html"
+    },
+    {
+      "beat": "b13",
+      "type": "fact",
+      "text": "'Special permission' headlines; Newsweek quoted X users.",
+      "fact_id": "F036",
+      "source": "https://www.newsweek.com/saudi-arabia-bending-marriage-law-cristiano-ronaldo-sparks-debate-1772599"
+    },
+    {
+      "beat": "b15",
+      "type": "fact",
+      "text": "CBS, 23 Dec 2022: about $75m a year basic. Reported.",
+      "fact_id": "F015",
+      "source": "https://www.cbssports.com/soccer/news/cristiano-ronaldo-to-al-nassr-saudi-club-hope-to-land-75-million-a-year-signing-before-transfer-window-opens"
+    },
+    {
+      "beat": "b16",
+      "type": "fact",
+      "text": "Package around EUR 200m a year including commercial (AFP source, Romano). Reported; split unpublished.",
+      "fact_id": "F016",
+      "source": "https://www.goal.com/en/news/ronaldo-earn-400m-al-nassr-transfer-saudi-arabia-world-cup-ambassador/blte08178ab0b12429b"
+    },
+    {
+      "beat": "b17",
+      "type": "fact",
+      "text": "Four Seasons, Kingdom Tower; reports $250k-$300k a month; no hotel confirmation.",
+      "fact_id": "F054",
+      "source": "https://gulfnews.com/sport/football/cristiano-ronaldos-first-saudi-home-has-17-rooms-and-costs-300k-a-month-1.93095651"
+    },
+    {
+      "beat": "b18",
+      "type": "fact",
+      "text": "Moved to a compound house (Mirror); Robb Report: villa in Al-Muhammadiyah; exact home unconfirmed.",
+      "fact_id": "F055",
+      "source": "https://newarab.com/news/ronaldo-moves-out-luxury-hotel-new-saudi-digs"
+    },
+    {
+      "beat": "b19",
+      "type": "fact",
+      "text": "Gulf News, 10 Jan 2023: up 1,072% to about 11m. Football Benchmark all-platform figures on screen.",
+      "fact_id": "F086",
+      "source": "https://gulfnews.com/sport/football/ronaldo-helps-al-nassrs-instagram-following-spike-by-1072-1.93126795"
+    },
+    {
+      "beat": "b20",
+      "type": "fact",
+      "text": "Debut as captain, 22 Jan 2023; four goals v Al-Wehda, 9 Feb 2023 (18 days).",
+      "fact_id": "F062",
+      "source": "https://www.tntsports.co.uk/football/cristiano-ronaldo-scores-his-first-al-nassr-goal-with-last-minute-penalty-to-salvage-draw-against-al_sto9370140/story.shtml"
+    },
+    {
+      "beat": "b21",
+      "type": "fact",
+      "text": "PIF took 75%, June 2023.",
+      "fact_id": "F012",
+      "source": "https://www.thenationalnews.com/sport/football/2023/06/05/pif-takes-control-of-al-hilal-al-nassr-al-ittihad-and-al-ahli-in-saudi-pro-league"
+    },
+    {
+      "beat": "b21",
+      "type": "fact",
+      "text": "Deloitte: record $957m in summer 2023.",
+      "fact_id": "F087",
+      "source": "https://www.deloitte.com/middle-east/en/about/press-room/saudi-pro-league-clubs-spend-us957-million-in-record-breaking-football.html"
+    },
+    {
+      "beat": "b21",
+      "type": "fact",
+      "text": "Causation by Ronaldo is argued, not proven.",
+      "fact_id": "F084",
+      "source": "https://www.soccerway.com/news/soccer-saudi-professional-league-saudi-spending-in-transfer-window-second-only-to-premier-league/2sRtXjxq"
+    },
+    {
+      "beat": "b22",
+      "type": "fact",
+      "text": "99 lashes false; Iranian embassy in Spain denied any ruling, 13 Oct 2023.",
+      "fact_id": "F041",
+      "source": "https://factly.in/no-cristiano-ronaldo-was-not-sentenced-to-99-lashes-for-hugging-a-painter-in-iran"
+    },
+    {
+      "beat": "b23",
+      "type": "fact",
+      "text": "One-match ban and fine, Feb 2024, gesture amid 'Messi' chants.",
+      "fact_id": "F042",
+      "source": "https://www.aljazeera.com/sports/2024/2/29/cristiano-ronaldo-suspended-al-nassr-saudi-pro-league"
+    },
+    {
+      "beat": "b24",
+      "type": "fact",
+      "text": "35 league goals, 27 May 2024, Saudi Pro League season record.",
+      "fact_id": "F065",
+      "source": "https://www.guinnessworldrecords.com/world-records/706350-most-goals-scored-in-a-season-of-football-soccer-saudi-pro-league"
+    },
+    {
+      "beat": "b25",
+      "type": "fact",
+      "text": "King's Cup final, 31 May 2024, Jeddah, lost on penalties; he scored.",
+      "fact_id": "F068",
+      "source": "https://www.espn.com/soccer/story/_/id/40252356/cristiano-ronaldo-tears-al-nassr-saudi-kings-cup-al-hilal"
+    },
+    {
+      "beat": "b26",
+      "type": "fact",
+      "text": "Sat in the dugout in tears as staff tried to comfort him.",
+      "fact_id": "F068",
+      "source": "https://www.espn.com/soccer/story/_/id/40252356/cristiano-ronaldo-tears-al-nassr-saudi-kings-cup-al-hilal"
+    },
+    {
+      "beat": "b27",
+      "type": "fact",
+      "text": "Forbes estimates: $200m on field (2024), $225m (2025). Estimates; windows differ from seasons.",
+      "fact_id": "F026",
+      "source": "https://en.wikipedia.org/wiki/Forbes_list_of_the_world's_highest-paid_athletes"
+    },
+    {
+      "beat": "b28",
+      "type": "fact",
+      "text": "Post on 26 May 2025 after a 3-2 loss.",
+      "fact_id": "F071",
+      "source": "https://www.nbcnews.com/sports/soccer/ronaldo-al-nassr-rcna209178"
+    },
+    {
+      "beat": "b29",
+      "type": "fact",
+      "text": "Extension announced 26 June 2025, one month later.",
+      "fact_id": "F071",
+      "source": "https://www.nbcnews.com/sports/soccer/ronaldo-al-nassr-rcna209178"
+    },
+    {
+      "beat": "b29",
+      "type": "fact",
+      "text": "Two-year contract, until 2027.",
+      "fact_id": "F018",
+      "source": "https://www.aljazeera.com/sports/2025/6/26/cristiano-ronaldo-signs-news-contract-at-al-nassr-until-2027"
+    },
+    {
+      "beat": "b30",
+      "type": "fact",
+      "text": "The Sun, 26 June 2025, unnamed sources: GBP 178m a year plus signing bonus; single origin; only breakdown for 2026/27. NBC's $468m excluded (F022).",
+      "fact_id": "F019",
+      "source": "https://www.goal.com/en-us/lists/cristiano-ronaldo-mind-blowing-new-contract-al-nassr-millionaire-every-other-day/blt7ccf58de68e242f1"
+    },
+    {
+      "beat": "b31",
+      "type": "fact",
+      "text": "Forbes 2026 on-field estimate $235m, window 1 May 2025 to 1 May 2026.",
+      "fact_id": "F026",
+      "source": "https://en.wikipedia.org/wiki/Forbes_list_of_the_world's_highest-paid_athletes"
+    },
+    {
+      "beat": "b32",
+      "type": "division",
+      "text": "Our division of $235m: $19.58m a month, $4.52m a week, $643,836 a day (pay_breakdown).",
+      "fact_id": "F026",
+      "source": "https://en.wikipedia.org/wiki/Forbes_list_of_the_world's_highest-paid_athletes"
+    },
+    {
+      "beat": "b33",
+      "type": "fact",
+      "text": "No appearance fee reported.",
+      "fact_id": "F025",
+      "source": "https://www.si.com/onsi/soccer/real-madrid/legends/eye-watering-details-of-cristiano-ronaldo-new-al-nassr-contract-emerge"
+    },
+    {
+      "beat": "b33",
+      "type": "division",
+      "text": "Our division: $235m / 37 apps = $6.35m (pay_breakdown; 37 apps per RonaldoStats).",
+      "fact_id": "F025",
+      "source": "https://www.si.com/onsi/soccer/real-madrid/legends/eye-watering-details-of-cristiano-ronaldo-new-al-nassr-contract-emerge"
+    },
+    {
+      "beat": "b34",
+      "type": "fact",
+      "text": "Face of Saudi Tourism campaign; 'considers himself Saudi', TOURISE, Riyadh, Nov 2025.",
+      "fact_id": "F083",
+      "source": "https://www.arabnews.com/node/2622186/amp"
+    },
+    {
+      "beat": "b34",
+      "type": "fact",
+      "text": "White House dinner for the Crown Prince, 18 Nov 2025.",
+      "fact_id": "F046",
+      "source": "https://www.espn.com/soccer/story/_/id/47008079/ronaldo-joins-trump-saudi-crown-prince-white-house-dinner"
+    },
+    {
+      "beat": "b35",
+      "type": "fact",
+      "text": "Two Nujuma villas bought, Dec 2025, reached by boat or seaplane.",
+      "fact_id": "F051",
+      "source": "https://gulfnews.com/world/gulf/saudi/cristiano-ronaldo-buys-luxury-villas-at-saudi-arabias-red-sea-destination-1.500388024"
+    },
+    {
+      "beat": "b37",
+      "type": "fact",
+      "text": "Beach claim: no report found in English or Arabic; origin not traced; no source lets us call it true or false.",
+      "fact_id": "F047",
+      "source": "https://lokmarg.com/ronaldo-enjoys-vacation-at-saudi-island-with-family-share-pics/"
+    },
+    {
+      "beat": "b38",
+      "type": "opinion",
+      "text": "ESPN sources said he sat out a 1-0 win over Al-Riyadh in protest at PIF's lack of transfer activity; he has not commented.",
+      "fact_id": "F073",
+      "source": "https://www.espn.com/soccer/story/_/id/47805301/cristiano-ronaldo-pif-al-nassr-frustrations-unhappy-saudi-pro-league-al-riyadh"
+    },
+    {
+      "beat": "b38",
+      "type": "fact",
+      "text": "League's reply to BBC Sport.",
+      "fact_id": "F074",
+      "source": "https://www.arabnews.pk/node/2631986/sport"
+    },
+    {
+      "beat": "b39",
+      "type": "fact",
+      "text": "16 May 2026 final lost 1-0 at home; ESPN counted four finals lost.",
+      "fact_id": "F076",
+      "source": "https://global.espn.com/football/story/_/id/48789219/cristiano-ronaldo-al-nassr-afc-champions-league-2-gamba-osaka-final"
+    },
+    {
+      "beat": "b40",
+      "type": "fact",
+      "text": "21 May 2026: two goals v Damac; league won; tears per reports; aged 41.",
+      "fact_id": "F075",
+      "source": "https://www.dailyunion.com/sports/national/ronaldo-ends-saudi-trophy-drought-with-2-goals-in-al-nassrs-win-to-clinch-league/article_9a596517-ea7d-584e-a002-5affaa74db31.html"
+    },
+    {
+      "beat": "b42",
+      "type": "fact",
+      "text": "No decree, regulation or official statement found either way.",
+      "fact_id": "F035",
+      "source": "https://www.hrw.org/news/2023/03/08/saudi-arabia-law-enshrines-male-guardianship"
+    },
+    {
+      "beat": "b42",
+      "type": "fact",
+      "text": "EFE 4 Jan 2023: two anonymous lawyers; ban stands, authorities do not interfere for foreigners generally.",
+      "fact_id": "F033",
+      "source": "https://www.foxsports.com.mx/2023/01/04/cristiano-ronaldo-podria-vivir-con-georgina-en-arabia-pese-a-ir-contra-la-ley/"
+    },
+    {
+      "beat": "b43",
+      "type": "fact",
+      "text": "Married 11 Aug 2026, civil ceremony, Cascais, Portugal.",
+      "fact_id": "F030",
+      "source": "https://www.espn.com/soccer/story/_/id/49584727/cristiano-ronaldo-marriage-wedding-georgina-rodriguez"
+    },
+    {
+      "beat": "b43",
+      "type": "fact",
+      "text": "Picture only, no line: their published wedding photo, catalog 58_wedding_bands_hands.jpg (Instagram, via HELLO!, Aug 2026).",
+      "fact_id": "F030",
+      "source": "https://www.espn.com/soccer/story/_/id/49584727/cristiano-ronaldo-marriage-wedding-georgina-rodriguez"
+    },
+    {
+      "beat": "b43",
+      "type": "fact",
+      "text": "Vogue, published 16 Aug 2026: 'probably' his last year.",
+      "fact_id": "F079",
+      "source": "https://thesun.my/sports/football/ronaldo-says-probably-in-last-year-of-career-vogue-interview/"
+    },
+    {
+      "beat": "b43",
+      "type": "fact",
+      "text": "About 985 career goals as of 30 Oct 2026.",
+      "fact_id": "F082",
+      "source": "https://www.espn.com/soccer/story/_/id/50327446/cristiano-ronaldo-al-nassr-982nd-career-goal-own-goal"
+    },
+    {
+      "beat": "b43",
+      "type": "fact",
+      "text": "Portuguese FA suspended him around 10 Oct 2026; no final punishment published.",
+      "fact_id": "F080",
+      "source": "https://www.espn.com/soccer/story/_/id/50172108/cristiano-ronaldo-goal-al-nassr-acknowledged-portugal-fa-suspension"
+    },
+    {
+      "beat": "b43",
+      "type": "fact",
+      "text": "Cardinale confirmed preliminary interest; no deal announced.",
+      "fact_id": "F085",
+      "source": "https://upi.com/Sports_News/Soccer/2026/10/30/saudi-ACMilan-owner-buy-Al-Nassr-Ronaldo/5611793365479"
+    },
+    {
+      "beat": "b43",
+      "type": "fact",
+      "text": "Contract to June 2027.",
+      "fact_id": "F024",
+      "source": "https://upi.com/Sports_News/Soccer/2026/10/30/saudi-ACMilan-owner-buy-Al-Nassr-Ronaldo/5611793365479"
+    },
+    {
+      "beat": "b43",
+      "type": "fact",
+      "text": "No law change for him found.",
+      "fact_id": "F035",
+      "source": "https://www.hrw.org/news/2023/03/08/saudi-arabia-law-enshrines-male-guardianship"
+    },
+    {
+      "beat": "b43",
+      "type": "opinion",
+      "text": "Our reading of the record: reported money one way, attention the other. Motive is not claimed for either side; the payer's split is unpublished.",
+      "fact_id": "F014",
+      "source": "https://www.skysports.com/football/news/13388595/cristiano-ronaldo-al-nassr-forward-close-to-agreeing-new-contract-to-stay-at-saudi-arabian-club"
+    }
+  ],
+  "publish": {
+    "titles": [
+      "Did Saudi Arabia Change Its Law for Ronaldo?",
+      "Ronaldo and Saudi Arabia: Who Got What?",
+      "Ronaldo in Saudi Arabia: What the Record Shows"
+    ],
+    "spoilers": [
+      "no evidence",
+      "no law",
+      "blind eye",
+      "unverified",
+      "false"
+    ],
+    "title": "Did Saudi Arabia Change Its Law for Ronaldo?",
+    "description": "How Cristiano Ronaldo went from Manchester United to Riyadh, what was reported about his pay, and what we could and couldn't find on the claims about Saudi law and a closed beach. All pay here is estimated: his contract has never been published, and every per-month, per-day and per-game figure is our own division of a press estimate. A documentary on a living person, built from sourced reports.",
+    "hashtags": [
+      "#ronaldo",
+      "#alnassr",
+      "#saudiarabia",
+      "#football",
+      "#documentary"
+    ],
+    "series": "The Complete Story",
+    "episode": null,
+    "comment_prompt": "If the contract were published tomorrow, which number do you think would turn out closest: Forbes or The Sun?",
+    "pinned_comment": "Sources: CBS, AFP via GOAL, Forbes via Wikipedia, The Sun via GOAL/SI, EFE via Bio Bio, Al Jazeera 2019, UK FCDO, Newsweek, Amnesty, ESPN, AP, UPI. Pay is estimated; contract unpublished; divisions are ours. We found no report of the beach story and couldn't trace or disprove it. Which is closest, Forbes or The Sun?"
+  }
+}

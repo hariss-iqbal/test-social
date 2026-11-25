@@ -1,0 +1,2723 @@
+{
+  "hook_text": {
+    "text": "DID SAUDI CHANGE ITS LAW?",
+    "until_s": 2.6
+  },
+  "loop": true,
+  "end_hold_s": 0.4,
+  "music": {
+    "src": "assets/music/Long_Note_Four.mp3",
+    "offset_s": 20.0,
+    "gain_db": 0
+  },
+  "cover": {
+    "material": "39_title_confetti_trophy.png",
+    "focus": [
+      0.55,
+      0.6
+    ],
+    "text": "WHAT DID SAUDI DO?",
+    "keyword": "SAUDI"
+  },
+  "beats": [
+    {
+      "beat_id": "b01",
+      "shots": [
+        {
+          "id": "s001",
+          "material": "15_south_africa_slip.mp4",
+          "src_in": 12.0,
+          "layout": "contain_blur",
+          "move": "push_in",
+          "crop": null,
+          "treatment": "doc",
+          "transition": "cut",
+          "sfx": [
+            {
+              "type": "impact",
+              "gain": 0.6
+            }
+          ],
+          "focus": [
+            0.5,
+            0.4
+          ]
+        },
+        {
+          "id": "s001b",
+          "material": "15_south_africa_slip.mp4",
+          "cue": "South",
+          "src_in": 15.8,
+          "layout": "contain_blur",
+          "move": "push_in",
+          "focus": [
+            0.5,
+            0.4
+          ],
+          "crop": [
+            0.18,
+            0.0,
+            0.62,
+            0.62
+          ],
+          "treatment": "doc",
+          "transition": "punch"
+        }
+      ]
+    },
+    {
+      "beat_id": "b02",
+      "shots": [
+        {
+          "id": "s002",
+          "material": "08_press_conf_earpiece.jpg",
+          "layout": "contain_blur",
+          "focus": [
+            0.33,
+            0.45
+          ],
+          "crop": null,
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut",
+          "overlay": {
+            "text": "3 JAN 2023 · RIYADH",
+            "style": "date"
+          }
+        },
+        {
+          "id": "s003",
+          "material": "11_billboard_hala_ronaldo_street.jpg",
+          "cue": "signed",
+          "layout": "contain_blur",
+          "focus": [
+            0.5,
+            0.3
+          ],
+          "crop": null,
+          "move": "pan_right",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s004",
+          "material": "09_press_conf_with_muammar_reuters.jpg",
+          "cue": "contract",
+          "layout": "contain_blur",
+          "crop": null,
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut",
+          "focus": [
+            0.5,
+            0.33
+          ]
+        }
+      ]
+    },
+    {
+      "beat_id": "b03",
+      "shots": [
+        {
+          "id": "s005",
+          "material": "69_si_contract_page_screenshot.png",
+          "layout": "contain_blur",
+          "crop": [
+            0.02,
+            0.05,
+            0.96,
+            0.52
+          ],
+          "move": "drift_down",
+          "treatment": "doc",
+          "transition": "cut",
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "source_tag": "Sports Illustrated web page, screenshot Nov 2026"
+        },
+        {
+          "id": "s006",
+          "material": "27_riyadh_skyline_dusk.jpg",
+          "cue": "rewritten",
+          "layout": "cover",
+          "crop": null,
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut",
+          "focus": [
+            0.5,
+            0.4
+          ],
+          "overlay": {
+            "text": "THE CLAIM: SAUDI LAW CHANGED FOR HIM",
+            "style": "pull"
+          }
+        },
+        {
+          "id": "s007",
+          "material": "53_founding_day_daqlah.jpg",
+          "cue": "closed",
+          "layout": "contain_blur",
+          "crop": [
+            0,
+            0,
+            1,
+            0.45
+          ],
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut",
+          "overlay": {
+            "text": "THE CLAIM: A BEACH CLOSED FOR A DAY",
+            "style": "pull"
+          },
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "source_tag": "Al Nassr/Instagram via The National, 2023"
+        }
+      ]
+    },
+    {
+      "beat_id": "b04",
+      "shots": [
+        {
+          "id": "s008",
+          "material": "06_unveil_thumbs_up.jpg",
+          "layout": "contain_blur",
+          "focus": [
+            0.42,
+            0.4
+          ],
+          "crop": null,
+          "move": "pull_out",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s009",
+          "material": "55_founding_day_alnassr_film.mp4",
+          "cue": "and",
+          "src_in": 129.59,
+          "layout": "contain_blur",
+          "move": "drift_up",
+          "crop": [
+            0,
+            0,
+            1,
+            0.88
+          ],
+          "treatment": "doc",
+          "transition": "cut",
+          "speed": 0.9
+        }
+      ]
+    },
+    {
+      "beat_id": "b05",
+      "shots": [
+        {
+          "id": "s010",
+          "material": "05_piers_morgan_interview_2022.mp4",
+          "src_in": 16.0,
+          "layout": "contain_blur",
+          "move": "push_in",
+          "crop": [
+            0,
+            0,
+            0.85,
+            0.76
+          ],
+          "treatment": "doc",
+          "transition": "dip",
+          "sfx": [
+            {
+              "type": "whoosh",
+              "gain": 0.5
+            }
+          ]
+        },
+        {
+          "id": "s011",
+          "material": "05_piers_morgan_interview_2022.mp4",
+          "cue": "Piers",
+          "src_in": 93.4,
+          "layout": "contain_blur",
+          "move": "pan_left",
+          "crop": [
+            0,
+            0,
+            0.85,
+            0.76
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s012",
+          "material": "05_piers_morgan_interview_2022.mp4",
+          "cue": "felt",
+          "src_in": 60.0,
+          "layout": "contain_blur",
+          "move": "drift_down",
+          "crop": [
+            0,
+            0,
+            0.85,
+            0.76
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s013",
+          "material": "01_manutd_old_trafford_2021.jpg",
+          "cue": "contract",
+          "layout": "cover",
+          "focus": [
+            0.5,
+            0.12
+          ],
+          "crop": null,
+          "move": "pull_out",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s014",
+          "material": "04_fifa_morocco_portugal_2022.mp4",
+          "cue": "after",
+          "src_in": 12.95,
+          "layout": "contain_blur",
+          "move": "push_in",
+          "crop": [
+            0,
+            0.08,
+            1,
+            0.92
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s015",
+          "material": "02_old_trafford_empty.jpg",
+          "cue": "thirty-seven",
+          "layout": "contain_blur",
+          "focus": [
+            0.5,
+            0.45
+          ],
+          "crop": null,
+          "move": "pan_right",
+          "treatment": "doc",
+          "transition": "cut"
+        }
+      ]
+    },
+    {
+      "beat_id": "b06",
+      "shots": [
+        {
+          "id": "s016",
+          "material": "15_south_africa_slip.mp4",
+          "layout": "contain_blur",
+          "crop": [
+            0.18,
+            0,
+            0.62,
+            0.62
+          ],
+          "move": "pull_out",
+          "treatment": "doc",
+          "transition": "cut",
+          "focus": [
+            0.5,
+            0.4
+          ],
+          "src_in": 9.65
+        },
+        {
+          "id": "s017",
+          "material": "33_debut_leads_out.jpg",
+          "cue": "On",
+          "layout": "contain_blur",
+          "crop": [
+            0.6,
+            0.24,
+            0.39,
+            0.42
+          ],
+          "move": "drift_up",
+          "treatment": "doc",
+          "transition": "cut",
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "s018",
+          "material": "16_muammar_arrives_mrsool.jpg",
+          "cue": "its",
+          "layout": "contain_blur",
+          "focus": [
+            0.42,
+            0.3
+          ],
+          "crop": null,
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut"
+        }
+      ]
+    },
+    {
+      "beat_id": "b07",
+      "shots": [
+        {
+          "id": "s019",
+          "material": "09_press_conf_with_muammar_reuters.jpg",
+          "layout": "contain_blur",
+          "focus": [
+            0.5,
+            0.33
+          ],
+          "crop": null,
+          "move": "pan_left",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s020",
+          "material": "77_card_timeline_joining.png",
+          "cue": "July",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.035,
+            0.108,
+            0.77,
+            0.155
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.190625,
+            0.9,
+            0.06458333333333334
+          ]
+        },
+        {
+          "id": "s021",
+          "material": "16_muammar_arrives_mrsool.jpg",
+          "cue": "meeting",
+          "layout": "contain_blur",
+          "crop": [
+            0.12,
+            0,
+            0.5,
+            0.62
+          ],
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut",
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "overlay": {
+            "text": "AL-MUAMMAR'S ACCOUNT",
+            "style": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "b08",
+      "shots": [
+        {
+          "id": "s022",
+          "material": "31_red_sea_film_ur.mp4",
+          "src_in": 32.15,
+          "layout": "contain_blur",
+          "move": "drift_down",
+          "crop": [
+            0,
+            0.1,
+            0.86,
+            0.9
+          ],
+          "treatment": "doc",
+          "transition": "cut",
+          "speed": 0.72
+        }
+      ]
+    },
+    {
+      "beat_id": "b09",
+      "shots": [
+        {
+          "id": "s023",
+          "material": "13_mrsool_park_stands.jpg",
+          "layout": "contain_blur",
+          "crop": null,
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut",
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "s024",
+          "material": "10_vendor_no7_shirt_road.jpg",
+          "cue": "with",
+          "layout": "contain_blur",
+          "focus": [
+            0.72,
+            0.5
+          ],
+          "crop": null,
+          "move": "pull_out",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s025",
+          "material": "14_alnassr_official_unveiling.mp4",
+          "cue": "Four",
+          "src_in": 51.0,
+          "layout": "contain_blur",
+          "move": "push_in",
+          "crop": [
+            0,
+            0,
+            1,
+            0.9
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s026",
+          "material": "07_unveil_wave_fireworks.jpg",
+          "cue": "fireworks",
+          "layout": "cover",
+          "focus": [
+            0.5,
+            0.32
+          ],
+          "crop": null,
+          "move": "pan_right",
+          "treatment": "doc",
+          "transition": "flash"
+        },
+        {
+          "id": "s027",
+          "material": "14_alnassr_official_unveiling.mp4",
+          "cue": "sold-out",
+          "src_in": 709.0,
+          "layout": "contain_blur",
+          "move": "pull_out",
+          "crop": [
+            0,
+            0,
+            1,
+            0.9
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        }
+      ]
+    },
+    {
+      "beat_id": "b10",
+      "shots": [
+        {
+          "id": "s028",
+          "material": "11_billboard_hala_ronaldo_street.jpg",
+          "layout": "contain_blur",
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "crop": [
+            0.2,
+            0.05,
+            0.6,
+            0.6
+          ],
+          "move": "drift_up",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s029",
+          "material": "27_riyadh_skyline_dusk.jpg",
+          "cue": "fit",
+          "layout": "contain_blur",
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "crop": [
+            0.25,
+            0.1,
+            0.6,
+            0.8
+          ],
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut",
+          "overlay": {
+            "text": "“fits into a wider pattern of sportswashing” — AMNESTY",
+            "style": "pull"
+          }
+        },
+        {
+          "id": "s030",
+          "material": "59_bid_fans_celebrate.jpg",
+          "cue": "polishing",
+          "layout": "contain_blur",
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "crop": [
+            0.41,
+            0.08,
+            0.59,
+            0.86
+          ],
+          "move": "pan_left",
+          "treatment": "doc",
+          "transition": "cut"
+        }
+      ]
+    },
+    {
+      "beat_id": "b11",
+      "shots": [
+        {
+          "id": "s031",
+          "material": "32_diplomatic_quarter_drive.mp4",
+          "src_in": 33.0,
+          "layout": "contain_blur",
+          "move": "drift_down",
+          "crop": [
+            0,
+            0,
+            1,
+            0.7
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s032",
+          "material": "12_arrival_georgina_flowers.jpg",
+          "cue": "partner",
+          "layout": "contain_blur",
+          "focus": [
+            0.45,
+            0.3
+          ],
+          "crop": [
+            0,
+            0,
+            1,
+            0.72
+          ],
+          "move": "pull_out",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s033",
+          "material": "32_diplomatic_quarter_drive.mp4",
+          "cue": "both",
+          "src_in": 62.0,
+          "layout": "contain_blur",
+          "move": "push_in",
+          "crop": [
+            0,
+            0,
+            1,
+            0.7
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s034",
+          "material": "67_vision_2030_official.mp4",
+          "cue": "country",
+          "src_in": 3.4,
+          "layout": "contain_blur",
+          "move": "pan_right",
+          "crop": [
+            0,
+            0,
+            1,
+            0.85
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s035",
+          "material": "26_kingdom_centre_night.jpg",
+          "cue": "living",
+          "layout": "cover",
+          "focus": [
+            0.5,
+            0.2
+          ],
+          "crop": null,
+          "move": "pull_out",
+          "treatment": "doc",
+          "transition": "cut",
+          "source_tag": "Hamza A. Durrani · CC BY-SA 4.0 · Wikimedia, 2024"
+        }
+      ]
+    },
+    {
+      "beat_id": "b12",
+      "shots": [
+        {
+          "id": "s036",
+          "material": "82_card_claim_conversion.png",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.8,
+            0.165
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.24270833333333333,
+            0.92,
+            0.019791666666666666
+          ],
+          "sfx": [
+            {
+              "type": "lib:typewriter_stamp",
+              "gain": 0.5,
+              "offset_s": -0.2
+            }
+          ]
+        },
+        {
+          "id": "s037",
+          "material": "82_card_claim_conversion.png",
+          "cue": "Fact-checkers",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.8,
+            0.25
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.30833333333333335,
+            0.92,
+            0.0375
+          ]
+        }
+      ]
+    },
+    {
+      "beat_id": "b13",
+      "shots": [
+        {
+          "id": "s038",
+          "material": "28_riyadh_night_from_iss.jpg",
+          "layout": "contain_blur",
+          "focus": [
+            0.55,
+            0.5
+          ],
+          "crop": null,
+          "move": "drift_up",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s039",
+          "material": "67_vision_2030_official.mp4",
+          "cue": "One",
+          "src_in": 5.15,
+          "layout": "contain_blur",
+          "move": "push_in",
+          "crop": [
+            0,
+            0,
+            1,
+            0.85
+          ],
+          "treatment": "doc",
+          "transition": "cut",
+          "speed": 0.5
+        }
+      ]
+    },
+    {
+      "beat_id": "b14",
+      "shots": [
+        {
+          "id": "s040",
+          "material": "12_arrival_georgina_flowers.jpg",
+          "layout": "contain_blur",
+          "crop": [
+            0,
+            0,
+            1,
+            0.72
+          ],
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut",
+          "focus": [
+            0.45,
+            0.3
+          ]
+        }
+      ]
+    },
+    {
+      "beat_id": "b15",
+      "shots": [
+        {
+          "id": "s041",
+          "material": "10_vendor_no7_shirt_road.jpg",
+          "layout": "contain_blur",
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "crop": [
+            0.5,
+            0.05,
+            0.49,
+            0.9
+          ],
+          "move": "drift_down",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s042",
+          "material": "72_card_compare_original_deal_2022.png",
+          "cue": "CBS",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.7,
+            0.204
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.20677083333333332,
+            0.5,
+            0.0453125
+          ]
+        }
+      ]
+    },
+    {
+      "beat_id": "b16",
+      "shots": [
+        {
+          "id": "s043",
+          "material": "72_card_compare_original_deal_2022.png",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.7,
+            0.307
+          ],
+          "move": "push_in",
+          "intensity": 0.1,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.3458333333333333,
+            0.7,
+            0.03177083333333333
+          ]
+        },
+        {
+          "id": "s044",
+          "material": "06_unveil_thumbs_up.jpg",
+          "cue": "year",
+          "layout": "contain_blur",
+          "crop": [
+            0.1,
+            0,
+            0.7,
+            0.85
+          ],
+          "treatment": "doc",
+          "transition": "cut",
+          "move": "push_in",
+          "focus": [
+            0.45,
+            0.4
+          ]
+        }
+      ]
+    },
+    {
+      "beat_id": "b17",
+      "shots": [
+        {
+          "id": "s045",
+          "material": "26_kingdom_centre_night.jpg",
+          "layout": "cover",
+          "focus": [
+            0.5,
+            0.25
+          ],
+          "crop": [
+            0.1,
+            0.05,
+            0.8,
+            0.8
+          ],
+          "move": "pull_out",
+          "treatment": "doc",
+          "transition": "cut",
+          "source_tag": "Hamza A. Durrani · CC BY-SA 4.0 · Wikimedia, 2024"
+        },
+        {
+          "id": "s046",
+          "material": "84_card_list_where_he_lives.png",
+          "cue": "reported",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.785,
+            0.2165
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.21927083333333333,
+            0.6,
+            0.034895833333333334
+          ]
+        }
+      ]
+    },
+    {
+      "beat_id": "b18",
+      "shots": [
+        {
+          "id": "s047",
+          "material": "27_riyadh_skyline_dusk.jpg",
+          "layout": "contain_blur",
+          "crop": [
+            0.25,
+            0.1,
+            0.6,
+            0.8
+          ],
+          "move": "pan_left",
+          "treatment": "doc",
+          "transition": "cut",
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "overlay": {
+            "text": "ROBB REPORT · HOME UNCONFIRMED",
+            "style": "label"
+          }
+        },
+        {
+          "id": "s048",
+          "material": "32_diplomatic_quarter_drive.mp4",
+          "cue": "but",
+          "src_in": 84.0,
+          "layout": "contain_blur",
+          "move": "push_in",
+          "crop": [
+            0,
+            0,
+            1,
+            0.7
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        }
+      ]
+    },
+    {
+      "beat_id": "b19",
+      "shots": [
+        {
+          "id": "s049",
+          "material": "14_alnassr_official_unveiling.mp4",
+          "src_in": 196.5,
+          "layout": "contain_blur",
+          "move": "pan_right",
+          "crop": [
+            0,
+            0,
+            1,
+            0.9
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s050",
+          "material": "87_card_list_what_saudi_got.png",
+          "cue": "Instagram",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.62,
+            0.17
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.19583333333333333,
+            0.8,
+            0.04895833333333333
+          ]
+        }
+      ]
+    },
+    {
+      "beat_id": "b20",
+      "shots": [
+        {
+          "id": "s051",
+          "material": "33_debut_leads_out.jpg",
+          "layout": "contain_blur",
+          "focus": [
+            0.5,
+            0.3
+          ],
+          "crop": [
+            0.405,
+            0.152,
+            0.4,
+            0.598
+          ],
+          "move": "pull_out",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s052",
+          "material": "42_debut_espn_highlights.mp4",
+          "cue": "within",
+          "src_in": 82.0,
+          "layout": "contain_blur",
+          "move": "drift_up",
+          "crop": [
+            0,
+            0.1,
+            1,
+            0.83
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s053",
+          "material": "88_card_stat_four_goals_wehda.png",
+          "cue": "scored",
+          "layout": "contain_blur",
+          "crop": [
+            0.03,
+            0.108,
+            0.58,
+            0.25
+          ],
+          "treatment": "card",
+          "transition": "cut",
+          "focus": [
+            0,
+            0
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "highlight": [
+            0.05,
+            0.215,
+            0.3,
+            0.09
+          ]
+        }
+      ]
+    },
+    {
+      "beat_id": "b21",
+      "shots": [
+        {
+          "id": "s054",
+          "material": "23_pif_tower_night.jpg",
+          "layout": "cover",
+          "focus": [
+            0.5,
+            0.45
+          ],
+          "crop": null,
+          "move": "pan_left",
+          "treatment": "doc",
+          "transition": "cut",
+          "overlay": {
+            "text": "5 JUNE 2023 · STATE FUND TAKES 75%",
+            "style": "pull"
+          },
+          "sfx": [
+            {
+              "type": "tick",
+              "gain": 0.4
+            }
+          ]
+        },
+        {
+          "id": "s055",
+          "material": "49_arab_cup_final_goals_official.mp4",
+          "cue": "took",
+          "src_in": 224.0,
+          "layout": "contain_blur",
+          "move": "drift_down",
+          "crop": [
+            0,
+            0.16,
+            1,
+            0.76
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s056",
+          "material": "49_arab_cup_final_goals_official.mp4",
+          "cue": "summer",
+          "layout": "contain_blur",
+          "crop": [
+            0.05,
+            0.14,
+            0.75,
+            0.86
+          ],
+          "move": "pull_out",
+          "treatment": "doc",
+          "transition": "cut",
+          "src_in": 135.6
+        },
+        {
+          "id": "s057",
+          "material": "87_card_list_what_saudi_got.png",
+          "cue": "spent",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.66,
+            0.33
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.3572916666666667,
+            0.8,
+            0.05
+          ]
+        },
+        {
+          "id": "s058",
+          "material": "52_arab_cup_trophy_ceremony_official.mp4",
+          "cue": "partly",
+          "src_in": 18.5,
+          "layout": "contain_blur",
+          "move": "push_in",
+          "crop": [
+            0,
+            0.04,
+            0.8,
+            0.88
+          ],
+          "treatment": "doc",
+          "transition": "cut",
+          "overlay": {
+            "text": "ARAB CLUB CHAMPIONS CUP · 12 AUG 2023",
+            "style": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "b22",
+      "shots": [
+        {
+          "id": "s059",
+          "material": "40_tehran_leads_team.jpg",
+          "layout": "contain_blur",
+          "focus": [
+            0.3,
+            0.3
+          ],
+          "crop": [
+            0,
+            0,
+            1,
+            0.7
+          ],
+          "move": "pan_right",
+          "treatment": "doc",
+          "transition": "cut",
+          "source_tag": "Mehr News/Foad Ashtari · CC BY 4.0 · Wikimedia, 2023"
+        },
+        {
+          "id": "s060",
+          "material": "81_card_claim_99_lashes.png",
+          "cue": "sentencing",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.72,
+            0.165
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.24270833333333333,
+            0.92,
+            0.015625
+          ]
+        },
+        {
+          "id": "s061",
+          "material": "81_card_claim_99_lashes.png",
+          "cue": "until",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.76,
+            0.27
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.3109375,
+            0.92,
+            0.03854166666666667
+          ]
+        }
+      ]
+    },
+    {
+      "beat_id": "b23",
+      "shots": [
+        {
+          "id": "s062",
+          "material": "50_al_shabab_feb2024_match_official.mp4",
+          "src_in": 344.8,
+          "layout": "contain_blur",
+          "move": "pull_out",
+          "crop": [
+            0,
+            0.16,
+            1,
+            0.76
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s063",
+          "material": "50_al_shabab_feb2024_match_official.mp4",
+          "cue": "February",
+          "src_in": 100.0,
+          "layout": "contain_blur",
+          "move": "drift_up",
+          "crop": [
+            0,
+            0.16,
+            1,
+            0.76
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s064",
+          "material": "50_al_shabab_feb2024_match_official.mp4",
+          "cue": "gesture",
+          "src_in": 35.5,
+          "layout": "contain_blur",
+          "move": "push_in",
+          "crop": [
+            0,
+            0.16,
+            1,
+            0.76
+          ],
+          "treatment": "doc",
+          "transition": "cut",
+          "overlay": {
+            "text": "ONE-MATCH BAN · REPORTED SAR 10,000 FINE",
+            "style": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "b24",
+      "shots": [
+        {
+          "id": "s065",
+          "material": "43_record_35_goals_alnassr_official.mp4",
+          "src_in": 240.5,
+          "layout": "contain_blur",
+          "move": "pan_left",
+          "crop": [
+            0,
+            0.16,
+            1,
+            0.76
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s066",
+          "material": "43_record_35_goals_alnassr_official.mp4",
+          "cue": "thirty-five",
+          "layout": "contain_blur",
+          "crop": [
+            0,
+            0.16,
+            1,
+            0.76
+          ],
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut",
+          "src_in": 241.6,
+          "overlay": {
+            "text": "SEASON RECORD, PER GUINNESS",
+            "style": "pull"
+          }
+        },
+        {
+          "id": "s067",
+          "material": "43_record_35_goals_alnassr_official.mp4",
+          "cue": "record",
+          "src_in": 113.0,
+          "layout": "contain_blur",
+          "move": "drift_down",
+          "crop": [
+            0,
+            0.16,
+            1,
+            0.76
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        }
+      ]
+    },
+    {
+      "beat_id": "b25",
+      "shots": [
+        {
+          "id": "s068",
+          "material": "44_kings_cup_final_end_ssc.mp4",
+          "src_in": 185.5,
+          "layout": "contain_blur",
+          "move": "pull_out",
+          "crop": [
+            0,
+            0.16,
+            1,
+            0.76
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s069",
+          "material": "44_kings_cup_final_end_ssc.mp4",
+          "cue": "went",
+          "src_in": 295.0,
+          "layout": "contain_blur",
+          "move": "push_in",
+          "crop": [
+            0,
+            0.16,
+            1,
+            0.76
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s070",
+          "material": "44_kings_cup_final_end_ssc.mp4",
+          "cue": "He",
+          "src_in": 289.6,
+          "layout": "contain_blur",
+          "move": "pan_right",
+          "crop": [
+            0,
+            0.16,
+            1,
+            0.76
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s071",
+          "material": "35_kings_cup_head_in_hands.jpg",
+          "cue": "Al-Nassr",
+          "layout": "contain_blur",
+          "focus": [
+            0.47,
+            0.8
+          ],
+          "crop": null,
+          "move": "pull_out",
+          "treatment": "doc",
+          "transition": "cut"
+        }
+      ]
+    },
+    {
+      "beat_id": "b26",
+      "shots": [
+        {
+          "id": "s072",
+          "material": "51_kings_cup_dugout_tears.mp4",
+          "src_in": 17.2,
+          "layout": "contain_blur",
+          "move": "drift_up",
+          "crop": [
+            0,
+            0.16,
+            1,
+            0.84
+          ],
+          "treatment": "doc",
+          "transition": "punch"
+        }
+      ]
+    },
+    {
+      "beat_id": "b27",
+      "shots": [
+        {
+          "id": "s073",
+          "material": "76_card_chart_forbes_on_off_field.png",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.85,
+            0.2555
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "callout": {
+            "rect": [
+              0.055,
+              0.113,
+              0.155,
+              0.03
+            ],
+            "shape": "box",
+            "at_s": 0.3
+          }
+        },
+        {
+          "id": "s074",
+          "material": "71_card_table_pay_by_season.png",
+          "cue": "put",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.8,
+            0.21
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.2734375,
+            0.9,
+            0.035416666666666666
+          ]
+        },
+        {
+          "id": "s075",
+          "material": "71_card_table_pay_by_season.png",
+          "cue": "then",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.81,
+            0.2585
+          ],
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.325,
+            0.9,
+            0.035
+          ],
+          "move": "push_in",
+          "intensity": 0.1
+        }
+      ]
+    },
+    {
+      "beat_id": "b28",
+      "shots": [
+        {
+          "id": "s076",
+          "material": "37_chapter_over_apr2025.jpg",
+          "layout": "contain_blur",
+          "focus": [
+            0.5,
+            0.3
+          ],
+          "crop": [
+            0,
+            0,
+            1,
+            0.9
+          ],
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "punch"
+        }
+      ]
+    },
+    {
+      "beat_id": "b29",
+      "shots": [
+        {
+          "id": "s077",
+          "material": "45_the_story_continues_ur.mp4",
+          "src_in": 34.18,
+          "layout": "contain_blur",
+          "move": "pan_left",
+          "crop": null,
+          "treatment": "doc",
+          "transition": "cut",
+          "overlay": {
+            "text": "26 JUNE 2025 · CONTRACT TO JUNE 2027",
+            "style": "pull"
+          },
+          "sfx": [
+            {
+              "type": "whoosh",
+              "gain": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "beat_id": "b30",
+      "shots": [
+        {
+          "id": "s078",
+          "material": "69_si_contract_page_screenshot.png",
+          "layout": "contain_blur",
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "crop": [
+            0.02,
+            0.05,
+            0.96,
+            0.52
+          ],
+          "move": "drift_down",
+          "treatment": "doc",
+          "transition": "cut",
+          "source_tag": "Sports Illustrated web page, screenshot Nov 2026"
+        },
+        {
+          "id": "s079",
+          "material": "73_card_list_extension_the_sun.png",
+          "cue": "printed",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.79,
+            0.205
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.20833333333333334,
+            0.5,
+            0.026041666666666668
+          ]
+        },
+        {
+          "id": "s080",
+          "material": "45_the_story_continues_ur.mp4",
+          "cue": "one",
+          "layout": "contain_blur",
+          "crop": null,
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut",
+          "src_in": 37.0,
+          "speed": 0.74
+        }
+      ]
+    },
+    {
+      "beat_id": "b31",
+      "shots": [
+        {
+          "id": "s081",
+          "material": "74_card_breakdown_forbes_division.png",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.72,
+            0.165
+          ],
+          "move": "push_in",
+          "treatment": "card",
+          "transition": "cut",
+          "intensity": 0.2,
+          "highlight": [
+            0.05,
+            0.175,
+            0.39,
+            0.065
+          ]
+        },
+        {
+          "id": "s082",
+          "material": "48_title_phone_angle_vertical.mp4",
+          "cue": "dollars",
+          "layout": "cover",
+          "crop": null,
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut",
+          "src_in": 6.6,
+          "overlay": {
+            "text": "FORBES ESTIMATE · NOT CONTRACT DATA",
+            "style": "pull"
+          },
+          "speed": 0.75
+        }
+      ]
+    },
+    {
+      "beat_id": "b32",
+      "shots": [
+        {
+          "id": "s083",
+          "material": "47_title_champions_ur.mp4",
+          "layout": "contain_blur",
+          "crop": null,
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut",
+          "src_in": 119.5
+        },
+        {
+          "id": "s084",
+          "material": "74_card_breakdown_forbes_division.png",
+          "cue": "nineteen",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.72,
+            0.262
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.33,
+            0.328,
+            0.22,
+            0.032
+          ]
+        },
+        {
+          "id": "s085",
+          "material": "74_card_breakdown_forbes_division.png",
+          "cue": "four",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.72,
+            0.3
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.33,
+            0.37,
+            0.19,
+            0.032
+          ]
+        },
+        {
+          "id": "s086",
+          "material": "74_card_breakdown_forbes_division.png",
+          "cue": "six",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.72,
+            0.34
+          ],
+          "move": "push_in",
+          "intensity": 0.1,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.33,
+            0.411,
+            0.23,
+            0.033
+          ],
+          "callout": {
+            "rect": [
+              0.325,
+              0.408,
+              0.24,
+              0.04
+            ],
+            "shape": "box",
+            "at_s": 0.25
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "b33",
+      "shots": [
+        {
+          "id": "s087",
+          "material": "75_card_table_per_match.png",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.71,
+            0.15
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.115625,
+            0.85,
+            0.05260416666666667
+          ]
+        },
+        {
+          "id": "s088",
+          "material": "46_title_damac_spl_official.mp4",
+          "cue": "Divide",
+          "layout": "contain_blur",
+          "move": "push_in",
+          "crop": [
+            0.05,
+            0.13,
+            0.85,
+            0.87
+          ],
+          "treatment": "doc",
+          "transition": "cut",
+          "src_in": 272.5,
+          "speed": 0.75
+        },
+        {
+          "id": "s089",
+          "material": "75_card_table_per_match.png",
+          "cue": "point",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.71,
+            0.31
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.3796875,
+            0.9,
+            0.020833333333333332
+          ]
+        }
+      ]
+    },
+    {
+      "beat_id": "b34",
+      "shots": [
+        {
+          "id": "s090",
+          "material": "70_stayed_for_more_visit_saudi.mp4",
+          "src_in": 4.45,
+          "layout": "contain_blur",
+          "move": "pan_right",
+          "crop": [
+            0.2,
+            0,
+            0.8,
+            0.8
+          ],
+          "treatment": "doc",
+          "transition": "cut",
+          "speed": 0.48
+        },
+        {
+          "id": "s091",
+          "material": "70_stayed_for_more_visit_saudi.mp4",
+          "cue": "tourism",
+          "src_in": 47.6,
+          "layout": "contain_blur",
+          "move": "pull_out",
+          "crop": [
+            0,
+            0,
+            1,
+            0.8
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s092",
+          "material": "61_wh_oval_b.jpg",
+          "cue": "In",
+          "layout": "contain_blur",
+          "focus": [
+            0.5,
+            0.3
+          ],
+          "crop": null,
+          "move": "drift_up",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s093",
+          "material": "57_wh_dinner_east_room.jpg",
+          "cue": "White",
+          "layout": "contain_blur",
+          "focus": [
+            0.43,
+            0.42
+          ],
+          "crop": null,
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s094",
+          "material": "64_white_house_arrival_mbs.mp4",
+          "cue": "Crown",
+          "src_in": 233.5,
+          "layout": "contain_blur",
+          "move": "pan_left",
+          "crop": [
+            0,
+            0,
+            1,
+            0.8
+          ],
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s095",
+          "material": "55_founding_day_alnassr_film.mp4",
+          "cue": "said",
+          "layout": "contain_blur",
+          "move": "drift_down",
+          "crop": [
+            0,
+            0,
+            1,
+            0.9
+          ],
+          "treatment": "doc",
+          "transition": "cut",
+          "src_in": 67.47
+        }
+      ]
+    },
+    {
+      "beat_id": "b35",
+      "shots": [
+        {
+          "id": "s096",
+          "material": "25_nujuma_overwater_aerial.jpg",
+          "layout": "contain_blur",
+          "focus": [
+            0.3,
+            0.5
+          ],
+          "crop": null,
+          "move": "pull_out",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s097",
+          "material": "24_nujuma_terrace_sunset.jpg",
+          "cue": "two",
+          "layout": "contain_blur",
+          "crop": null,
+          "move": "pan_right",
+          "treatment": "doc",
+          "transition": "cut",
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "overlay": {
+            "text": "NUJUMA · PURCHASE REPORTED",
+            "style": "label"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "b36",
+      "shots": [
+        {
+          "id": "s098",
+          "material": "30_red_sea_islands_official.mp4",
+          "src_in": 9.0,
+          "layout": "contain_blur",
+          "move": "push_in",
+          "crop": null,
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s099",
+          "material": "80_card_claim_beach.png",
+          "cue": "whole",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.78,
+            0.185
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.24166666666666667,
+            0.92,
+            0.042708333333333334
+          ],
+          "sfx": [
+            {
+              "type": "lib:typewriter_stamp",
+              "gain": 0.5,
+              "offset_s": -0.23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "beat_id": "b37",
+      "shots": [
+        {
+          "id": "s100",
+          "material": "30_red_sea_islands_official.mp4",
+          "src_in": 36.6,
+          "layout": "contain_blur",
+          "move": "pan_right",
+          "crop": null,
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s101",
+          "material": "80_card_claim_beach.png",
+          "cue": "found",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.78,
+            0.265
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.32760416666666664,
+            0.92,
+            0.034895833333333334
+          ]
+        }
+      ]
+    },
+    {
+      "beat_id": "b38",
+      "shots": [
+        {
+          "id": "s102",
+          "material": "46_title_damac_spl_official.mp4",
+          "src_in": 19.0,
+          "layout": "contain_blur",
+          "move": "pull_out",
+          "crop": [
+            0,
+            0.16,
+            1,
+            0.76
+          ],
+          "treatment": "doc",
+          "transition": "dip",
+          "speed": 0.88
+        },
+        {
+          "id": "s103",
+          "material": "23_pif_tower_night.jpg",
+          "cue": "out",
+          "layout": "cover",
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "crop": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "move": "drift_up",
+          "treatment": "doc",
+          "transition": "cut",
+          "overlay": {
+            "text": "“no individual … determines decisions beyond their own club” — LEAGUE",
+            "style": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "b39",
+      "shots": [
+        {
+          "id": "s104",
+          "material": "89_card_stat_final_gamba_osaka.png",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.76,
+            0.25
+          ],
+          "treatment": "card",
+          "transition": "cut",
+          "move": "push_in",
+          "intensity": 0.2,
+          "highlight": [
+            0.05,
+            0.215,
+            0.29,
+            0.09
+          ],
+          "sfx": [
+            {
+              "type": "tick",
+              "gain": 0.4
+            }
+          ]
+        },
+        {
+          "id": "s105",
+          "material": "36_kings_cup_hands_on_hips.jpg",
+          "cue": "fourth",
+          "layout": "contain_blur",
+          "focus": [
+            0.47,
+            0.35
+          ],
+          "crop": null,
+          "move": "pan_left",
+          "treatment": "doc",
+          "transition": "cut",
+          "overlay": {
+            "text": "KING'S CUP FINAL, 2024",
+            "style": "label"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "b40",
+      "shots": [
+        {
+          "id": "s106",
+          "material": "46_title_damac_spl_official.mp4",
+          "layout": "contain_blur",
+          "move": "drift_down",
+          "crop": [
+            0.25,
+            0.08,
+            0.55,
+            0.87
+          ],
+          "treatment": "doc",
+          "transition": "cut",
+          "overlay": {
+            "text": "21 MAY 2026 · 4-1 v DAMAC",
+            "style": "date"
+          },
+          "src_in": 550.5
+        },
+        {
+          "id": "s107",
+          "material": "47_title_champions_ur.mp4",
+          "cue": "won",
+          "src_in": 40.75,
+          "layout": "contain_blur",
+          "move": "pull_out",
+          "crop": null,
+          "treatment": "doc",
+          "transition": "punch"
+        },
+        {
+          "id": "s108",
+          "material": "39_title_confetti_trophy.png",
+          "cue": "forty-one",
+          "layout": "contain_blur",
+          "focus": [
+            0.55,
+            0.5
+          ],
+          "crop": null,
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s109",
+          "material": "46_title_damac_spl_official.mp4",
+          "cue": "tears",
+          "layout": "contain_blur",
+          "move": "push_in",
+          "crop": [
+            0.26,
+            0.03,
+            0.44,
+            0.85
+          ],
+          "treatment": "doc",
+          "transition": "cut",
+          "src_in": 423.5,
+          "speed": 0.5
+        }
+      ]
+    },
+    {
+      "beat_id": "b41",
+      "shots": [
+        {
+          "id": "s110",
+          "material": "28_riyadh_night_from_iss.jpg",
+          "layout": "contain_blur",
+          "focus": [
+            0.55,
+            0.5
+          ],
+          "crop": null,
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut",
+          "intensity": 0.5
+        }
+      ]
+    },
+    {
+      "beat_id": "b42",
+      "shots": [
+        {
+          "id": "s111",
+          "material": "79_card_claim_law_changed.png",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.03,
+            0.108,
+            0.72,
+            0.165
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "flash",
+          "sfx": [
+            {
+              "type": "riser",
+              "gain": 0.7,
+              "offset_s": -0.08
+            },
+            {
+              "type": "impact",
+              "gain": 0.8,
+              "offset_s": -0.08
+            }
+          ],
+          "highlight": [
+            0.04,
+            0.15104166666666666,
+            0.62,
+            0.058854166666666666
+          ]
+        },
+        {
+          "id": "s112",
+          "material": "47_title_champions_ur.mp4",
+          "cue": "reported",
+          "src_in": 99.5,
+          "layout": "contain_blur",
+          "crop": null,
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s113",
+          "material": "48_title_phone_angle_vertical.mp4",
+          "cue": "attention",
+          "src_in": 122.0,
+          "layout": "contain_blur",
+          "crop": [
+            0,
+            0,
+            1,
+            0.6
+          ],
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s114",
+          "material": "79_card_claim_law_changed.png",
+          "cue": "nobody",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.03,
+            0.108,
+            0.72,
+            0.165
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.15104166666666666,
+            0.62,
+            0.058854166666666666
+          ]
+        },
+        {
+          "id": "s115",
+          "material": "79_card_claim_law_changed.png",
+          "cue": "decree",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.03,
+            0.108,
+            0.79,
+            0.25
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.30833333333333335,
+            0.92,
+            0.034895833333333334
+          ]
+        },
+        {
+          "id": "s116",
+          "material": "79_card_claim_law_changed.png",
+          "cue": "story",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.03,
+            0.108,
+            0.79,
+            0.344
+          ],
+          "move": "push_in",
+          "intensity": 0.1,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.4317708333333333,
+            0.92,
+            0.015104166666666667
+          ]
+        },
+        {
+          "id": "s117",
+          "material": "79_card_claim_law_changed.png",
+          "cue": "EFE",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.03,
+            0.108,
+            0.82,
+            0.385
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.453125,
+            0.92,
+            0.03125
+          ]
+        },
+        {
+          "id": "s118",
+          "material": "26_kingdom_centre_night.jpg",
+          "cue": "authorities",
+          "layout": "cover",
+          "crop": null,
+          "treatment": "doc",
+          "transition": "cut",
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "move": "drift_up",
+          "source_tag": "Hamza A. Durrani · CC BY-SA 4.0 · Wikimedia, 2024"
+        },
+        {
+          "id": "s119",
+          "material": "79_card_claim_law_changed.png",
+          "cue": "blind",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.03,
+            0.108,
+            0.82,
+            0.385
+          ],
+          "treatment": "card",
+          "transition": "cut",
+          "move": "push_in",
+          "intensity": 0.2,
+          "highlight": [
+            0.2,
+            0.4505,
+            0.19,
+            0.0182
+          ]
+        },
+        {
+          "id": "s120",
+          "material": "79_card_claim_law_changed.png",
+          "cue": "not",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.03,
+            0.108,
+            0.72,
+            0.165
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.15104166666666666,
+            0.62,
+            0.058854166666666666
+          ]
+        }
+      ]
+    },
+    {
+      "beat_id": "b43",
+      "shots": [
+        {
+          "id": "s121",
+          "material": "58_wedding_bands_hands.jpg",
+          "layout": "cover",
+          "focus": [
+            0.5,
+            0.6
+          ],
+          "crop": null,
+          "move": "push_in",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s122",
+          "material": "63_cascais_estoril_bay.jpg",
+          "cue": "in",
+          "layout": "contain_blur",
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "crop": null,
+          "move": "pan_left",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s123",
+          "material": "38_title_hand_on_heart.jpg",
+          "cue": "He",
+          "layout": "contain_blur",
+          "focus": [
+            0.5,
+            0.25
+          ],
+          "crop": null,
+          "move": "drift_down",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s124",
+          "material": "86_card_stat_goals_985.png",
+          "cue": "He's",
+          "layout": "contain_blur",
+          "focus": [
+            0,
+            0
+          ],
+          "crop": [
+            0.04,
+            0.108,
+            0.65,
+            0.245
+          ],
+          "move": "push_in",
+          "intensity": 0.2,
+          "treatment": "card",
+          "transition": "cut",
+          "highlight": [
+            0.04,
+            0.203125,
+            0.55,
+            0.084375
+          ]
+        },
+        {
+          "id": "s125",
+          "material": "03_wc2022_fist_portugal.jpg",
+          "cue": "short",
+          "layout": "cover",
+          "focus": [
+            0.5,
+            0.2
+          ],
+          "crop": null,
+          "move": "pull_out",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s126",
+          "material": "48_title_phone_angle_vertical.mp4",
+          "cue": "and",
+          "src_in": 55.0,
+          "layout": "cover",
+          "move": "push_in",
+          "crop": null,
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s127",
+          "material": "13_mrsool_park_stands.jpg",
+          "cue": "An",
+          "layout": "contain_blur",
+          "focus": [
+            0.5,
+            0.5
+          ],
+          "crop": [
+            0.1,
+            0.1,
+            0.8,
+            0.8
+          ],
+          "move": "pan_right",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s129",
+          "material": "53_founding_day_daqlah.jpg",
+          "cue": "Why",
+          "layout": "contain_blur",
+          "focus": [
+            0.55,
+            0.3
+          ],
+          "crop": [
+            0.2,
+            0,
+            0.65,
+            0.55
+          ],
+          "move": "pull_out",
+          "treatment": "doc",
+          "transition": "cut",
+          "source_tag": "Al Nassr/Instagram via The National, 2023"
+        },
+        {
+          "id": "s130",
+          "material": "08_press_conf_earpiece.jpg",
+          "cue": "And",
+          "layout": "contain_blur",
+          "focus": [
+            0.33,
+            0.5
+          ],
+          "crop": null,
+          "move": "drift_up",
+          "treatment": "doc",
+          "transition": "cut"
+        },
+        {
+          "id": "s131",
+          "material": "15_south_africa_slip.mp4",
+          "cue": "man",
+          "src_in": 9.65,
+          "layout": "contain_blur",
+          "move": "push_in",
+          "crop": null,
+          "treatment": "doc",
+          "transition": "cut"
+        }
+      ]
+    }
+  ]
+}

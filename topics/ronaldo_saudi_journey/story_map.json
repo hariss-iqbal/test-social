@@ -1,0 +1,161 @@
+{
+ "narration_sha": "14eaea5b5f89",
+ "acts": {
+  "beginning": {
+   "beats": [
+    "b01",
+    "b02",
+    "b03",
+    "b04",
+    "b05",
+    "b06",
+    "b07",
+    "b08",
+    "b09",
+    "b10"
+   ],
+   "who": "Cristiano Ronaldo, thirty-seven, a footballer with no club after leaving Manchester United",
+   "where_when": "A press table in Riyadh after his December thirtieth signing, with backstory from two months earlier and from July twenty twenty-two",
+   "status_quo": "He felt betrayed by United, his contract ended, and after the World Cup he had no club",
+   "inciting_event": "He signs for Al-Nassr on a contract never published, and the silence fills with pay figures, a rewritten-law story and a closed-beach story"
+  },
+  "middle": {
+   "beats": [
+    "b11",
+    "b12",
+    "b13",
+    "b14",
+    "b15",
+    "b16",
+    "b17",
+    "b18",
+    "b19",
+    "b20",
+    "b21",
+    "b22",
+    "b23",
+    "b24",
+    "b25",
+    "b26",
+    "b27",
+    "b28",
+    "b29",
+    "b30",
+    "b31",
+    "b32",
+    "b33",
+    "b34",
+    "b35",
+    "b36",
+    "b37",
+    "b38",
+    "b39",
+    "b40",
+    "b41"
+   ],
+   "driving_question": "'So what did Saudi Arabia really do for him, and what did he do for Saudi Arabia?' (b04), restated at b41 as 'So what did each side get, and was a law bent for him?'",
+   "escalations": [
+    "b11-b14: an unmarried foreign couple where living together was reportedly forbidden; 'bend their laws' is planted and flagged",
+    "b15-b18: pay and housing figures pile up with no confirmation",
+    "b19-b21: attention surges, the state investment fund takes his club, record spending follows",
+    "b22-b23: a false rumour falls away, but Saudi rules really do reach him with a ban",
+    "b24-b26: a record season ends in a lost final and tears",
+    "b28-b33: he says the chapter is over, then re-signs; the biggest figures are estimates and our own division",
+    "b34-b37: he gives the kingdom his face and words; the beach story can't be traced or disproved",
+    "b38-b40: a reported protest, a fourth lost final, then his first Saudi league in tears"
+   ]
+  },
+  "climax": {
+   "beat": "b42",
+   "signpost": "The truth was,",
+   "answer": "The reported money went to him, the attention went to Saudi Arabia, and nobody has shown a law bent; two anonymous lawyers described a general blind eye for foreigners. Starts at word 759 of 919 (83%).",
+   "answers_driving_question": true
+  },
+  "ending": {
+   "beat": "b43",
+   "resolution": "He married her in Portugal, not Saudi Arabia, which settles the 'instead of just marrying her' post; motives stay unproven and no rewritten law was found",
+   "closes_character": "Married, probably in his last playing year, about nine hundred eighty-five goals, deal ending June twenty twenty-seven",
+   "final_line_meaning": "We could find no evidence that any law was rewritten for Ronaldo, the man we met at that press table",
+   "loops_into_b01": "Yes: the last line ends on 'that press table', and b01 opens 'Cristiano Ronaldo sat at a press table in Riyadh', so replay names the man and shows the table just mentioned."
+  }
+ },
+ "setups_payoffs": [
+  {
+   "setup": "Contract never published",
+   "setup_beat": "b02",
+   "payoff": "b16 says no published breakdown; pay is attributed as reports and estimates through b33",
+   "payoff_beat": "b33",
+   "link_stated": true
+  },
+  {
+   "setup": "Rewritten law in the silence",
+   "setup_beat": "b03",
+   "payoff": "No decree, regulation or official statement found; a blind eye for foreigners, not a law bent for one man",
+   "payoff_beat": "b42",
+   "link_stated": true
+  },
+  {
+   "setup": "Closed beach story",
+   "setup_beat": "b03",
+   "payoff": "No report found, couldn't trace it, can't disprove it",
+   "payoff_beat": "b37",
+   "link_stated": true
+  },
+  {
+   "setup": "Who approached first?",
+   "setup_beat": "b06",
+   "payoff": "Al-Muammar's account, with nothing from Ronaldo confirming it",
+   "payoff_beat": "b08",
+   "link_stated": true
+  },
+  {
+   "setup": "'Bend their laws instead of just marrying her', 'Hold on to that one'",
+   "setup_beat": "b13",
+   "payoff": "b41 asks if a law was bent; b42 answers; b43 says he did marry her, in Portugal",
+   "payoff_beat": "b43",
+   "link_stated": true
+  },
+  {
+   "setup": "State investment fund takes control of his club",
+   "setup_beat": "b21",
+   "payoff": "He reportedly protests the state fund's lack of signings",
+   "payoff_beat": "b38",
+   "link_stated": true
+  },
+  {
+   "setup": "Tears in the dugout after a lost final",
+   "setup_beat": "b26",
+   "payoff": "Wins his first Saudi league, 'in tears again'",
+   "payoff_beat": "b40",
+   "link_stated": true
+  },
+  {
+   "setup": "Driving question",
+   "setup_beat": "b04",
+   "payoff": "Money to him, attention to Saudi Arabia, right after the signpost",
+   "payoff_beat": "b42",
+   "link_stated": true
+  },
+  {
+   "setup": "Press table",
+   "setup_beat": "b01",
+   "payoff": "Final line returns to 'that press table'",
+   "payoff_beat": "b43",
+   "link_stated": true
+  }
+ ],
+ "cold_listener": {
+  "three_sentence_retelling": "Ronaldo, clubless at thirty-seven after falling out with Manchester United, signed for a Saudi club on a contract never published, and stories about his pay, a bent law and a closed beach filled the gap. Over nearly four years he scored heavily, cried after a lost final, re-signed for huge estimated money, lent the kingdom his face, and finally won the league at forty-one. The reported money went to him and the attention to Saudi Arabia, no law change could be found, the beach story couldn't be traced, and he married his partner in Portugal.",
+  "lines_without_meaning": [],
+  "unanswered_questions": [],
+  "unexplained_names_or_terms": []
+ },
+ "complete": true,
+ "verdict": "PASS",
+ "fixes": [],
+ "notes": [
+  "b43's unnamed investment firm line was accepted as an owner-requested latest-status fact. A listener reads 'interest in his club' as possible investment or purchase; which firm is background curiosity, not a question the story raised.",
+  "b43's 'her' has no antecedent inside b42, but b42's 'ban on living together' and the echo of b13's 'marrying her' carry it, with Georgina last named at b35. Not a failure.",
+  "b33's ', by our arithmetic' is kept as an owner requirement."
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "_why": "Long-form vertical (~5 min): owner asked for the full journey, every topic covered (how he joined, pay by year, law, beach, home, football, what Saudi got). Exceeds the 180 s Shorts cap by design.",
+ "WORDS_MIN": 720,
+ "WORDS_MAX": 930,
+ "BEATS_MIN": 30,
+ "BEATS_MAX": 60,
+ "DURATION_MIN": 230,
+ "DURATION_MAX": 330,
+ "PAUSE_MAX_MS": 620,
+ "SHOT_MAX_IMAGE_S": 4.1,
+ "_why_SHOT_MAX_IMAGE_S": "Text-heavy claim card 79 in b42: the 'no decree, regulation, statement' row is spoken over 4.0 s and needs that long to read; only as far as needed."
+}

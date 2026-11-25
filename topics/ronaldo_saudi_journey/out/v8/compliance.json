@@ -1,0 +1,497 @@
+{
+ "version": "v8",
+ "verdict": "FAIL",
+ "safe_to_post": false,
+ "incomplete": true,
+ "sampling_limits": "Frames from out/v8/final.mp4 only: 988 extracted. Many image reads returned no picture ('media removed: request limit'), so those sheets are counted as not seen. Stopped at the coordinator's time limit. Sheets were about 390-520 px per frame, so crowd faces under about 15 px cannot be judged. Audio measured, not heard.",
+ "children_or_uncertain_age": [
+  {
+   "t": "106.57-107.40",
+   "shot": "s049",
+   "finding": "Young spectator, bottom row, about x 590-640, y 1040-1085: small face, dark fringe, no visible facial hair, much smaller than the moustached man in the same row. Seen 106.63, 106.73, 106.83, 106.93, 107.03, 107.13, 107.40.",
+   "read": "appears to be a child or young teen",
+   "confidence": "moderate; pink smoke and low resolution, zoomed and graded"
+  },
+  {
+   "t": "106.60-108.00",
+   "shot": "s049",
+   "finding": "Person in a pale fur-trimmed hood, about x 700-880, face covered by a hand or phone at most samples.",
+   "read": "age cannot be judged",
+   "confidence": "low"
+  },
+  {
+   "t": "106.63-107.00",
+   "shot": "s049",
+   "finding": "Second young male in profile at lower left of the row, about x 340-500.",
+   "read": "teen or young adult",
+   "confidence": "low"
+  },
+  {
+   "t": "120.90-121.97",
+   "shot": "s056",
+   "finding": "Still photo, stand above the rail, left of Ronaldo's arm: small round-faced seated person in white in front of the man with the striped scarf (zoom at 120.93, 121.93). Right side: dark-haired person in a white hood holding a phone (121.93), and a lowered head in blue (120.93).",
+   "read": "left figure appears to be a child or young teen; the other two uncertain",
+   "confidence": "moderate for left figure, low for others; slightly soft background"
+  },
+  {
+   "t": "52.27 (shot 51.17-52.33)",
+   "shot": "s025",
+   "finding": "Lifted shadows, left of the tunnel, about x 200-290, y 1190-1400: dark figure that looks shorter than the adults beside it. Catalog says children were on this pitch at this event (17_georgina_mrsool_pitch).",
+   "read": "possible child, or an adult further away",
+   "confidence": "low; silhouette, one frame, the frames between 51.60 and 52.27 were not seen"
+  },
+  {
+   "t": "120.17, 120.57",
+   "shot": "s055",
+   "finding": "Beardless male in profile, white shirt and scarf, just above the SOURCE line.",
+   "read": "teen or young adult",
+   "confidence": "low; two crops only"
+  },
+  {
+   "t": "232.87-235.30",
+   "shot": "s105",
+   "finding": "Heavily blurred stand behind him, including a smaller figure in white with a yellow sash at right.",
+   "read": "cannot be excluded or confirmed",
+   "confidence": "low; too blurred to judge"
+  },
+  {
+   "t": "60.00",
+   "shot": "s030",
+   "finding": "Man in glasses and white scarf at right, faint moustache.",
+   "read": "young adult",
+   "confidence": "moderate; one frame"
+  },
+  {
+   "t": "180.93",
+   "shot": "s082",
+   "finding": "Dense low-res crowd at left; no face reads as a child, but face size cannot exclude one.",
+   "read": "no child identified",
+   "confidence": "low; one zoomed frame plus sheet"
+  }
+ ],
+ "child_scan_coverage": {
+  "scanned_at_requested_sampling": [
+   "s001",
+   "s001b",
+   "s002",
+   "s003",
+   "s004",
+   "s006",
+   "s013",
+   "s026",
+   "s035",
+   "s040",
+   "s041",
+   "s044",
+   "s045",
+   "s047",
+   "s048",
+   "s049",
+   "s051",
+   "s054",
+   "s056",
+   "s059",
+   "s071",
+   "s076",
+   "s078",
+   "s082",
+   "s083",
+   "s088",
+   "s092",
+   "s093",
+   "s096",
+   "s097",
+   "s098",
+   "s100",
+   "s102",
+   "s103",
+   "s105",
+   "s106",
+   "s107",
+   "s108",
+   "s109",
+   "s110",
+   "s112",
+   "s113",
+   "s118",
+   "s121",
+   "s122",
+   "s123",
+   "s125",
+   "s126",
+   "s127"
+  ],
+  "partial": {
+   "s025": "3 frames: 51.20, 51.60, 52.27",
+   "s030": "60.00 only",
+   "s039": "83.97-85.33 only",
+   "s055": "119.37 full panel; 120.17, 120.57 two crops",
+   "s062": "135.07-136.27, lower-left crop only",
+   "s069": "148.87-149.60 only",
+   "s080": "177.43-178.53 only",
+   "s090": "crops only: 199.80 left side, 199.90-201.07 chin band",
+   "s095": "208.17-209.07 only",
+   "s131": "293.93-294.07 frames; 291.40-291.80 luma only"
+  },
+  "not_seen": [
+   "s005",
+   "s007",
+   "s008",
+   "s009",
+   "s010",
+   "s011",
+   "s012",
+   "s014",
+   "s015",
+   "s016",
+   "s017",
+   "s018",
+   "s019",
+   "s021",
+   "s022",
+   "s023",
+   "s024",
+   "s027",
+   "s028",
+   "s029",
+   "s031",
+   "s032",
+   "s033",
+   "s034",
+   "s038",
+   "s052",
+   "s058",
+   "s063",
+   "s064",
+   "s065",
+   "s066",
+   "s067",
+   "s068",
+   "s070",
+   "s072",
+   "s077",
+   "s091",
+   "s094",
+   "s129",
+   "s130"
+  ],
+  "cards_not_seen": [
+   "s020",
+   "s036",
+   "s037",
+   "s042",
+   "s043",
+   "s046",
+   "s050",
+   "s053",
+   "s057",
+   "s060",
+   "s061",
+   "s073",
+   "s074",
+   "s075",
+   "s079",
+   "s081",
+   "s084",
+   "s085",
+   "s086",
+   "s087",
+   "s089",
+   "s099",
+   "s101",
+   "s104",
+   "s111",
+   "s114",
+   "s115",
+   "s116",
+   "s117",
+   "s119",
+   "s120",
+   "s124"
+  ]
+ },
+ "items": [
+  {
+   "id": "BRIEF-no-child",
+   "status": "FAIL",
+   "evidence": "Scan NOT complete, so the film is not cleared. Two figures appear to be children: s049 106.57-107.40 and s056 120.90-121.97. See children_or_uncertain_age and child_scan_coverage. Named priorities: s112, s113, s106, s109 scanned, no child seen; stands there are tiny and cannot be fully excluded. s051 and s040 sheet resolution only, no child seen, the s051 hand/sleeve fix not confirmed at zoom. s030, s055, s062, s082 partial. s017 and s032 not seen.",
+   "owner": "edl.json s049, s056; s025 pending",
+   "fix": "s049: move src_in off the stand footage, e.g. catalog 14 segment 196.0-203.0 (uninspected, re-audit). s056: no clean crop, because his head sits at the rail; replace the picture and audit the replacement. s025: look at it, or crop to about x>=0.28 (estimate). s055, if the owner wants the young male out: src_in 224.0 (uninspected). Then finish the scan."
+  },
+  {
+   "id": "C01",
+   "status": "NOT CHECKED",
+   "evidence": "Seen sheets show no text on text (s006, s054, s082, s103, s106). Most frames were panel crops excluding captions; full film not checked.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C02",
+   "status": "FAIL",
+   "evidence": "106.73-106.83 s049: SOURCE line crosses the head of a spectator at lower left (zoom). Other shots with no face under the credit in seen frames: s112, s113, s106, s088, s126 has it on the upper body region of the distant group, not checked at zoom. Shots not seen are not cleared.",
+   "owner": "edl.json s049",
+   "fix": "Resolved by replacing s049 footage; re-check the credit on the new segment."
+  },
+  {
+   "id": "C03",
+   "status": "NOT CHECKED",
+   "evidence": "Timeline: no one-word pages, shortest page 0.30 s. Caption page middles were extracted but not reviewed. Dim mid-fade captions seen at s026 52.87, 53.40 and s035 71.77.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C04",
+   "status": "NOT CHECKED",
+   "evidence": "Count is PASS, see BRIEF-label-count. Stacking and repeat checks not done across the film.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C05",
+   "status": "NOT CHECKED",
+   "evidence": "s112, s113, s090, s106, s109 match catalog. Seen tags match their pictures. Not compared for every shot.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C06",
+   "status": "NOT CHECKED",
+   "evidence": "s103 and s029 wording not re-verified against research.json this round. Script identical to v6.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C07",
+   "status": "NOT CHECKED",
+   "evidence": "Script identical to v6; label text not systematically compared.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C08",
+   "status": "NOT CHECKED",
+   "evidence": "Not walked label by label.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C09",
+   "status": "NOT CHECKED",
+   "evidence": "Not walked.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C10",
+   "status": "NOT CHECKED",
+   "evidence": "s112 and s113 fit their words. Rest not walked.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C11",
+   "status": "FAIL",
+   "evidence": "s049 and s056 private spectators who appear to be minors. Excluded-material check not rerun.",
+   "owner": "edl.json s049, s056",
+   "fix": "See BRIEF-no-child."
+  },
+  {
+   "id": "C12",
+   "status": "PASS",
+   "evidence": "qc black and freeze lists empty; s010 and s102 dips planned. Note, not a rule break: s069 148.87-149.10 opens on about 0.27 s of a combed close-up tail before a source cut at 149.13.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C13",
+   "status": "NOT CHECKED",
+   "evidence": "Not walked across the film.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C14",
+   "status": "PASS",
+   "evidence": "Measured from timeline. At 3: 05,14,26,27,32,43,44,47,48,50. At 4: 15,46,74. At 7: 79. Covered by the v2-v4 and v6 waivers as previously applied, in distinct segments. The waiver list does not name 47 and 48, new to 3 uses in v8; owner may want to confirm.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C15",
+   "status": "PASS",
+   "evidence": "'The truth was' at 245.23 after the 1.10 s pause; 919 caption words equal 919 aligned words. Ends 'at that press table.'",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C16",
+   "status": "PASS",
+   "evidence": "Last word ends 293.58, file 294.10, tail 0.52 s.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C17",
+   "status": "PASS",
+   "evidence": "Measured, not heard. -14.02 LUFS. Lowest 1 s mix window -24.9 dB at 244 s. SFX before their words: 71.6 v 71.87, 116.367 v 116.43, 214.87 v 215.17, 230.367 v 230.44, 245.053 v 245.23.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C18",
+   "status": "NOT CHECKED",
+   "evidence": "Script identical to v6; on-screen attribution not re-walked; s021 label not seen.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C19",
+   "status": "PASS",
+   "evidence": "Hook is 5 words; head moves in the first second; first words 'Cristiano Ronaldo sat'. Top-of-frame crop; caption layer starts at frame 3 per timeline.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C20",
+   "status": "PASS",
+   "evidence": "Tail 0.52 s; loop_similarity 0.95, loop true.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C21",
+   "status": "PASS",
+   "evidence": "3.13 words/s. Largest gaps 0.60 s under topic PAUSE_MAX_MS 620; 1.10 s pre-reveal pause.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C22",
+   "status": "PASS",
+   "evidence": "cover.jpg byte-identical to audited v6 cover, not re-viewed. 3 titles of 7-8 words, pinned comment and prompt present.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C23",
+   "status": "NOT CHECKED",
+   "evidence": "Longest static 4.63 s per qc is fine. Callouts on cards not seen.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C24",
+   "status": "PASS",
+   "evidence": "Hook ends 2.60. s001 credit seen 2.83-3.77 (fading at 2.83 and 3.77), on s001b at 4.23-4.93. Timeline issues empty.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C25",
+   "status": "PASS",
+   "evidence": "Timeline cover circle null.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C26",
+   "status": "NOT CHECKED",
+   "evidence": "Card rings not seen.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C27",
+   "status": "NOT CHECKED",
+   "evidence": "All tags seen are whole. s007 and s129, the v6 failures, not seen.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C28",
+   "status": "N/A",
+   "evidence": "No map pins.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "C29",
+   "status": "NOT CHECKED",
+   "evidence": "Not measured this round.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "BRIEF-label-count",
+   "status": "PASS",
+   "evidence": "16 labels plus the hook in timeline overlays; ceiling 16.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "BRIEF-s090",
+   "status": "PASS",
+   "evidence": "Stays on close-up: every-frame difference scan finds no cut inside s090, and source ends about 5.25 s (4.47 + 1.63 x 0.48) against the boxing cut at 'about 5.3 s', a thin margin. Close-up seen in crops only. Man behind: lifted frame 199.80 shows hooded figure with adult-looking jaw and neck; blurred, moderately sure, one frame.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "BRIEF-s090-source",
+   "status": "PASS",
+   "evidence": "Credit text correct. Strip starts at the bottom of the chin at 199.90-201.07, below the lips and stubble. Very little margin; a stricter reader could call it touching.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "BRIEF-s113-sharpness",
+   "status": "PASS",
+   "evidence": "qc sharpness 413 (s112 1981, s082 959, s109 260). Soft, noisy phone footage but readable; no numeric limit exists, so this is a judgement. Sky and LED board only; orange blob at 248.97 is a firework.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "BRIEF-s112-s113-source",
+   "status": "PASS",
+   "evidence": "Both 'UR Cristiano, 2026', matching catalog. s112 credit on robe and plinth, s113 on the board; no face crossed at 0.4 s samples.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "BRIEF-s131-flash",
+   "status": "PASS",
+   "evidence": "Panel luma from 291.50 flat at 52.1-52.6. The earlier 72 values are s130. Measured; s131 opening not viewed.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "BRIEF-s001-credit",
+   "status": "PASS",
+   "evidence": "See C24. First cut 3.80 s, accepted warning. Credit dips out across the cut and returns on s001b.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "BRIEF-card-clipping",
+   "status": "NOT CHECKED",
+   "evidence": "cards sheets not seen, including s120.",
+   "owner": null,
+   "fix": null
+  },
+  {
+   "id": "BRIEF-pull-wrap",
+   "status": "NOT CHECKED",
+   "evidence": "s054 wraps well. s082 still splits '· NOT / CONTRACT DATA', and s103 leaves '— / LEAGUE'. s021 not seen.",
+   "owner": null,
+   "fix": null
+  }
+ ],
+ "new_rules_suggested": [
+  "C35: treat an audit as incomplete unless every contact sheet actually displayed; record which did. Origin: ronaldo_saudi_journey v8."
+ ],
+ "counts": {
+  "FAIL": 3,
+  "NOT CHECKED": 17,
+  "PASS": 18,
+  "N/A": 1
+ }
+}

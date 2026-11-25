@@ -1,0 +1,3092 @@
+{
+  "materials": [
+    {
+      "filename": "01_manutd_old_trafford_2021.jpg",
+      "type": "image",
+      "width": 1164,
+      "height": 1828,
+      "description": "Ronaldo in the red Manchester United kit on the Old Trafford pitch, palms open, Sept 2021",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.1
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Manchester_United_v_Newcastle_United,_11_September_2021_(10).jpg",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Ardfern · CC BY-SA 4.0 · Wikimedia",
+      "chapter": 1
+    },
+    {
+      "filename": "02_old_trafford_empty.jpg",
+      "type": "image",
+      "width": 1024,
+      "height": 683,
+      "description": "Empty Old Trafford: red seats spelling 'Manchester United' above the pitch. 2006 photo",
+      "subject": "place",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Old_Trafford_inside_20060726_1.jpg",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": true,
+      "text_box": [
+        0.05,
+        0.38,
+        0.9,
+        0.2
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: André Zahn · CC BY-SA 2.0 de · Wikimedia",
+      "chapter": 1,
+      "note": "Seat lettering is part of the stadium.",
+      "enhanced": "enhanced/02_old_trafford_empty.jpg",
+      "enhancement": "realesrgan-x4plus + tone restore",
+      "enhanced_size": [
+        2400,
+        1600
+      ]
+    },
+    {
+      "filename": "03_wc2022_fist_portugal.jpg",
+      "type": "image",
+      "width": 720,
+      "height": 1093,
+      "description": "Ronaldo in Portugal's red-and-green World Cup 2022 shirt clenching a fist, teeth gritted",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.2
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_WC2022_-_02.jpg",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Hossein Zohrevand · CC BY 4.0 · Wikimedia",
+      "chapter": 1,
+      "note": "Taken 2 Dec 2022 in the group stage, not at the Morocco match."
+    },
+    {
+      "filename": "04_fifa_morocco_portugal_2022.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "FIFA's official highlights of Morocco 1-0 Portugal, World Cup quarter-final, 10 Dec 2022",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=M766FGsv5do",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.85,
+        0,
+        0.15,
+        0.06
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 12.95,
+          "out": 16.23,
+          "shows": "Morocco players celebrating En-Nesyri's goal"
+        },
+        {
+          "in": 22.0,
+          "out": 29.0,
+          "shows": "Replay: En-Nesyri rising with the goalkeeper for the header"
+        },
+        {
+          "in": 58.0,
+          "out": 65.0,
+          "shows": "Match action, Portugal in white v Morocco in red, then wide"
+        },
+        {
+          "in": 77.33,
+          "out": 84.0,
+          "shows": "Goalmouth scramble: Portugal No. 11 and Morocco No. 18, goalkeeper down"
+        },
+        {
+          "in": 113.0,
+          "out": 119.71,
+          "shows": "Wide view at full time"
+        }
+      ],
+      "source_label": "Video: FIFA, 2022",
+      "chapter": 1,
+      "note": "FIFA+ bug top right and score bug top left: crop. Does not include Ronaldo walking off in tears. Ronaldo isn't verified as identifiable in any listed segment."
+    },
+    {
+      "filename": "05_piers_morgan_interview_2022.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "Official preview of the Nov 2022 TalkTV interview: Ronaldo in a dark jacket and white T-shirt talking, Piers Morgan opposite",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=1XiE9BcNws8",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0,
+        0.78,
+        1,
+        0.22
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 11.31,
+          "out": 12.53,
+          "shows": "Piers Morgan speaking"
+        },
+        {
+          "in": 16.0,
+          "out": 23.0,
+          "shows": "Ronaldo close up, speaking"
+        },
+        {
+          "in": 34.0,
+          "out": 41.0,
+          "shows": "Two-shot over Piers Morgan's shoulder"
+        },
+        {
+          "in": 60.0,
+          "out": 67.0,
+          "shows": "Ronaldo close up, speaking"
+        },
+        {
+          "in": 93.35,
+          "out": 94.73,
+          "shows": "Piers Morgan speaking"
+        }
+      ],
+      "source_label": "Video: TalkTV / Piers Morgan Uncensored, 2022",
+      "chapter": 1,
+      "note": "Permanent TalkTV chyron bottom and bug top right: crop to the top 76%, or don't use."
+    },
+    {
+      "filename": "06_unveil_thumbs_up.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1600,
+      "description": "Ronaldo in a dark suit and blue tie giving a thumbs up on arrival at Mrsool Park at night, 3 Jan 2023",
+      "subject": "person",
+      "focus": [
+        0.42,
+        0.27
+      ],
+      "source": "real",
+      "source_url": "https://www.thenationalnews.com/sport/football/2023/01/03/cristiano-ronaldo-very-proud-to-be-taking-on-new-challenge-with-al-nassr-in-saudi-arabia/",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: AFP, via The National, 2023",
+      "chapter": 2
+    },
+    {
+      "filename": "07_unveil_wave_fireworks.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1726,
+      "description": "Ronaldo in Al-Nassr kit waving with one arm raised between columns of white pyrotechnics",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.32
+      ],
+      "source": "real",
+      "source_url": "https://www.thenationalnews.com/sport/football/2023/01/03/cristiano-ronaldo-very-proud-to-be-taking-on-new-challenge-with-al-nassr-in-saudi-arabia/",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Reuters, via The National, 2023",
+      "chapter": 2
+    },
+    {
+      "filename": "08_press_conf_earpiece.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1630,
+      "description": "Close shot of Ronaldo in a grey suit holding a translation earpiece at the press conference, 'Saudi Welcome to Arabia' behind him",
+      "subject": "person",
+      "focus": [
+        0.34,
+        0.52
+      ],
+      "source": "real",
+      "source_url": "https://www.thenationalnews.com/sport/football/2023/01/03/cristiano-ronaldo-very-proud-to-be-taking-on-new-challenge-with-al-nassr-in-saudi-arabia/",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.2,
+        0,
+        0.6,
+        0.32
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: AP, via The National, 2023",
+      "chapter": 2,
+      "note": "Backdrop text only."
+    },
+    {
+      "filename": "09_press_conf_with_muammar_reuters.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1596,
+      "description": "Ronaldo and Musalli Al-Muammar (caption-identified) at the press table, reporters' heads and phones in the foreground",
+      "subject": "person",
+      "focus": [
+        0.3,
+        0.33
+      ],
+      "source": "real",
+      "source_url": "https://www.thenationalnews.com/sport/football/2023/01/03/cristiano-ronaldo-very-proud-to-be-taking-on-new-challenge-with-al-nassr-in-saudi-arabia/",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Reuters, via The National, 2023",
+      "chapter": 2
+    },
+    {
+      "filename": "10_vendor_no7_shirt_road.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1581,
+      "description": "A roadside vendor holding up a yellow Ronaldo No. 7 shirt and scarves beside a car, near a King Saud University road sign",
+      "subject": "event",
+      "focus": [
+        0.72,
+        0.5
+      ],
+      "source": "real",
+      "source_url": "https://www.thenationalnews.com/sport/football/2023/01/03/cristiano-ronaldo-very-proud-to-be-taking-on-new-challenge-with-al-nassr-in-saudi-arabia/",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Reuters, via The National, 2023",
+      "chapter": 2,
+      "enhanced": "enhanced/10_vendor_no7_shirt_road.jpg",
+      "enhancement": "tone restore + light denoise (already high-res)",
+      "enhanced_size": [
+        2400,
+        1581
+      ]
+    },
+    {
+      "filename": "11_billboard_hala_ronaldo_street.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1350,
+      "description": "Two digital billboards reading 'Hala Ronaldo' over a wet Riyadh street with a passing car",
+      "subject": "place",
+      "focus": [
+        0.5,
+        0.25
+      ],
+      "source": "real",
+      "source_url": "https://www.thenationalnews.com/sport/football/2023/01/03/cristiano-ronaldo-very-proud-to-be-taking-on-new-challenge-with-al-nassr-in-saudi-arabia/",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.25,
+        0.05,
+        0.5,
+        0.55
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: AFP, via The National, 2023",
+      "chapter": 2,
+      "note": "Billboard text is part of the scene.",
+      "enhanced": "enhanced/11_billboard_hala_ronaldo_street.jpg",
+      "enhancement": "tone restore + light denoise (already high-res)",
+      "enhanced_size": [
+        2400,
+        1350
+      ]
+    },
+    {
+      "filename": "12_arrival_georgina_flowers.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1600,
+      "description": "Night arrival in Riyadh: Georgina Rodriguez in a white beanie and fur coat receiving a large yellow bouquet, Ronaldo beside her with a backpack",
+      "subject": "person",
+      "focus": [
+        0.45,
+        0.3
+      ],
+      "source": "real",
+      "source_url": "https://www.thenationalnews.com/sport/football/2023/01/03/cristiano-ronaldo-very-proud-to-be-taking-on-new-challenge-with-al-nassr-in-saudi-arabia/",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: AFP, via The National, 2023",
+      "chapter": 2
+    },
+    {
+      "filename": "13_mrsool_park_stands.jpg",
+      "type": "image",
+      "width": 6720,
+      "height": 4480,
+      "description": "Empty Mrsool Park: yellow and blue stands and a striped pitch from the upper tier, 2021",
+      "subject": "place",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Inside_King_Saud_University_Stadium.jpg",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Alina.chiorean · CC BY-SA 4.0 · Wikimedia",
+      "chapter": 2,
+      "enhanced": "enhanced/13_mrsool_park_stands.jpg",
+      "enhancement": "tone restore + light denoise (already high-res)",
+      "enhanced_size": [
+        2400,
+        1600
+      ]
+    },
+    {
+      "filename": "14_alnassr_official_unveiling.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "Al-Nassr's official film of the Mrsool Park unveiling, 3 Jan 2023: tunnel walk, fireworks, crowd, No. 7 on the pitch",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=OhlmggeaTrs",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.9,
+        0.92,
+        0.1,
+        0.08
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 51.0,
+          "out": 58.0,
+          "shows": "Silhouette entering the yellow CR7 tunnel, then people on the pitch"
+        },
+        {
+          "in": 66.0,
+          "out": 73.0,
+          "shows": "Ronaldo between pyrotechnic columns, then red stadium lights"
+        },
+        {
+          "in": 86.0,
+          "out": 93.0,
+          "shows": "Ronaldo walking forward, lights and fireworks behind"
+        },
+        {
+          "in": 120.0,
+          "out": 127.0,
+          "shows": "Ronaldo with arm raised at the arch, then a pink flare in the stands"
+        },
+        {
+          "in": 139.0,
+          "out": 146.0,
+          "shows": "Ronaldo beside presenters at the Welcome CR7 arch"
+        },
+        {
+          "in": 196.0,
+          "out": 203.0,
+          "shows": "Ronaldo with arm raised, speaking into a microphone at the Welcome CR7 arch"
+        },
+        {
+          "in": 253.0,
+          "out": 260.0,
+          "shows": "Ronaldo close up speaking into a microphone at the arch"
+        },
+        {
+          "in": 291.0,
+          "out": 298.0,
+          "shows": "Ronaldo at the arch, then aerial of the lit pitch"
+        },
+        {
+          "in": 538.0,
+          "out": 545.0,
+          "shows": "Ronaldo in No. 7 walking the pitch with staff, then a wide view"
+        },
+        {
+          "in": 576.0,
+          "out": 583.0,
+          "shows": "Ronaldo with a ball, then No. 7 from behind"
+        },
+        {
+          "in": 709.0,
+          "out": 716.0,
+          "shows": "Aerial of the stadium"
+        }
+      ],
+      "source_label": "Video: Al-Nassr FC, 2023",
+      "chapter": 2,
+      "note": "Small club logo bottom right. Use the listed segments only: 741-912 s shows his children (minors)."
+    },
+    {
+      "filename": "15_south_africa_slip.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "Press conference at Al-Nassr, 3 Jan 2023: Ronaldo says 'it's not the end of my career to coming to South Africa'. Audio transcribed with whisper; the slip is in the segment.",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=g1AsfrKvU_Q",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.05,
+        0.3,
+        0.75,
+        0.5
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 12.0,
+          "out": 17.5,
+          "shows": "Ronaldo at the press table saying 'So for me, it's not the end of my career to coming to South Africa'. Whisper heard 'hand' for 'end'; press reports confirm the wording."
+        },
+        {
+          "in": 8.6,
+          "out": 12.0,
+          "shows": "Same shot: lead-in, 'It's different, the evolution of football is different'"
+        }
+      ],
+      "source_label": "Video: The Independent, 2023",
+      "chapter": 2,
+      "note": "Independent title card covers 0-6 s and logo 18 s on: use only the listed segment. Original audio needed."
+    },
+    {
+      "filename": "16_muammar_arrives_mrsool.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1600,
+      "description": "Musalli Al-Muammar (centre, per agency caption) in black robe and red keffiyeh arriving at Mrsool Park among men",
+      "subject": "person",
+      "focus": [
+        0.42,
+        0.3
+      ],
+      "source": "real",
+      "source_url": "https://www.thenationalnews.com/sport/football/2023/01/03/cristiano-ronaldo-very-proud-to-be-taking-on-new-challenge-with-al-nassr-in-saudi-arabia/",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: AFP, via The National, 2023",
+      "chapter": 3,
+      "note": "Identity rests on the AFP caption ('centre')."
+    },
+    {
+      "filename": "17_georgina_mrsool_pitch.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1600,
+      "description": "Georgina Rodriguez in a long dark robe walking on the Mrsool Park pitch with children at the unveiling",
+      "subject": "person",
+      "focus": [
+        0.33,
+        0.15
+      ],
+      "source": "real",
+      "source_url": "https://www.thenationalnews.com/sport/football/2023/01/03/cristiano-ronaldo-very-proud-to-be-taking-on-new-challenge-with-al-nassr-in-saudi-arabia/",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: EPA, via The National, 2023",
+      "chapter": 3,
+      "note": "Children visible (minors): crop to Georgina, head and shoulders."
+    },
+    {
+      "filename": "18_jesus_ronaldo_training_laugh.jpg",
+      "type": "image",
+      "width": 4096,
+      "height": 3296,
+      "description": "Jorge Jesus in grey training top and Ronaldo in navy Al-Nassr training top laughing and embracing in a gym",
+      "subject": "person",
+      "focus": [
+        0.65,
+        0.25
+      ],
+      "source": "real",
+      "source_url": "https://www.abola.pt/noticias/cristiano-ronaldo-reencontra-se-com-o-al-nassr-na-cidade-do-futebol-2026080418325177288",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Al Nassr, via A Bola",
+      "chapter": 3
+    },
+    {
+      "filename": "19_jesus_press_conf_acl2.jpg",
+      "type": "image",
+      "width": 1200,
+      "height": 934,
+      "description": "Jorge Jesus at an AFC Champions League Two press table behind a nameplate reading 'Jorge Jesus, Al Nassr Club', match ball beside him",
+      "subject": "person",
+      "focus": [
+        0.48,
+        0.25
+      ],
+      "source": "real",
+      "source_url": "https://www.okaz.com.sa/sport/saudi/2218719",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.02,
+        0.42,
+        0.15,
+        0.2
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo via Okaz, 2025",
+      "chapter": 3,
+      "note": "Nameplate and sponsor wall in shot. Agency not stated by the source."
+    },
+    {
+      "filename": "20_mbs_presents_kings_cup.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1600,
+      "description": "Crown Prince Mohammed bin Salman shaking hands with Al-Hilal's No. 29 Salem Al-Dawsari on the presentation stand, King's Cup trophy beside them, 2024",
+      "subject": "person",
+      "focus": [
+        0.42,
+        0.15
+      ],
+      "source": "real",
+      "source_url": "https://www.thenationalnews.com/sport/football/2024/06/01/cristiano-ronaldo-left-in-tears-as-al-hilal-beat-al-nassr-on-penalties-to-win-kings-cup",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: AFP, via The National, 2024",
+      "chapter": 3
+    },
+    {
+      "filename": "21_georgina_venice_2026.jpg",
+      "type": "image",
+      "width": 3001,
+      "height": 4499,
+      "description": "Georgina Rodriguez in a dark blazer waving at the Venice film festival, Sept 2026",
+      "subject": "person",
+      "focus": [
+        0.45,
+        0.2
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Georgina_Rodriguez-1234.jpg",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Harald Krichel · CC BY-SA 4.0 · Wikimedia",
+      "chapter": 3
+    },
+    {
+      "filename": "22_mbs_official_portrait.jpg",
+      "type": "image",
+      "width": 1585,
+      "height": 1981,
+      "description": "Official portrait of Crown Prince Mohammed bin Salman in red-checked headdress against a black background",
+      "subject": "person",
+      "focus": [
+        0.47,
+        0.3
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%B5%D9%88%D8%B1%D8%A9_%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_%D9%84%D9%84%D8%A3%D9%85%D9%8A%D8%B1_%D9%85%D8%AD%D9%85%D8%AF_%D8%A8%D9%86_%D8%B3%D9%84%D9%85%D8%A7%D9%86_%D8%A8%D9%86_%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2_%D8%A2%D9%84_%D8%B3%D8%B9%D9%88%D8%AF_(%D9%85%D9%82%D8%B5%D9%88%D8%B5%D8%A9).jpg",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Saudi Press Agency · CC BY-SA 4.0 · Wikimedia",
+      "chapter": 3
+    },
+    {
+      "filename": "23_pif_tower_night.jpg",
+      "type": "image",
+      "width": 1920,
+      "height": 2560,
+      "description": "PIF Tower lit green at night between faceted KAFD buildings, Riyadh, 2024",
+      "subject": "place",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PIF_Tower_Riyadh_2024.jpeg",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Faisal Arif · CC BY-SA 4.0 · Wikimedia",
+      "chapter": 3,
+      "enhanced": "enhanced/23_pif_tower_night.jpg",
+      "enhancement": "tone restore + light denoise (already high-res)",
+      "enhanced_size": [
+        1800,
+        2400
+      ]
+    },
+    {
+      "filename": "24_nujuma_terrace_sunset.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1600,
+      "description": "Nujuma: curved canopy over a wooden pool terrace with loungers facing the Red Sea at sunset. No people.",
+      "subject": "place",
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "source": "real",
+      "source_url": "https://thenationalnews.com/travel/2024/05/27/nujuma-a-ritz-carlton-reserve-in-saudi-arabias-red-sea-in-pictures",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Ritz-Carlton, via The National",
+      "chapter": 4,
+      "note": "Generic resort picture. Never pair with the beach-closure claim.",
+      "enhanced": "enhanced/24_nujuma_terrace_sunset.jpg",
+      "enhancement": "tone restore + light denoise (already high-res)",
+      "enhanced_size": [
+        2400,
+        1600
+      ]
+    },
+    {
+      "filename": "25_nujuma_overwater_aerial.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1600,
+      "description": "Top-down view of three shell-shaped overwater villas on a boardwalk over turquoise water. No people.",
+      "subject": "place",
+      "focus": [
+        0.25,
+        0.55
+      ],
+      "source": "real",
+      "source_url": "https://thenationalnews.com/travel/2024/05/27/nujuma-a-ritz-carlton-reserve-in-saudi-arabias-red-sea-in-pictures",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Image: Ritz-Carlton, via The National",
+      "chapter": 4,
+      "note": "Marketing image; may be an architectural render, so don't present it as a news photo.",
+      "enhanced": "enhanced/25_nujuma_overwater_aerial.jpg",
+      "enhancement": "tone restore + light denoise (already high-res)",
+      "enhanced_size": [
+        2400,
+        1600
+      ]
+    },
+    {
+      "filename": "26_kingdom_centre_night.jpg",
+      "type": "image",
+      "width": 2892,
+      "height": 3909,
+      "description": "Kingdom Centre tower at night seen from below through palm trees, Riyadh, 2024",
+      "subject": "place",
+      "focus": [
+        0.5,
+        0.2
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kingdom_Centre_Riyadh_2024.jpeg",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Hamza A. Durrani · CC BY-SA 4.0 · Wikimedia",
+      "chapter": 4,
+      "enhanced": "enhanced/26_kingdom_centre_night.jpg",
+      "enhancement": "tone restore + light denoise (already high-res)",
+      "enhanced_size": [
+        1775,
+        2400
+      ]
+    },
+    {
+      "filename": "27_riyadh_skyline_dusk.jpg",
+      "type": "image",
+      "width": 1920,
+      "height": 1080,
+      "description": "Riyadh skyline at dusk with Kingdom Centre and Al Faisaliah under a purple sky, 2018",
+      "subject": "place",
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Riyadh_Skyline.jpg",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: B.alotaby · CC BY-SA 4.0 · Wikimedia",
+      "chapter": 4,
+      "enhanced": "enhanced/27_riyadh_skyline_dusk.jpg",
+      "enhancement": "realesrgan-x4plus + tone restore",
+      "enhanced_size": [
+        2400,
+        1350
+      ]
+    },
+    {
+      "filename": "28_riyadh_night_from_iss.jpg",
+      "type": "image",
+      "width": 1920,
+      "height": 1280,
+      "description": "Riyadh's street grid glowing at night, photographed from the International Space Station",
+      "subject": "place",
+      "focus": [
+        0.55,
+        0.5
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Riyadh,_Saudi_Arabia,_the_Middle_Eastern_nation%27s_capital_and_largest_city_(iss073e0222623).jpg",
+      "rights": "public_record",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: NASA Johnson Space Center · public domain",
+      "chapter": 4,
+      "enhanced": "enhanced/28_riyadh_night_from_iss.jpg",
+      "enhancement": "tone restore + light denoise (already high-res)",
+      "enhanced_size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "filename": "29_red_sea_sand_island_aerial.jpg",
+      "type": "image",
+      "width": 960,
+      "height": 1280,
+      "description": "Aerial view of an empty sand island in turquoise reef water, within the Red Sea tourism destination. No people.",
+      "subject": "place",
+      "focus": [
+        0.45,
+        0.5
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Red_Sea_island.jpg",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Dunseath · CC BY-SA 4.0 · Wikimedia",
+      "chapter": 4,
+      "note": "Generic place. Never pair with the beach-closure claim.",
+      "enhanced": "enhanced/29_red_sea_sand_island_aerial.jpg",
+      "enhancement": "realesrgan-x4plus + tone restore",
+      "enhanced_size": [
+        1800,
+        2400
+      ]
+    },
+    {
+      "filename": "30_red_sea_islands_official.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "Red Sea Development Company's official film of the untouched islands, April 2019: rock, sand spit, dolphins, reef. No people.",
+      "subject": "place",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=tTfhwZtIjX4",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 0.15,
+          "out": 2.81,
+          "shows": "Dark rocky shore over clear water"
+        },
+        {
+          "in": 3.11,
+          "out": 8.07,
+          "shows": "Birds over a white sand spit"
+        },
+        {
+          "in": 9.0,
+          "out": 14.7,
+          "shows": "Dolphins from above"
+        },
+        {
+          "in": 21.34,
+          "out": 24.62,
+          "shows": "Turtle over a reef"
+        },
+        {
+          "in": 28.26,
+          "out": 33.34,
+          "shows": "Clownfish in orange anemone"
+        },
+        {
+          "in": 36.6,
+          "out": 40.0,
+          "shows": "Fish under a coral arch"
+        }
+      ],
+      "source_label": "Video: Red Sea Global, 2019",
+      "chapter": 4,
+      "note": "Generic place. Filmed years before any Ronaldo link: never pair with the beach-closure claim."
+    },
+    {
+      "filename": "31_red_sea_film_ur.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "Ronaldo's own channel on 'The Red Sea Project', Aug 2024: aerials, resort spaces, and Ronaldo in studio talking about privacy",
+      "subject": "place",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=HQ8gIrd4Gyo",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.88,
+        0.02,
+        0.1,
+        0.06
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 4.11,
+          "out": 7.29,
+          "shows": "Open sea with birds, then sunset with the title 'The Red Sea Project'"
+        },
+        {
+          "in": 15.79,
+          "out": 17.37,
+          "shows": "Blue sky over a white sand bar"
+        },
+        {
+          "in": 32.15,
+          "out": 33.93,
+          "shows": "Ronaldo in studio talking, No. 7 shirt behind him"
+        },
+        {
+          "in": 37.95,
+          "out": 40.33,
+          "shows": "Quote 'I can't go anywhere on the planet where nobody recognizes me' over an aerial of a reef island at sunset"
+        },
+        {
+          "in": 86.03,
+          "out": 87.33,
+          "shows": "Ronaldo on a leather sofa in his studio, wide shot"
+        }
+      ],
+      "source_label": "Video: UR Cristiano, 2024",
+      "chapter": 4,
+      "note": "UR bug top right. Skip 18-29 s (likely renders), 57-59 s (his son) and 69-71 s (beach couple). Never pair with the beach-closure claim."
+    },
+    {
+      "filename": "32_diplomatic_quarter_drive.mp4",
+      "type": "video",
+      "width": 608,
+      "height": 1080,
+      "description": "Dashcam-style phone film driving through Riyadh's Diplomatic Quarter, 2017: palms, mud-brick buildings, an 'Embassy Area' sign",
+      "subject": "place",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=WPCSRj9y5y4",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": true,
+      "text_box": [
+        0,
+        0.72,
+        1,
+        0.28
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 33.0,
+          "out": 40.0,
+          "shows": "Mud-brick style building with road signs"
+        },
+        {
+          "in": 62.0,
+          "out": 69.0,
+          "shows": "Palm-lined road past a building; a brown 'Embassy Area' sign passes mid-segment"
+        },
+        {
+          "in": 84.0,
+          "out": 91.0,
+          "shows": "Palm-lined road"
+        }
+      ],
+      "source_label": "Video: Fekrekeko, CC BY, 2017",
+      "chapter": 4,
+      "note": "Dashboard fills the lower frame: crop. Vertical, phone quality. Research found no report he lived here: place only."
+    },
+    {
+      "filename": "33_debut_leads_out.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1600,
+      "description": "Ronaldo with captain's armband leading Al-Nassr out of the tunnel, crowd and 'Al-Nassr FC' banner above, debut v Al-Ettifaq",
+      "subject": "person",
+      "focus": [
+        0.51,
+        0.2
+      ],
+      "source": "real",
+      "source_url": "https://thenationalnews.com/sport/football/2023/01/22/cristiano-ronaldo-in-the-worldwide-spotlight-as-he-makes-al-nassr-debut",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.45,
+        0.2,
+        0.55,
+        0.1
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Getty, via The National, 2023",
+      "chapter": 5,
+      "note": "A child mascot in shot; stadium banner only."
+    },
+    {
+      "filename": "34_acc_final_bench_run.jpg",
+      "type": "image",
+      "width": 2962,
+      "height": 2184,
+      "description": "Al-Nassr substitutes and staff sprinting onto the pitch celebrating at the 2023 Arab Club Champions Cup final; the Reuters caption places Ronaldo with them",
+      "subject": "event",
+      "focus": [
+        0.45,
+        0.25
+      ],
+      "source": "real",
+      "source_url": "https://dailysabah.com/sports/football/ronaldo-leads-al-nassr-arab-club-champions-cup-win",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Reuters, via Daily Sabah, 2023",
+      "chapter": 5,
+      "enhanced": "enhanced/34_acc_final_bench_run.jpg",
+      "enhancement": "tone restore + light denoise (already high-res)",
+      "enhanced_size": [
+        2400,
+        1769
+      ]
+    },
+    {
+      "filename": "35_kings_cup_head_in_hands.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1545,
+      "description": "King's Cup final: Ronaldo kneeling with his face in his hands as teammates bend over him",
+      "subject": "person",
+      "focus": [
+        0.47,
+        0.82
+      ],
+      "source": "real",
+      "source_url": "https://www.thenationalnews.com/sport/football/2024/06/01/cristiano-ronaldo-left-in-tears-as-al-hilal-beat-al-nassr-on-penalties-to-win-kings-cup",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Reuters, via The National, 2024",
+      "chapter": 5
+    },
+    {
+      "filename": "36_kings_cup_hands_on_hips.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 1669,
+      "description": "Ronaldo standing, hands on hips, looking up after the final, Al-Hilal player on his knees in front",
+      "subject": "person",
+      "focus": [
+        0.47,
+        0.2
+      ],
+      "source": "real",
+      "source_url": "https://www.thenationalnews.com/sport/football/2024/06/01/cristiano-ronaldo-left-in-tears-as-al-hilal-beat-al-nassr-on-penalties-to-win-kings-cup",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Reuters, via The National, 2024",
+      "chapter": 5
+    },
+    {
+      "filename": "37_chapter_over_apr2025.jpg",
+      "type": "image",
+      "width": 1500,
+      "height": 1000,
+      "description": "Ronaldo in yellow kit and armband gesturing, blurred crowd behind, Jeddah, 30 April 2025. NBC ran it with its 'chapter is over' report.",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.17
+      ],
+      "source": "real",
+      "source_url": "https://www.nbcnews.com/sports/soccer/ronaldo-al-nassr-rcna209178",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Yasser Bakhsh / Getty, via NBC News, 2025",
+      "chapter": 5,
+      "note": "It is not the Instagram post itself."
+    },
+    {
+      "filename": "38_title_hand_on_heart.jpg",
+      "type": "image",
+      "width": 3136,
+      "height": 1764,
+      "description": "Al-Nassr v Damac, 21 May 2026: Ronaldo in white kit smiling broadly, eyes nearly shut, hand on his chest",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.25
+      ],
+      "source": "real",
+      "source_url": "https://www.goal.com/en/lists/video-cristiano-ronaldo-breaks-down-in-tears-before-leading-al-nassr-drum-celebration-winning-first-saudi-pro-league-title/blt683ef0f4973086a0",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Getty, via GOAL, 2026",
+      "chapter": 5
+    },
+    {
+      "filename": "39_title_confetti_trophy.png",
+      "type": "image",
+      "width": 1200,
+      "height": 800,
+      "description": "Confetti falling as Ronaldo, arm raised in a crowd of teammates, celebrates with the league trophy",
+      "subject": "event",
+      "focus": [
+        0.55,
+        0.55
+      ],
+      "source": "real",
+      "source_url": "https://www.khaleejtimes.com/sports/football/ronaldo-al-nassr-win-saudi-league-title-4-1-damac",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: AFP, via Khaleej Times, 2026",
+      "chapter": 5,
+      "enhanced": "enhanced/39_title_confetti_trophy.jpg",
+      "enhancement": "realesrgan-x4plus + tone restore",
+      "enhanced_size": [
+        2400,
+        1600
+      ]
+    },
+    {
+      "filename": "40_tehran_leads_team.jpg",
+      "type": "image",
+      "width": 960,
+      "height": 640,
+      "description": "Ronaldo in navy Al-Nassr kit with armband leading teammates across the pitch at Azadi Stadium, 19 Sept 2023",
+      "subject": "person",
+      "focus": [
+        0.25,
+        0.2
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:(Tehran)_Persepolis_F.C._v_Al_Nassr_FC,_19_September_2023_14.jpg",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": true,
+      "text_box": [
+        0.02,
+        0.72,
+        0.36,
+        0.18
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Mehr News/Foad Ashtari · CC BY 4.0 · Wikimedia",
+      "chapter": 5,
+      "note": "Mehr News credit burned in lower left: crop it, keep the on-screen credit. Tehran away match."
+    },
+    {
+      "filename": "41_tehran_no7_back.jpg",
+      "type": "image",
+      "width": 960,
+      "height": 640,
+      "description": "Ronaldo's back, 'Ronaldo 7' navy shirt and armband, greeting Persepolis players at Azadi, 19 Sept 2023",
+      "subject": "person",
+      "focus": [
+        0.42,
+        0.22
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:(Tehran)_Persepolis_F.C._v_Al_Nassr_FC,_19_September_2023_15.jpg",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": true,
+      "text_box": [
+        0.02,
+        0.72,
+        0.36,
+        0.18
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Mehr News/Foad Ashtari · CC BY 4.0 · Wikimedia",
+      "chapter": 5,
+      "note": "Mehr News credit burned in lower left: crop it, keep the on-screen credit. Tehran away match."
+    },
+    {
+      "filename": "42_debut_espn_highlights.mp4",
+      "type": "video",
+      "width": 1280,
+      "height": 720,
+      "description": "ESPN FC highlights of Ronaldo's debut, Al-Nassr 1-0 Al-Ettifaq, 22 Jan 2023",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=SiEnx5nTYN0",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0,
+        0,
+        0.2,
+        0.05
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 0.15,
+          "out": 5.29,
+          "shows": "Teams in the tunnel with animated graphics"
+        },
+        {
+          "in": 6.0,
+          "out": 12.17,
+          "shows": "Referee, then Ronaldo lined up with armband. Child mascot in shot."
+        },
+        {
+          "in": 12.47,
+          "out": 15.09,
+          "shows": "Fan sign reading 'I wish you the best but you are only the best'"
+        },
+        {
+          "in": 82.0,
+          "out": 89.0,
+          "shows": "Ronaldo running at a defender, then a wide view"
+        },
+        {
+          "in": 108.87,
+          "out": 113.0,
+          "shows": "Ronaldo's acrobatic attempt, ending on the ground"
+        },
+        {
+          "in": 134.0,
+          "out": 141.0,
+          "shows": "Teammate No. 94 talking, then Ronaldo's No. 7 shirt"
+        },
+        {
+          "in": 143.0,
+          "out": 147.17,
+          "shows": "Ronaldo walking beside a green-shirted opponent; a child mascot in shot"
+        }
+      ],
+      "source_label": "Video: ESPN FC, 2023",
+      "chapter": 5,
+      "note": "Score bug top left. 147 s onward is the ESPN studio anchor: never use."
+    },
+    {
+      "filename": "43_record_35_goals_alnassr_official.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "Al-Nassr's official highlights of Al-Nassr 4-2 Al-Ittihad, 27 May 2024, the match in which he reached 35 league goals",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=c89nbOazlys",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.75,
+        0,
+        0.25,
+        0.07
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 4.5,
+          "out": 11.5,
+          "shows": "Team lined up for the anthem"
+        },
+        {
+          "in": 112.85,
+          "out": 119.5,
+          "shows": "Ronaldo with the ball and armband, then a wide view"
+        },
+        {
+          "in": 240.5,
+          "out": 246.77,
+          "shows": "Ronaldo with arms out celebrating, then teammates piling on at the corner"
+        },
+        {
+          "in": 352.5,
+          "out": 359.5,
+          "shows": "Players and staff by the bench, then Ronaldo shaking hands with staff"
+        }
+      ],
+      "source_label": "Video: Al-Nassr FC, 2024",
+      "chapter": 5,
+      "note": "SSC bug top right and score bug top left: crop."
+    },
+    {
+      "filename": "44_kings_cup_final_end_ssc.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "SSC's coverage of the end of the King's Cup final, 31 May 2024: Ronaldo reacts, and Mohammed bin Salman presents the trophy to Al-Hilal",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=wLReyCawQ5I",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.8,
+        0,
+        0.2,
+        0.07
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 185.5,
+          "out": 192.5,
+          "shows": "Mohammed bin Salman seated beside the trophy in the royal box"
+        },
+        {
+          "in": 289.5,
+          "out": 296.5,
+          "shows": "Ronaldo close, looking down, armband on, then a penalty from a wide view"
+        },
+        {
+          "in": 313.23,
+          "out": 319.5,
+          "shows": "Al-Hilal players celebrating, then staff embracing"
+        },
+        {
+          "in": 345.5,
+          "out": 349.33,
+          "shows": "Mohammed bin Salman handing the trophy to Al-Hilal players"
+        },
+        {
+          "in": 362.5,
+          "out": 369.5,
+          "shows": "Mohammed bin Salman with the trophy and Al-Hilal's captain"
+        }
+      ],
+      "source_label": "Video: SSC, 2024",
+      "chapter": 5,
+      "note": "SSC bug top right and score bug top left: crop. Clip file starts at 32:30 of the original upload, so segment times are for this file. No tears here: see kings_cup_dugout_tears."
+    },
+    {
+      "filename": "45_the_story_continues_ur.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "'The Story Continues...' from Ronaldo's own channel, released 26 June 2025, the day of the extension: palm-lined beach resort, then Ronaldo looking into the camera",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=Drj1-WLCm1o",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 2.0,
+          "out": 5.88,
+          "shows": "Aerial of a beach resort with overwater villas"
+        },
+        {
+          "in": 6.18,
+          "out": 9.77,
+          "shows": "Palm trees against blue sky"
+        },
+        {
+          "in": 18.35,
+          "out": 21.78,
+          "shows": "Bare feet walking on white sand"
+        },
+        {
+          "in": 22.08,
+          "out": 24.9,
+          "shows": "Ronaldo from behind walking toward the sea"
+        },
+        {
+          "in": 34.18,
+          "out": 39.67,
+          "shows": "Ronaldo with his head bowed, palms behind"
+        },
+        {
+          "in": 35.0,
+          "out": 39.67,
+          "shows": "Ronaldo lifting his head to look at the camera"
+        }
+      ],
+      "source_label": "Video: UR Cristiano, 2025",
+      "chapter": 5,
+      "note": "For the extension beat. Never pair with the beach-closure claim."
+    },
+    {
+      "filename": "46_title_damac_spl_official.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "Saudi Pro League's official highlights of Al-Nassr 4-1 Damac and the trophy ceremony, 21 May 2026",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=yuK9TrOqR1E",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.85,
+        0,
+        0.15,
+        0.05
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 18.99,
+          "out": 22.33,
+          "shows": "Aerial of the stadium with a pitch display before kick-off"
+        },
+        {
+          "in": 268.95,
+          "out": 274.5,
+          "shows": "Ronaldo close in profile, then a wide view"
+        },
+        {
+          "in": 423.5,
+          "out": 426.91,
+          "shows": "Ronaldo in white kit, looking down, then thumb up"
+        },
+        {
+          "in": 496.5,
+          "out": 501.63,
+          "shows": "Ronaldo's No. 7 back in the white kit with a flag, score graphic 4-1"
+        },
+        {
+          "in": 547.5,
+          "out": 554.5,
+          "shows": "Ronaldo receiving the trophy on the stand"
+        },
+        {
+          "in": 568.5,
+          "out": 573.91,
+          "shows": "Team lifting the trophy under a Champions arch"
+        }
+      ],
+      "source_label": "Video: Saudi Pro League, 2026",
+      "chapter": 5,
+      "note": "League logos top right, score bug on match shots."
+    },
+    {
+      "filename": "47_title_champions_ur.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "'Champions, what a night!' from Ronaldo's own channel, 22 May 2026: tears, the flag, the trophy and fireworks, without score graphics",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=Ca0z9n8Uivo",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 31.5,
+          "out": 38.5,
+          "shows": "Ronaldo with raised arms, Portuguese flag, among staff"
+        },
+        {
+          "in": 35.5,
+          "out": 39.17,
+          "shows": "Ronaldo embracing a staff member"
+        },
+        {
+          "in": 40.75,
+          "out": 46.45,
+          "shows": "Squad lifting the trophy, 'Champions 25/26' sign"
+        },
+        {
+          "in": 49.83,
+          "out": 52.53,
+          "shows": "Ronaldo's emotional smile, stands behind"
+        },
+        {
+          "in": 53.87,
+          "out": 55.29,
+          "shows": "Long embrace seen from behind"
+        },
+        {
+          "in": 86.5,
+          "out": 93.5,
+          "shows": "Ronaldo with armband and headband among officials"
+        },
+        {
+          "in": 99.5,
+          "out": 106.5,
+          "shows": "Ronaldo handed the trophy by officials"
+        },
+        {
+          "in": 119.5,
+          "out": 126.5,
+          "shows": "Ronaldo with his medal, holding the trophy"
+        },
+        {
+          "in": 139.5,
+          "out": 146.5,
+          "shows": "Squad with trophy aloft, then a dark aerial"
+        },
+        {
+          "in": 167.5,
+          "out": 174.5,
+          "shows": "Aerial of players piled under the arch"
+        },
+        {
+          "in": 187.5,
+          "out": 189.69,
+          "shows": "Aerial of fireworks over the stadium"
+        }
+      ],
+      "source_label": "Video: UR Cristiano, 2026",
+      "chapter": 5
+    },
+    {
+      "filename": "48_title_phone_angle_vertical.mp4",
+      "type": "video",
+      "width": 576,
+      "height": 1024,
+      "description": "'A special moment, from a special angle': vertical phone film of the title ceremony from pitch level, from Ronaldo's channel, 22 May 2026",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=Y8GBVHkrdD8",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 5.0,
+          "out": 12.0,
+          "shows": "Phone view: Ronaldo walking toward the stand"
+        },
+        {
+          "in": 55.0,
+          "out": 62.0,
+          "shows": "Ronaldo on the stand, distant, with the trophy, stadium full of lights"
+        },
+        {
+          "in": 85.0,
+          "out": 92.0,
+          "shows": "Squad behind the 'Champions' sign"
+        },
+        {
+          "in": 105.0,
+          "out": 112.0,
+          "shows": "Squad and confetti, purple light"
+        },
+        {
+          "in": 122.0,
+          "out": 127.84,
+          "shows": "Fireworks over the stadium"
+        }
+      ],
+      "source_label": "Video: UR Cristiano, 2026",
+      "chapter": 5,
+      "note": "Already vertical. Handheld; a stranger crosses at 58 and 69 s."
+    },
+    {
+      "filename": "49_arab_cup_final_goals_official.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "Al-Nassr's official goals video of the 2023 Arab Club Champions Cup final, Al-Nassr 2-1 Al-Hilal, 12 Aug 2023",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=8VWhGXcLing",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.8,
+        0,
+        0.2,
+        0.07
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 49.5,
+          "out": 52.58,
+          "shows": "Ronaldo in front of a goal net, gesturing, armband on"
+        },
+        {
+          "in": 84.0,
+          "out": 91.0,
+          "shows": "An Al-Nassr attack and the ball in the net"
+        },
+        {
+          "in": 135.53,
+          "out": 140.0,
+          "shows": "Ronaldo close up with a teammate"
+        },
+        {
+          "in": 142.4,
+          "out": 145.08,
+          "shows": "Ronaldo standing, yellow kit and armband, stands behind"
+        },
+        {
+          "in": 182.0,
+          "out": 184.29,
+          "shows": "Ronaldo pointing one finger up"
+        },
+        {
+          "in": 220.47,
+          "out": 223.62,
+          "shows": "Al-Nassr fans waving flags, then players celebrating"
+        },
+        {
+          "in": 224.0,
+          "out": 228.67,
+          "shows": "Team huddled by the corner in celebration"
+        },
+        {
+          "in": 315.02,
+          "out": 318.55,
+          "shows": "Ronaldo with a hand over his mouth, waiting"
+        },
+        {
+          "in": 58.48,
+          "out": 60.22,
+          "shows": "Al-Hilal fans with a red flare"
+        }
+      ],
+      "source_label": "Video: Al-Nassr FC, 2023",
+      "chapter": 5,
+      "note": "SSC bug top right, score bug top left: crop. No trophy lift here."
+    },
+    {
+      "filename": "50_al_shabab_feb2024_match_official.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "Al-Nassr's official highlights of Al-Shabab 2-3 Al-Nassr, 25 Feb 2024, the match after which he was banned. The gesture itself is NOT in the listed segments.",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=nTED5Qcz760",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.8,
+        0,
+        0.2,
+        0.07
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 35.0,
+          "out": 42.0,
+          "shows": "Wide match action"
+        },
+        {
+          "in": 99.83,
+          "out": 105.0,
+          "shows": "Ronaldo kissing the ball before a penalty, then a wide view"
+        },
+        {
+          "in": 344.78,
+          "out": 346.75,
+          "shows": "Al-Nassr fans in the stands with a flare"
+        }
+      ],
+      "source_label": "Video: Al-Nassr FC, 2024",
+      "chapter": 5,
+      "note": "Owner rule: no close-up of the gesture. Do not use 336-340 s (Ronaldo's back, arm raised toward the stands) or anything outside these segments."
+    },
+    {
+      "filename": "51_kings_cup_dugout_tears.mp4",
+      "type": "video",
+      "width": 1440,
+      "height": 1080,
+      "description": "Broadcast footage of Ronaldo crying in the dugout after the King's Cup final, 31 May 2024, face wet, then wiping his eye, red seats behind. Reuploaded on YouTube by a third party.",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=LLQiG-oeHu0",
+      "rights": "news_media",
+      "risk": "high",
+      "burned_in_text": true,
+      "text_box": [
+        0.68,
+        0.02,
+        0.32,
+        0.1
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 6.02,
+          "out": 13.0,
+          "shows": "Blurred movement, then Ronaldo's tear-stained face in close up"
+        },
+        {
+          "in": 10.0,
+          "out": 12.81,
+          "shows": "Ronaldo's tear-stained face, close up"
+        },
+        {
+          "in": 17.02,
+          "out": 21.5,
+          "shows": "Ronaldo seated, head bowed, then raising a hand to his face"
+        },
+        {
+          "in": 17.02,
+          "out": 23.5,
+          "shows": "Ronaldo wiping his eye with one hand"
+        }
+      ],
+      "source_label": "Broadcast footage, King's Cup final, 2024",
+      "chapter": 5,
+      "note": "'Trend with Riyad' creator label top right: must be cropped (keep below y 12%). Original broadcaster not stated by the uploader. Third-party reupload: replace with a licensed copy if one can be found."
+    },
+    {
+      "filename": "52_arab_cup_trophy_ceremony_official.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "Al-Nassr's official film of the 2023 Arab Club Champions Cup trophy celebration, Taif, 12 Aug 2023: Ronaldo with the gold trophy, the squad under the 'King Salman Club Cup' arch, fireworks",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=Sy84HzYs2I4",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.8,
+        0,
+        0.2,
+        0.07
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 2.5,
+          "out": 9.5,
+          "shows": "Ronaldo holding the gold trophy among staff"
+        },
+        {
+          "in": 18.5,
+          "out": 25.5,
+          "shows": "Ronaldo walking toward camera carrying the gold trophy"
+        },
+        {
+          "in": 22.5,
+          "out": 29.5,
+          "shows": "Ronaldo in profile with the trophy, then from behind beside a man in white"
+        },
+        {
+          "in": 47.8,
+          "out": 52.1,
+          "shows": "High view of the squad under the arch"
+        },
+        {
+          "in": 52.4,
+          "out": 55.48,
+          "shows": "Fireworks over the stadium"
+        },
+        {
+          "in": 65.53,
+          "out": 68.98,
+          "shows": "Confetti falling over players"
+        },
+        {
+          "in": 114.5,
+          "out": 121.45,
+          "shows": "Ronaldo's back, 'Ronaldo 7', hugging a staff member"
+        },
+        {
+          "in": 175.88,
+          "out": 179.85,
+          "shows": "Ronaldo laughing at camera, close"
+        }
+      ],
+      "source_label": "Video: Al-Nassr FC, 2023",
+      "chapter": 5,
+      "note": "SSC bug top right; Arabic title banner from about 156 s. File is cut from 22:10 of the upload."
+    },
+    {
+      "filename": "53_founding_day_daqlah.jpg",
+      "type": "image",
+      "width": 2400,
+      "height": 2400,
+      "description": "Ronaldo in a traditional patterned Saudi daqlah robe against a plain light background, Founding Day, Feb 2023",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.2
+      ],
+      "source": "real",
+      "source_url": "https://www.thenationalnews.com/lifestyle/2023/02/23/cristiano-ronaldo-wears-traditional-saudi-thobe-and-daqlah-to-celebrate-founding-day",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Al Nassr/Instagram via The National, 2023",
+      "chapter": 6,
+      "note": "Cultural dress only. Never imply conversion."
+    },
+    {
+      "filename": "54_ardah_jenadriyah.jpg",
+      "type": "image",
+      "width": 1920,
+      "height": 1434,
+      "description": "Ardah sword dance at the Jenadriyah festival, men with swords and a green flag before mud-brick walls, 2012",
+      "subject": "event",
+      "focus": [
+        0.55,
+        0.5
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jenadriyah_27_(12).JPG",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Abodi009 · CC BY-SA 3.0 · Wikimedia",
+      "chapter": 6,
+      "note": "Generic cultural picture, not Ronaldo's event.",
+      "enhanced": "enhanced/54_ardah_jenadriyah.jpg",
+      "enhancement": "tone restore + light denoise (already high-res)",
+      "enhanced_size": [
+        1920,
+        1434
+      ]
+    },
+    {
+      "filename": "55_founding_day_alnassr_film.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "Founding Day, 22 Feb 2023: Al-Nassr's produced film of Ronaldo and teammates in traditional dress with coffee and the sword dance, as carried by ShanghaiEye",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=n3DVXPXzTRg",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.9,
+        0.9,
+        0.1,
+        0.1
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 14.67,
+          "out": 17.57,
+          "shows": "Ronaldo in white behind a table card showing the club crest"
+        },
+        {
+          "in": 67.47,
+          "out": 72.0,
+          "shows": "Ronaldo standing in the patterned daqlah robe, stadium behind"
+        },
+        {
+          "in": 109.19,
+          "out": 113.37,
+          "shows": "Ronaldo with sword among dancers, green flag"
+        },
+        {
+          "in": 129.59,
+          "out": 131.69,
+          "shows": "Ronaldo with raised sword, smiling"
+        },
+        {
+          "in": 137.0,
+          "out": 143.13,
+          "shows": "Line of men with raised swords"
+        },
+        {
+          "in": 152.23,
+          "out": 154.37,
+          "shows": "Group shot with green flag"
+        }
+      ],
+      "source_label": "Video: Al-Nassr, via ShanghaiEye, 2023",
+      "chapter": 6,
+      "note": "Small club logo bottom right. Skip the portraits of the three leaders at 0-2 s unless the script needs them. Cultural event only: never imply conversion."
+    },
+    {
+      "filename": "56_al_shabab_may2023_match_official.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "Al-Nassr's official extended highlights of Al-Nassr 3-2 Al-Shabab, May 2023, the match of the sujood clip. The prostration isn't in the listed segments.",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=oYzuDiKua1k",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.8,
+        0,
+        0.2,
+        0.07
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 409.0,
+          "out": 416.0,
+          "shows": "Wide view, then Ronaldo looking up, arms out"
+        },
+        {
+          "in": 884.0,
+          "out": 891.0,
+          "shows": "A diving goalkeeper and a goal"
+        },
+        {
+          "in": 909.0,
+          "out": 916.0,
+          "shows": "A goalkeeper celebrating, then Al-Nassr players huddled, backs to camera"
+        },
+        {
+          "in": 1160.42,
+          "out": 1165.08,
+          "shows": "A fan in a 'Ronaldo 7' shirt waving a large club flag"
+        }
+      ],
+      "source_label": "Video: Al-Nassr FC, 2023",
+      "chapter": 6,
+      "note": "Not proof of the sujood. Never imply conversion."
+    },
+    {
+      "filename": "57_wh_dinner_east_room.jpg",
+      "type": "image",
+      "width": 1200,
+      "height": 675,
+      "description": "White House dinner: Ronaldo at a candlelit table looking toward the camera, a man in a keffiyeh beside him, guests in the foreground, 18 Nov 2025",
+      "subject": "person",
+      "focus": [
+        0.43,
+        0.42
+      ],
+      "source": "real",
+      "source_url": "https://www.deccanherald.com/amp/story/world%2Fronaldo-attends-white-house-meeting-between-trump-and-saudi-crown-prince-3802587",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Reuters, via Deccan Herald, 2025",
+      "chapter": 7
+    },
+    {
+      "filename": "58_wedding_bands_hands.jpg",
+      "type": "image",
+      "width": 819,
+      "height": 1024,
+      "description": "Close-up of two hands with plain gold wedding bands and a large diamond ring on white fabric, the couple's published wedding photo",
+      "subject": "document",
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "source": "real",
+      "source_url": "https://www.hellomagazine.com/fashion/celebrity-style/918043/cristiano-ronaldos-new-wife-georgina-debuts-bridal-outfit-after-wedding/",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Instagram, via HELLO!, Aug 2026",
+      "chapter": 7,
+      "note": "The only published wedding image cataloged.",
+      "enhanced": "enhanced/58_wedding_bands_hands.jpg",
+      "enhancement": "lanczos2x+unsharp (document: no GAN)",
+      "enhanced_size": [
+        1638,
+        2048
+      ]
+    },
+    {
+      "filename": "59_bid_fans_celebrate.jpg",
+      "type": "image",
+      "width": 3000,
+      "height": 2000,
+      "description": "Fans in green Saudi shirts cheering at night with a phone raised, Riyadh, 11 Dec 2024, as Saudi Arabia is named 2034 host",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "source": "real",
+      "source_url": "https://www.dailysabah.com/sports/football/saudi-arabia-lights-up-after-landing-2034-world-cup-hosting-rights/amp",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Reuters, via Daily Sabah, 2024",
+      "chapter": 7,
+      "enhanced": "enhanced/59_bid_fans_celebrate.jpg",
+      "enhancement": "tone restore + light denoise (already high-res)",
+      "enhanced_size": [
+        2400,
+        1600
+      ]
+    },
+    {
+      "filename": "60_wh_colonnade_walk.jpg",
+      "type": "image",
+      "width": 3000,
+      "height": 2000,
+      "description": "Trump walking along the West Colonnade with Ronaldo and Georgina Rodriguez, 18 Nov 2025",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.3
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:President_Donald_Trump_walks_with_Cristiano_Ronaldo_and_Georgina_Rodr%C3%ADguez_on_the_West_Colonnade_of_the_White_House_(54934212861).jpg",
+      "rights": "public_record",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: The White House · public domain",
+      "chapter": 7
+    },
+    {
+      "filename": "61_wh_oval_b.jpg",
+      "type": "image",
+      "width": 3000,
+      "height": 2000,
+      "description": "Ronaldo and Trump side by side giving thumbs up by the flags in the Oval Office, 18 Nov 2025",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.3
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:President_Donald_Trump_meets_with_Cristiano_Ronaldo_in_the_Oval_Office_(54934459299).jpg",
+      "rights": "public_record",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: The White House · public domain",
+      "chapter": 7
+    },
+    {
+      "filename": "62_wh_oval_resolute_desk.jpg",
+      "type": "image",
+      "width": 3000,
+      "height": 2000,
+      "description": "Trump, back to camera at the Resolute Desk, facing Ronaldo and Georgina Rodriguez, 18 Nov 2025",
+      "subject": "person",
+      "focus": [
+        0.6,
+        0.45
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:President_Donald_Trump_meets_with_Cristiano_Ronaldo_and_Georgina_Rodr%C3%ADguez_in_the_Oval_Office_(54934212986).jpg",
+      "rights": "public_record",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: The White House · public domain",
+      "chapter": 7
+    },
+    {
+      "filename": "63_cascais_estoril_bay.jpg",
+      "type": "image",
+      "width": 1920,
+      "height": 1440,
+      "description": "View over Estoril toward Cascais bay, tiled roofs, palms and sea, 2012",
+      "subject": "place",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "source": "real",
+      "source_url": "https://commons.wikimedia.org/wiki/File:View_on_Estoril_and_Cascais_2012.jpg",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Photo: Apetrov09703 · CC BY-SA 4.0 · Wikimedia",
+      "chapter": 7,
+      "note": "The place only; nothing from the wedding.",
+      "enhanced": "enhanced/63_cascais_estoril_bay.jpg",
+      "enhancement": "tone restore + light denoise (already high-res)",
+      "enhanced_size": [
+        1920,
+        1440
+      ]
+    },
+    {
+      "filename": "64_white_house_arrival_mbs.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "The White House's official video of the arrival ceremony for Mohammed bin Salman, 18 Nov 2025",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=gxWYZ1IYe-Y",
+      "rights": "public_record",
+      "risk": "low",
+      "burned_in_text": true,
+      "text_box": [
+        0,
+        0.82,
+        1,
+        0.18
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 204.5,
+          "out": 211.5,
+          "shows": "Cavalry with flags on the South Lawn"
+        },
+        {
+          "in": 233.5,
+          "out": 240.5,
+          "shows": "Crown prince and Trump greeting on a red carpet between flags"
+        },
+        {
+          "in": 290.5,
+          "out": 297.5,
+          "shows": "Trump and the crown prince standing for salutes at the door"
+        },
+        {
+          "in": 305.5,
+          "out": 312.5,
+          "shows": "Trump and the crown prince turning to enter"
+        }
+      ],
+      "source_label": "Video: The White House, 2025",
+      "chapter": 7,
+      "note": "Permanent 'Text POTUS' banner along the bottom: crop it. Ronaldo is not in this clip."
+    },
+    {
+      "filename": "65_white_house_dinner_room_ap.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "AP video of the East Room dinner, 18 Nov 2025: candlelit tables, guests, Trump's speech naming Ronaldo",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=oDJp5so081g",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0,
+        0.55,
+        1,
+        0.3
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 14.0,
+          "out": 20.02,
+          "shows": "Guests standing among candlelit tables"
+        },
+        {
+          "in": 29.0,
+          "out": 36.0,
+          "shows": "Guests in tuxedos around tables, gold curtains"
+        },
+        {
+          "in": 52.08,
+          "out": 57.0,
+          "shows": "Long table with flowers and rows of guests"
+        },
+        {
+          "in": 84.0,
+          "out": 90.08,
+          "shows": "Wide of the East Room as guests stand"
+        },
+        {
+          "in": 104.0,
+          "out": 111.0,
+          "shows": "Trump at a lectern, subtitled mentioning Ronaldo and his son"
+        }
+      ],
+      "source_label": "Video: Associated Press, 2025",
+      "chapter": 7,
+      "note": "AP caption text on most shots, so use these segments only. Ronaldo's face isn't clear in the frames checked; this is the room."
+    },
+    {
+      "filename": "66_saudi_2034_yalla_official.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "Official Saudi 2034 film 'Yalla Yalla, Welcome to Saudi 34': Infantino's announcement, then dancers and stadium renders",
+      "subject": "event",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=bpUOsiu7GIw",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0,
+        0,
+        0.3,
+        0.15
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 3.5,
+          "out": 10.37,
+          "shows": "FIFA's Infantino opening the envelope at the lectern"
+        },
+        {
+          "in": 130.23,
+          "out": 135.5,
+          "shows": "Singers on a lit set in Saudi dress"
+        },
+        {
+          "in": 165.91,
+          "out": 168.45,
+          "shows": "'Welcome to Saudi 34' over fireworks"
+        }
+      ],
+      "source_label": "Video: Saudi Arabia FIFA World Cup 2034, 2024",
+      "chapter": 7,
+      "note": "Letterboxed. Stadium shots are renders of unbuilt venues: say 'planned' if used."
+    },
+    {
+      "filename": "67_vision_2030_official.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "Official Vision 2030 film 'A story of transformation', April 2024: landscapes, city, people",
+      "subject": "place",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=xI875iluUlU",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.2,
+        0.88,
+        0.6,
+        0.1
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 0.15,
+          "out": 1.13,
+          "shows": "Aerial of a sand spit and reef at sunset"
+        },
+        {
+          "in": 3.35,
+          "out": 5.09,
+          "shows": "Aerial of mountain roads"
+        },
+        {
+          "in": 6.31,
+          "out": 7.45,
+          "shows": "Downward aerial of KAFD towers"
+        },
+        {
+          "in": 11.23,
+          "out": 13.61,
+          "shows": "Woman on a skateboard, palms behind"
+        }
+      ],
+      "source_label": "Video: Saudi Vision 2030, 2024",
+      "chapter": 7,
+      "note": "Government promotion; Arabic subtitles from 21 s. Use as such."
+    },
+    {
+      "filename": "68_forbes_list_wikipedia_table.png",
+      "type": "image",
+      "width": 840,
+      "height": 1030,
+      "description": "Screenshot of Wikipedia's table of Forbes' highest-paid athletes: 2026 list with Ronaldo first at $300 million, 2025 list below with him at $275 million",
+      "subject": "document",
+      "focus": [
+        0.5,
+        0.2
+      ],
+      "source": "real",
+      "source_url": "https://en.wikipedia.org/wiki/Forbes_list_of_the_world%27s_highest-paid_athletes",
+      "rights": "wikimedia_cc",
+      "risk": "low",
+      "burned_in_text": true,
+      "text_box": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Wikipedia table of Forbes data, screenshot Nov 2026",
+      "chapter": 8,
+      "note": "Forbes estimates, not contract data. forbes.com itself refused the capture.",
+      "enhanced": "enhanced/68_forbes_list_wikipedia_table.jpg",
+      "enhancement": "lanczos2x+unsharp (document: no GAN)",
+      "enhanced_size": [
+        1800,
+        2060
+      ]
+    },
+    {
+      "filename": "69_si_contract_page_screenshot.png",
+      "type": "image",
+      "width": 1400,
+      "height": 1900,
+      "description": "Screenshot of Sports Illustrated's page headed 'Eye Watering Details Of Cristiano Ronaldo's New Al-Nassr Contract Emerge', with a photo of him. Grey advert block below; crop to the headline and photo.",
+      "subject": "document",
+      "focus": [
+        0.5,
+        0.2
+      ],
+      "source": "real",
+      "source_url": "https://www.si.com/onsi/soccer/real-madrid/legends/eye-watering-details-of-cristiano-ronaldo-new-al-nassr-contract-emerge",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.1,
+        0.05,
+        0.8,
+        0.55
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Sports Illustrated page, screenshot Nov 2026",
+      "chapter": 8,
+      "note": "Not The Sun's own page: SI relays The Sun's unconfirmed numbers. Say 'reported'.",
+      "enhanced": "enhanced/69_si_contract_page_screenshot.jpg",
+      "enhancement": "lanczos2x+unsharp (document: no GAN)",
+      "enhanced_size": [
+        1400,
+        1900
+      ]
+    },
+    {
+      "filename": "70_stayed_for_more_visit_saudi.mp4",
+      "type": "video",
+      "width": 1920,
+      "height": 1080,
+      "description": "'I came here to do what I love, but I #StayedForMore': Saudi tourism promotion fronted by Ronaldo, carrying Visit Saudi branding, 1 Sept 2025",
+      "subject": "person",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "real",
+      "source_url": "https://www.youtube.com/watch?v=JfMbboNYWX8",
+      "rights": "news_media",
+      "risk": "medium",
+      "burned_in_text": true,
+      "text_box": [
+        0.15,
+        0.88,
+        0.7,
+        0.1
+      ],
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": [
+        {
+          "in": 0.15,
+          "out": 1.53,
+          "shows": "Ronaldo's face in black and white"
+        },
+        {
+          "in": 6.79,
+          "out": 8.17,
+          "shows": "Extreme close up in black and white"
+        },
+        {
+          "in": 21.23,
+          "out": 22.13,
+          "shows": "Ronaldo close up in motion, black and white"
+        }
+      ],
+      "source_label": "Video: UR Cristiano / Visit Saudi, 2025",
+      "chapter": 8,
+      "note": "Burned-in English subtitles and location labels. Promotional: say so if used. Fee, if any, not reported in research."
+    },
+    {
+      "filename": "71_card_table_pay_by_season.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "Pay by season table, 2022/23 to 2026/27, with basis per row; tagged REPORTED, ESTIMATE, contract never published",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "table",
+      "card_type": "table",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: CBS, AFP source, Romano, Forbes, The Sun"
+    },
+    {
+      "filename": "72_card_compare_original_deal_2022.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "Original 2022 deal: CBS about $75m a year basic versus total package about EUR 200m (AFP source 'more than', Romano near); tagged REPORTED",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "comparison",
+      "card_type": "comparison",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: CBS, AFP source, Romano"
+    },
+    {
+      "filename": "73_card_list_extension_the_sun.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "2025 extension as reported by The Sun: £178m base, £24.5m signing bonus, £38m year-2 bonus, single-source extras; tagged one tabloid, unconfirmed; end date June 2027 per ESPN, UPI",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "list",
+      "card_type": "list",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: The Sun; end date ESPN, UPI"
+    },
+    {
+      "filename": "74_card_breakdown_forbes_division.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "Forbes $235m on-field estimate divided into month, week, day and hour; tagged ESTIMATE and OUR DIVISION, not reported fees",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "breakdown",
+      "card_type": "breakdown",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: Forbes 2026; divisions ours"
+    },
+    {
+      "filename": "75_card_table_per_match.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "Appearances and dollars per game by season; tagged OUR DIVISION, no appearance fee has been reported",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "table",
+      "card_type": "table",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: RonaldoStats, Forbes, CBS; divisions ours"
+    },
+    {
+      "filename": "76_card_chart_forbes_on_off_field.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "Stacked bars of Forbes on-field and off-field estimates, 2023 to 2026, No. 1 each year; tagged ESTIMATE, not contract data",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "chart",
+      "card_type": "chart",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: Forbes via Wikipedia"
+    },
+    {
+      "filename": "77_card_timeline_joining.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "Timeline of the joining: July 2022 idea (Al-Muammar's account only), Nov 2022 United exit, 30 Dec signing, 3 Jan 2023 unveiling",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "timeline",
+      "card_type": "timeline",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: Al-Muammar, AP, Al-Nassr, The National"
+    },
+    {
+      "filename": "78_card_timeline_football.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "Football timeline: 2023 Arab Club Champions Cup, 2024 35-goal record, 2024 King's Cup final loss, 2026 league title",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "timeline",
+      "card_type": "timeline",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: Wikipedia, ESPN, Guinness, AP"
+    },
+    {
+      "filename": "79_card_claim_law_changed.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "Claim check, verdict NO EVIDENCE: Saudi law changed for him; shows the 2019 hotel rule and EFE anonymous lawyers, Jan 2023",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "claim",
+      "card_type": "claim",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: Al Jazeera, EFE via Bio Bio Chile"
+    },
+    {
+      "filename": "80_card_claim_beach.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "Claim check, verdict UNVERIFIED: a Saudi beach closed for his family; no report found, nearest is an unconfirmed Riyadh park closure",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "claim",
+      "card_type": "claim",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: Mundo Deportivo via DNA India, Lokmarg"
+    },
+    {
+      "filename": "81_card_claim_99_lashes.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "Claim check, verdict FALSE: Iran sentenced him to 99 lashes; Iranian embassy in Spain denial and fact-checkers",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "claim",
+      "card_type": "claim",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: Iranian embassy, Factly, BOOM, Africa Check"
+    },
+    {
+      "filename": "82_card_claim_conversion.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "Claim check, verdict FALSE: conversion to Islam before King Salman; altered images, no statement or record",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "claim",
+      "card_type": "claim",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: PRNigeria, Lead Stories, New Arab"
+    },
+    {
+      "filename": "83_card_claim_stake.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "Claim check, verdict UNVERIFIED: 15% stake in Al-Nassr; conflicting reports of 5%, 15%, 20% priority, and PIF 100%",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "claim",
+      "card_type": "claim",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: GOAL, The Sun, Asharq Business, WST"
+    },
+    {
+      "filename": "84_card_list_where_he_lives.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "Where he lives: Four Seasons Kingdom Tower reported $250k to $300k a month, Nujuma villas purchase reported; tagged REPORTED, no price confirmed",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "list",
+      "card_type": "list",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: Gulf News, Mirror, Saudi Gazette, The Sun"
+    },
+    {
+      "filename": "85_card_quote_no_world_cup_clause.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "Al-Nassr's verbatim statement that the contract does not entail commitments to any World Cup bids; marked as a club denial, none from Ronaldo found",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "quote",
+      "card_type": "quote",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: Al-Nassr via Al Jazeera, ESPN"
+    },
+    {
+      "filename": "86_card_stat_goals_985.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "About 985 career goals as of 30 Oct 2026, 1,000 not reached; disputed goal 982 explained; 138 for Al-Nassr in 160 matches",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "stat",
+      "card_type": "stat",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: ESPN, Yahoo, RonaldoStats"
+    },
+    {
+      "filename": "87_card_list_what_saudi_got.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "What Saudi Arabia got: only sourced follower and spend numbers; states no credible figure found for shirt sales, tourism or broadcast audience",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "list",
+      "card_type": "list",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: Gulf News, Football Benchmark, Deloitte"
+    },
+    {
+      "filename": "88_card_stat_four_goals_wehda.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "All four goals in a 4-0 win over Al-Wehda, 9 Feb 2023, with debut 22 Jan and first goal 3 Feb",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "stat",
+      "card_type": "stat",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: TNT Sports, Gulf News, The National, Wikipedia"
+    },
+    {
+      "filename": "89_card_stat_final_gamba_osaka.png",
+      "type": "image",
+      "width": 1080,
+      "height": 1920,
+      "description": "AFC Champions League Two final lost 0-1 at home to Gamba Osaka, 16 May 2026; four finals lost at Al-Nassr by ESPN's count",
+      "subject": "card",
+      "visual_type": "card",
+      "content_type": "stat",
+      "card_type": "stat",
+      "focus": [
+        0.5,
+        0.35
+      ],
+      "source": "generated_card",
+      "source_url": null,
+      "rights": "generated",
+      "risk": "low",
+      "burned_in_text": false,
+      "text_box": null,
+      "vision_verified": true,
+      "low_res_ok": null,
+      "segments": null,
+      "source_label": "Data: ESPN, Arab News"
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+ "mode": "single",
+ "reviewed": "script.json",
+ "winner": "draft_3.json",
+ "verdict": "PASS",
+ "score": 8,
+ "pass_conditions": "No high-priority fact issue and no story score below 7. Apply the fixes and regenerate cards 71 and 79 before voice.",
+ "beat_id_note": "Ids moved in the redraft: the b40 line from the request is now in b43; the spoken faith statement is b12, not b10.",
+ "fixes": [
+  {
+   "beat": "b12",
+   "priority": "medium",
+   "issue": "This is the spoken faith statement (b10 is now Amnesty). 'As far as any record shows' is universal and drops the fact-checker attribution research_gaps requires ('not a convert, per fact-checks'). 'No statement about his faith' is wider than F038, which covers only 'being Catholic, in our reading'. It also departs from the earlier off-voice advice, which is acceptable because the owner asked for this item, if the wording stays inside the file.",
+   "old": "He's not a Muslim convert, as far as any record shows, and we found no statement from him about his faith.",
+   "rewrite": "Fact-checkers found no statement or record that he converted to Islam, so we won't label his faith."
+  },
+  {
+   "beat": "b06",
+   "priority": "medium",
+   "issue": "F006's 'only first-hand account' holds for Al-Nassr only. F011 (verified): Al-Hilal's president said on record 'Yes, we negotiated with Ronaldo' in summer 2022. Asked as 'who approached first?', the line hides the earlier Saudi approach, and it appears nowhere in the script or on card 77. Also add F011 to claims and a card 77 or on-screen line: 'Summer 2022: Al-Hilal talks, amount disputed.'",
+   "old": "The only first-hand account is from Al-Nassr's president then,",
+   "rewrite": "For Al-Nassr, the only first-hand account is from its president then,"
+  },
+  {
+   "beat": "b30",
+   "priority": "medium",
+   "issue": "'This season' has no anchor. It follows a June 2025 signing and precedes the year to May 2026, so it is heard as 2025/26, but the claim means 2026/27. It also says 'only breakdown' with no search scope.",
+   "old": "the only breakdown for this season",
+   "rewrite": "the only breakdown we found for the current season"
+  },
+  {
+   "beat": "b33",
+   "priority": "low",
+   "issue": "Flat negative; F025 says 'we found no report' and claim_checks says it cannot be ruled out. Same pattern as the earlier b40 fix.",
+   "old": "None has been reported.",
+   "rewrite": "We found none reported."
+  },
+  {
+   "beat": "b43",
+   "priority": "low",
+   "issue": "The writer's replacement line is factually sound: 'reported' hedges, and it names no payer or motive. But 'one way' never says which way, and 'reported money' is not how people talk. The rewrite stays clear of a payer. Keep the opinion tag.",
+   "old": "Reported money went one way, attention the other.",
+   "rewrite": "The reported money went to him, the attention went to Saudi Arabia."
+  },
+  {
+   "beat": "b21",
+   "priority": "low",
+   "issue": "On screen only: 'his only final win there until May 2026' implies a later final win, but May 2026 was a league match and the final was lost. Same defect flagged in draft 2 last round; F064 and the timeline carry the wording.",
+   "old": "his only final win there until May 2026",
+   "rewrite": "his only trophy there until May 2026"
+  },
+  {
+   "beat": "b30 (card 71)",
+   "priority": "medium",
+   "issue": "REGENERATE. The PNG and make_cards.py have no NBC $468m exclusion, though the beat's on_screen and claim rely on it. The card already fills the safe area to about y 1020 (limit 1030), so make room, for example in the source line.",
+   "rewrite": "Add: NBC's $468m, unattributed, excluded."
+  },
+  {
+   "beat": "b42 (card 79)",
+   "priority": "medium",
+   "issue": "REGENERATE. The PNG and make_cards.py have no UK advice line, though the beat's on_screen requires it. Also full to about y 1020; shorten the 2019 bullet. Add FCDO to the source line. Keep it away from the couple's names.",
+   "rewrite": "Add: UK FCDO: 'Sex outside of marriage and adultery are illegal, including for tourists.' Does not address cohabitation. No statute named."
+  }
+ ],
+ "factual_errors": [
+  "b12: universal wording, attribution dropped, wider than F038.",
+  "b06: 'only first-hand account' is true for Al-Nassr only; omits F011.",
+  "b30: 'this season' is unanchored and unscoped.",
+  "b33: flat negative, file says 'found no report'.",
+  "b21 on screen: 'only final win until May 2026'."
+ ],
+ "previous_fixes_applied": {
+  "b29 monthly maths": "yes, now b32",
+  "b40 closing": "yes with changed wording, now b43",
+  "b37 merged": "yes",
+  "b39 climax": "yes, verbatim, now b42",
+  "b34 viral": "yes, reworded, now b36",
+  "b03 the internet": "yes, reworded",
+  "b07 family member": "yes, off voice and off card 77",
+  "b27 only figure": "voice yes, now b30; card 71 NO",
+  "b31 That November": "yes, now b34",
+  "b35a protest": "yes, now b38, tagged opinion",
+  "b16 district": "yes, now b18",
+  "b10 on-screen faith": "yes, card 82 and b12, but voice added a statement, see b12",
+  "b09 fireworks claim": "yes",
+  "b39 UK advice to card 79": "voice yes; card 79 NO"
+ },
+ "coverage": {
+  "how_he_joined_who_approached_first": "yes, but omits Al-Hilal 2022 (b06)",
+  "each_season_reported_figure": "yes, 5 of 5; 2026/27 only via the unanchored b30",
+  "yearly_monthly_weekly_daily": "yes (b31, b32)",
+  "per_match": "yes (b33)",
+  "non_muslim_with_georgina_did_they_change_the_law": "yes (b11-b13, b41-b42); see b12",
+  "beach": "yes (b36-b37)",
+  "where_he_lives": "yes (b17-b18, b35)",
+  "football_debut_record_tears_title": "yes (b20, b24-b26, b40)",
+  "what_saudi_got": "yes (b19, b21, b34)",
+  "latest_status": "yes (b43)"
+ },
+ "numbers_verified": "$75m; EUR 200m; $300k; 1,072% as 'more than a thousand'; $957m; 35; 99; $200m, $225m, $235m; GBP 178m; 235/12 = 19.58; 235/52 = 4.52; 235/365 = 643,836; 235/37 = 6.35; about 985; four finals; ages 37 and 41; day gaps 30 Dec-3 Jan, 27-31 May, 16-21 May, 26 May-26 Jun, 22 Jan-9 Feb.",
+ "story_scores": {
+  "scene": 7,
+  "time": 8,
+  "character": 8,
+  "pull": 8,
+  "payoff": 7,
+  "arc": 8,
+  "read_aloud": 7,
+  "thesis_test": {
+   "our_sentence": "Reported money went to him and attention to Saudi Arabia, with no law we could find rewritten for one man and neither side's motive provable.",
+   "matches_spine": true
+  }
+ },
+ "score_breakdown": {
+  "curiosity_spike_coverage": 9,
+  "opening_hook": 9,
+  "scene_tension": 7.5,
+  "closing_impact": 7.5,
+  "word_budget": 7
+ },
+ "missed_compelling_details": [
+  {
+   "detail": "Riyadh match held an hour after a missile alert, Oct 2026",
+   "priority": "low",
+   "suggested_scene": "omit; research says handle with care"
+  },
+  {
+   "detail": "Mrsool as a delivery app",
+   "priority": "low",
+   "suggested_scene": "omit; research says unverified"
+  }
+ ],
+ "scene_reviews": [
+  {
+   "scene": "b27-b33",
+   "curiosity_spike": true,
+   "issue": "Seven beats of figures, carried by the b28-b29 twist; owner-required coverage.",
+   "suggestion": "No added words."
+  },
+  {
+   "scene": "b43",
+   "curiosity_spike": true,
+   "issue": "About 100 words after the climax; status list before one closing idea. One forward passage, acceptable at this length only.",
+   "suggestion": "Do not add to it."
+  }
+ ],
+ "opening_assessment": {
+  "strength": "strong",
+  "alternative": null
+ },
+ "closing_assessment": {
+  "impact": "adequate",
+  "circles_back": true,
+  "suggestion": "See b43 fix"
+ },
+ "word_budget_waste": [
+  "b16 and b21 end in caption fragments: 'split never published', 'his part in it argued'"
+ ],
+ "checks": {
+  "check_script_as_is": "PASS",
+  "dry_run_with_fixes": {
+   "words": 898,
+   "climax_start_pct": 82,
+   "climax_end_pct": 89,
+   "errors": [],
+   "method": "limits.json applied, scratch copy"
+  }
+ },
+ "previous": {
+  "mode": "rank",
+  "winner": "draft_1.json",
+  "verdict": "REVISE",
+  "score": 6,
+  "fixes": [
+   {
+    "beat": "b29",
+    "priority": "high",
+    "issue": "Arithmetic. $235m/12 = $19.58m, which rounds to 19.6, not 'nineteen and a half'; the voice also contradicts its own card 74.",
+    "rewrite": "Our own maths on that *estimate* gives about nineteen point six million a month, four and a half million a week, six hundred forty-four thousand dollars a day."
+   },
+   {
+    "beat": "b40",
+    "priority": "high",
+    "issue": "'No record shows a law rewritten' is universal; the file only supports 'none found' (F034; research_gaps: no Saudi law text read, treatment of zina in the new codes not established). 'Saudi Arabia gave him the money' also names the state as payer, though the contract is unpublished and b08 says PIF had no control until June 2023. Thesis was untagged opinion. Closing stacks four endings. Rewrite merges b37 so time runs forward (Aug to Oct 2026) and closes on one idea. Tag this beat type opinion; update story_spine.payoff, loop_line and thesis to 'no record we found'. On screen add: Portugal out to Spain July 2026; Portuguese FA suspension Oct 2026, no final ruling.",
+    "rewrite": "And he did marry her, on August eleventh, twenty twenty-six, in a civil ceremony in Cascais, Portugal, not Saudi Arabia. He's on about nine hundred eighty-five goals, he told Vogue this is probably his last year, and his deal ends in June twenty twenty-seven, with RedBird confirming early interest in the club, no deal yet. We think it was a trade. Saudi football paid him, whatever the figure, and he gave it the world's attention. And we found no record of a law rewritten for the man who once sat at that press table."
+   },
+   {
+    "beat": "b37",
+    "priority": "high",
+    "issue": "Cut as a separate beat: its content moves into b40 so the answer lands earlier (see climax_ruling). Move b38 and b39 directly after b36.",
+    "rewrite": null
+   },
+   {
+    "beat": "b39",
+    "priority": "high",
+    "issue": "80-word lecture at the climax. 'What's on record' rests on anonymous lawyers, so it is not on record. 'People cite' the hotel rule is unsourced. UK sex-law line beside a named couple reads as insinuation, and F030 says that advice does not address cohabitation. Move the hotel rule and UK advice to card 79 on screen. Cuts 22 words.",
+    "rewrite": "The truth was, nobody has shown that it did. We found no *decree*, no regulation, no official statement either way. The story traces to two anonymous lawyers, who told the agency EFE the ban still stood but authorities had stopped interfering with foreigners generally. That's a blind eye described for foreigners, not a law bent for one man."
+   },
+   {
+    "beat": "b34",
+    "priority": "high",
+    "issue": "'Viral story' asserts circulation the file cannot show: no report of the beach claim was found anywhere and its origin is untraced (F046). Verdict language in b35 is correct; keep it.",
+    "rewrite": "You may have heard something bigger, a whole Saudi beach closed for a day for his family."
+   },
+   {
+    "beat": "b03",
+    "priority": "high",
+    "issue": "Same problem: 'the internet' filled it with a closed beach is undocumented.",
+    "rewrite": "That silence filled up with pay figures, talk of a closed beach, even a rewritten law."
+   },
+   {
+    "beat": "b07",
+    "priority": "high",
+    "issue": "'Contact through a family member' puts an unnamed relative into an uncorroborated, summary-only account (F006, verified false) and invites insinuation about the family. Keep it off voice and off card 77.",
+    "rewrite": "He said a Saudi prince proposed it in July twenty twenty-two, and that contacts led to a meeting in Lisbon overseen by the sports minister."
+   },
+   {
+    "beat": "b27",
+    "priority": "medium",
+    "issue": "'The only figure for this season' overclaims: NBC printed $468m a year, unattributed and excluded by the file (F021). Show that exclusion on card 71.",
+    "rewrite": "The Sun, from unnamed sources, printed a hundred seventy-eight million pounds a year plus a signing bonus, one tabloid, unconfirmed, and the only breakdown for this season."
+   },
+   {
+    "beat": "b31",
+    "priority": "medium",
+    "issue": "'That November' follows 'May twenty twenty-six' in b28, so it is heard as November 2026, which has not happened. The event is 18 Nov 2025.",
+    "rewrite": "Saudi Arabia got his face on a tourism campaign. In November twenty twenty-five he sat at the White House dinner for its Crown Prince, and in Riyadh said he considered himself Saudi."
+   },
+   {
+    "beat": "b35a (new, after b35)",
+    "priority": "medium",
+    "issue": "Missed high-value compelling detail: the Feb 2026 reported protest (F072). On screen: league's 'no individual' quote; no comment from Ronaldo found. Tag type opinion.",
+    "rewrite": "In February twenty twenty-six, ESPN's sources said he sat out a match, protesting the state fund's lack of signings."
+   },
+   {
+    "beat": "b16",
+    "priority": "low",
+    "issue": "Naming a family home's district in the voice adds nothing and rests on one report (F054). Keep the district on card 84.",
+    "rewrite": "One later report says a villa in Riyadh, but we couldn't confirm where he lives now."
+   },
+   {
+    "beat": "b10",
+    "priority": "low",
+    "issue": "Owner's 'non-Muslim' is not spoken. Keep 'foreigners': it is the lawyers' actual category, and F037 says to use the faith label with care. Cover it on screen only.",
+    "rewrite": "Narration unchanged. On screen add: Reports cite no statute. No conversion, per fact-checkers (card 82)."
+   },
+   {
+    "beat": "b09",
+    "priority": "low",
+    "issue": "Fireworks are not in research.json; only catalog items 07 and the official film show them. Add a claim citing The National photo.",
+    "rewrite": "Narration unchanged."
+   }
+  ],
+  "ruling_biggest_pay_cheque": "Rejected. No fact, claim check or pay-table row in research.json says it; the word 'biggest' does not occur in the file. The nearest text is 'record-breaking' inside two URLs. The contract is unpublished and Forbes ranks single years, so no historical comparison can be made. Cut from draft 2 b03.",
+  "climax_ruling": {
+   "ruling": "Does not work as written, in either draft. Both pass the checker (limit 92 %) with almost no margin, but the rubric wants the climax at about 65-85 %.",
+   "draft_1": "Answer starts at 83 %, which is right, and ends at 92 %. The problem is an 80-word lecture followed by a 73-word stacked coda.",
+   "draft_2": "Answer starts at 87 % and is a soft 'both, we think'. The real payoff is the 78-word b38, so it has two endings.",
+   "mechanical_trap": "Only one beat may follow the climax and the climax must end by 92 %, so the last beat must hold at least 8 % of the words. Trimming only the last beat fails the check. Move the answer earlier instead.",
+   "fix_measured": "Dry run of the fixes on a scratch copy: 883 words, b39 58 words starting at 83% and ending at 89%, b40 94 words, check_script no errors. A closing beat this long is acceptable for about 5 minutes only because it is now one forward-moving passage ending on one idea."
+  },
+  "coverage": {
+   "how_he_joined_who_approached_first": {
+    "draft_1": "yes",
+    "draft_2": "yes, but concludes beyond the evidence (b06)"
+   },
+   "each_season_reported_figure": {
+    "draft_1": "yes, 5 of 5",
+    "draft_2": "yes, 5 of 5"
+   },
+   "yearly_monthly_weekly_daily": {
+    "draft_1": "yes, monthly misrounded",
+    "draft_2": "yes"
+   },
+   "per_match": {
+    "draft_1": "yes",
+    "draft_2": "yes"
+   },
+   "non_muslim_with_georgina_did_they_change_the_law": {
+    "draft_1": "partial: 'foreigners' spoken, 'non-Muslim' not; law question asked aloud",
+    "draft_2": "partial: same"
+   },
+   "beach": {
+    "draft_1": "yes",
+    "draft_2": "yes"
+   },
+   "where_he_lives": {
+    "draft_1": "yes",
+    "draft_2": "yes"
+   },
+   "football_debut_record_tears_title": {
+    "draft_1": "yes",
+    "draft_2": "yes"
+   },
+   "what_saudi_got": {
+    "draft_1": "yes",
+    "draft_2": "yes"
+   },
+   "latest_status": {
+    "draft_1": "voice yes; Portugal suspension and World Cup exit missing even on screen",
+    "draft_2": "partial: about 985 goals is on screen only, not spoken"
+   }
+  },
+  "factual_errors": {
+   "draft_1": [
+    "b29: 'nineteen and a half million' should be about 19.6m.",
+    "b03, b34: 'the internet' and 'viral' assert circulation of a beach claim the file could not find anywhere.",
+    "b40: 'no record shows' goes beyond 'none found'. 'Saudi Arabia gave him the money' names a payer the unpublished contract cannot confirm.",
+    "b39: 'on record' rests on anonymous lawyers; 'people cite' is unsourced.",
+    "b07: unnamed family member from an uncorroborated account.",
+    "b27: 'only figure' ignores NBC's excluded $468m.",
+    "b31: 'That November' misleads; the event is Nov 2025."
+   ],
+   "draft_2": [
+    "b03: 'biggest pay cheque in football history' is unsourced. See ruling.",
+    "b06: 'so the Saudi side moved first' is the narrator's conclusion from one verified:false account, and a prince's proposal is not an approach to Ronaldo. Fix: 'by his account'.",
+    "b12: UK sex-law line attached to a named couple is insinuation; F030 says that advice does not address cohabitation. Fix: move to screen.",
+    "b19: 'his only final win for nearly three years' implies a later final win. The 2026 title was a league match and the 2026 final was lost. Should be 'only trophy'.",
+    "b24: 'posted four words' is unsupported. The file holds only the quoted phrase, not the length of the post.",
+    "b10: 'then told reporters' asserts an order of events found nowhere in the file. Fix: 'and told'.",
+    "b33-b34: the record $957m is listed under what Saudi 'got', implying he caused it. F083 says causation is argued, not proven, and that caveat is on screen only.",
+    "b37: 'he'd asked for a big project' overstates 'wanted reassurance' (relayed); 'It turned out' asserts what 'we think' then hedges.",
+    "b38: 'It can't explain why he cried' is an unsupported statement of motive and is the thesis. The gold bands come from catalog item 58 only, with no claim entry. 'I'll leave him in August' jumps back from October after b36: dates are correct (wedding 11 Aug, Vogue 16 Aug, RedBird Oct) but time runs backwards.",
+    "on_screen_hook: 'WORLD'S HIGHEST-PAID ATHLETE' on frame 1 is a Forbes estimate stated as fact.",
+    "b11: 'then a compound' is unhedged (Mirror only); 'isn't public' should be 'we couldn't confirm'."
+   ]
+  },
+  "checks_passed": "No conversion implied in either draft. Beach neither confirmed nor disproved in the narration of either draft. All pay figures spoken as reported or estimated, and all divisions flagged as ours, except D2 b03. D1 narration does not state that the law did not change; only the b40 wording overreaches. Dates and day counts otherwise verified (30 Dec to 3 Jan, 27 to 31 May, 16 to 21 May, 26 May to 26 Jun, ages 37/39/41, 235m/37 = 6.35m, 644k a day). check_script: no errors on either draft with limits.json applied.",
+  "rankings": [
+   {
+    "draft": "draft_1.json",
+    "rank": 1,
+    "score": 6,
+    "strengths": [
+     "Holds the owner's law question to the end and answers it from the evidence",
+     "Fewer and more easily fixed fact problems",
+     "Attribution discipline on law and beach",
+     "Keeps the ban and 99 lashes in the voice"
+    ],
+    "weaknesses": [
+     "Score capped at 6 by high-priority fact issues",
+     "Mid-section money beats b13-b16 and b25-b30 read as a list",
+     "Stacked ending",
+     "Feb 2026 protest missing from the voice"
+    ]
+   },
+   {
+    "draft": "draft_2.json",
+    "rank": 2,
+    "score": 5,
+    "strengths": [
+     "Better hook, character presence and spoken rhythm",
+     "Dugout loop and gold-band image are the best lines in either draft",
+     "Correct monthly figure",
+     "Protest and ownership in the voice"
+    ],
+    "weaknesses": [
+     "Eleven fact items, including the unsourced 'biggest' in the driving question",
+     "Thesis rests on an unprovable motive, which line edits cannot fix",
+     "Law answered at about 20 %, so the back half has less pull",
+     "Soft climax, chronology reversal, 985 goals not spoken"
+    ]
+   }
+  ],
+  "winner_review": {
+   "verdict": "REVISE",
+   "score": 6,
+   "story_scores": {
+    "scene": 7,
+    "time": 6,
+    "character": 7,
+    "pull": 8,
+    "payoff": 5,
+    "arc": 6,
+    "read_aloud": 6,
+    "thesis_test": {
+     "our_sentence": "The record shows money traded for attention, and no law we can find rewritten for one man.",
+     "matches_spine": true
+    }
+   },
+   "missed_compelling_details": [
+    {
+     "detail": "Feb 2026 reported protest against the state fund, and the league's 'no individual' reply",
+     "priority": "high",
+     "suggested_scene": "b35a"
+    },
+    {
+     "detail": "Goal 982 may be an own goal",
+     "priority": "low",
+     "suggested_scene": "on screen, already card 86"
+    },
+    {
+     "detail": "Riyadh match held an hour after a missile alert, Oct 2026",
+     "priority": "low",
+     "suggested_scene": "omit; research says handle with care"
+    }
+   ],
+   "scene_reviews": [
+    {
+     "scene": "b13-b16",
+     "curiosity_spike": false,
+     "issue": "Topic report on money and home interrupts the law tension",
+     "suggestion": "Keep for coverage, carried by cards; do not add words here"
+    },
+    {
+     "scene": "b25-b30",
+     "curiosity_spike": true,
+     "issue": "Long run of figures, broken only by the b26 twist",
+     "suggestion": "Keep b26 as the turn; fix b27, b29"
+    }
+   ],
+   "opening_assessment": {
+    "strength": "strong",
+    "alternative": null
+   },
+   "closing_assessment": {
+    "impact": "adequate",
+    "circles_back": true,
+    "suggestion": "See b40 rewrite and climax_ruling"
+   },
+   "word_budget_waste": [
+    "b39 hotel rule and UK advice belong on screen",
+    "b40 'So here's the honest answer' and the repeated contract line",
+    "b37 and b40 as separate status and wedding blocks"
+   ],
+   "graft_from_draft_2": "Optional if words allow: the published gold-band photo as a visual in b40, without the line. Add a claim for it first."
+  }
+ }
+}

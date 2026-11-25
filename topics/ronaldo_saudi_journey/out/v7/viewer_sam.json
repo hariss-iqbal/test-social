@@ -1,0 +1,48 @@
+{
+  "persona": "sam",
+  "version": "v7",
+  "method_note": "Voice and mix NOT heard. Judged from the words and timings in build/alignment.json, the music and SFX cues in build/timeline.json, and the frame sheets. Anything about delivery is inferred from the engine name (edge-tts, en-US-AndrewMultilingualNeural) and pause lengths. The swipe second is a persona judgement, not a measurement. Moments after the swipe were read from the transcript for this report; Sam would not have reached them in the feed.",
+  "would_stop_scrolling": "Yes, on the ears. Ronaldo at a press table telling the world he's come to South Africa, then 'He meant Saudi Arabia.' A real moment with a dry punchline, done by 6 seconds. If I glance, the banner says 'DID SAUDI CHANGE ITS LAW?', which is a good question, though it isn't the one the narrator asks me.",
+  "swipe_away_at_s": 126,
+  "estimated_watch_pct": 40,
+  "moments": [
+    {
+      "t": 5,
+      "reaction": "Hooked. 'He meant Saudi Arabia.' Four words, no explaining the joke. That's somebody telling me a story."
+    },
+    {
+      "t": 31,
+      "reaction": "First dip. 'So who approached first?' is a decent question, then the answer is who said what, when, three years later, ending on 'We found nothing from Ronaldo confirming that.' A meeting in Lisbon with a prince's idea behind it should be a scene. I got the footnotes for one."
+    },
+    {
+      "t": 62,
+      "reaction": "Back in. 'And he hadn't come alone.' Then two foreigners, unmarried, in a country where that's forbidden. Now there are stakes, and there's a person in it. This is the story, and it took a minute to show up."
+    },
+    {
+      "t": 75,
+      "reaction": "'So we won't label his faith.' Nobody asked. The narrator stopped to read me their editorial policy."
+    },
+    {
+      "t": 85,
+      "reaction": "'Hold on to that one.' Best line since the open, and I'm properly listening. One second later: 'On the money, CBS reported.' Promise parked, spreadsheet opened."
+    },
+    {
+      "t": 126,
+      "reaction": "Gone. 'Partly because of him, some argue.' Forty seconds since 'hold on to that one' and it's been Instagram percentages, a fund and a nine hundred fifty-seven million spend, closing on a shrug. Nothing is pulling me to the next line. Annoyingly, the Iran lashes rumour starts one second later and might have caught me."
+    },
+    {
+      "t": 156,
+      "reaction": "Read later: 'He scored his. Al-Nassr lost. He sat in the dugout in tears.' Best writing in the video, and I'd have missed it. Then the very next words, about half a second on, are 'Forbes, which only estimates.' Kills the only feeling the video has earned."
+    },
+    {
+      "t": 274,
+      "reaction": "Read later: 'And he did marry her... in Portugal, not Saudi Arabia.' That's the real ending, and a lovely payoff to 'hold on to that one', though the windup at 245 s took twenty seconds of decrees and lawyers to get here. Then it carries on for about twenty more seconds: Vogue, goal count, an investment firm from nowhere. It should have stopped."
+    }
+  ],
+  "felt_cheap_or_ai": "I did not hear the voice, so I can't judge how it actually sounds. On paper the words read like a compliance report: about 26 hedge words (reported, estimate, unconfirmed, found, couldn't, can't) in 919 words. Pace is about 3.1 words a second with nearly all pauses at 0.35 to 0.6 s and only one longer than that (1.1 s at 244 s), so even without hearing it I'd expect little light and shade, and the same synthetic narrator doesn't reassure me. Spoken numbers pile up: 'million' 10 times, 'twenty' 18 times, mostly in dates. On my glances: same dark data cards keep returning, some with type far too small for a phone (the NO EVIDENCE card from 256 s), one card holding the screen for most of 252 to 262 s, and the same photos and tower repeated. The small 'source' tag on nearly every picture makes it feel like homework. The chunky word-by-word captions and blurred-background photo band look like the template everyone uses. The real footage is the good part: fireworks, the dugout, the ring.",
+  "confusing": "Two different driving questions: the voice asks what each side did for the other, and the banner asks if the law changed. The law question isn't asked out loud as THE question until 243 s. Closed beach teased at 14 s, not explained until about 215 s. Prince, minister, president and Lisbon all go by in 15 seconds and are never used again. 'Scored all four in a four-nil' takes a second by ear. Dollars, euros and pounds keep switching, and I can't compare them while I'm working. The 99 lashes rumour has no link to what comes before it. The 'in tears again' caption sits over him smiling at about 241 s, if I happen to look.",
+  "comment_you_would_post": "the dugout bit at 2:30 is the whole video, why am I hearing about the Four Seasons bill first",
+  "share_or_follow": "No share, no follow. If I knew the dugout and the Portugal wedding were coming I might stick around, but nothing tells me. The care with facts is real and I respect it, but a podcast earns my next episode by making me need the next sentence, and this one stops to check its sources every time it gets going.",
+  "one_change": "Keep only the thread started at 62 s: an unmarried couple in a country that forbids it, the internet saying he made them bend the law, 'hold on to that one'. Ask that out loud in the first 20 seconds, tell it forward through the fireworks, the dugout tears and the league win, pay it off on 'he did marry her, in Portugal' and stop there. Cut the pay breakdown to one number and put the sourcing on screen. About half the length.",
+  "score": 4
+}
