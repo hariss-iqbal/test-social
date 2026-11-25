@@ -226,6 +226,10 @@ export const City: React.FC<{ p: ParamValues; seed: number; simT: number }> = ({
   }
   const leaves = [mats.leafA, mats.leafB, mats.leafC];
   const glow = radialTexture();
+  const billows = useMemo(() => {
+    const r = mulberry32(seed + 99);
+    return Array.from({ length: 70 }, () => ({ x: (r() - 0.5) * 700, z0: -760 + r() * 820, y: 4 + r() * 70, s: 60 + r() * 120, v: 18 + r() * 16, c: r() }));
+  }, [seed]);
   const t = simT;
   const wrap = (v: number, lo: number, hi: number) => lo + ((((v - lo) % (hi - lo)) + (hi - lo)) % (hi - lo));
 
@@ -281,6 +285,68 @@ export const City: React.FC<{ p: ParamValues; seed: number; simT: number }> = ({
           })}
         </group>
       ))}
+      {/* fires: flames at the foot of the (fallen) towers and in the park trees, smoke rising above */}
+      {p.ruin_fires > 0.01 && data.towers.map((b, i) => {
+        if (i % 2) return null;
+        const fl = 0.7 + 0.3 * Math.sin(simT * 9 + i * 1.7) * Math.sin(simT * 4.1 + i);
+        const sz = (34 + (i % 5) * 14) * p.ruin_fires * fl;
+        return (
+          <group key={`rf${i}`} position={[b.x, 0, b.z + b.d * 0.5]}>
+            <sprite position={[0, sz * 0.55, 0]} scale={[sz * 1.3, sz * 1.6, 1]}>
+              <spriteMaterial map={glow} color={i % 4 ? "#ff7a1f" : "#ffb347"} transparent opacity={Math.min(1, p.ruin_fires)} depthWrite={false} blending={THREE.AdditiveBlending} toneMapped={false} />
+            </sprite>
+            <sprite position={[Math.sin(simT * 0.4 + i) * 8, sz * 2.2 + 20, 0]} scale={[sz * 3, sz * 3, 1]}>
+              <spriteMaterial map={glow} color="#2e2622" transparent opacity={0.55 * Math.min(1, p.ruin_fires)} depthWrite={false} />
+            </sprite>
+          </group>
+        );
+      })}
+      {p.ruin_fires > 0.01 && data.trees.map(([x, z], i) => {
+        if (i % 3) return null;
+        const fl = 0.7 + 0.3 * Math.sin(simT * 13 + i * 2.3) * Math.sin(simT * 5.7 + i);
+        const sz = 4.5 * p.ruin_fires * fl;
+        return (
+          <sprite key={`tf${i}`} position={[x, 1.2 + sz * 0.4, z]} scale={[sz, sz * 1.5, 1]}>
+            <spriteMaterial map={glow} color={i % 2 ? "#ff8a2a" : "#ffc35a"} transparent opacity={Math.min(1, p.ruin_fires)} depthWrite={false} blending={THREE.AdditiveBlending} toneMapped={false} />
+          </sprite>
+        );
+      })}
+      {p.ruin_fires > 0.01 && <pointLight position={[0, 40, -380]} intensity={2.5e5 * p.ruin_fires} distance={1200} decay={2} color="#ff7a30" />}
+      {/* dust storm: billows roll toward the POV; storm_front sweeps the wall in */}
+      {p.storm > 0.01 && billows.map((b, i) => {
+        const z = wrap(b.z0 + simT * b.v, -760, 60);
+        if (z > p.storm_front) return null;
+        const near = Math.min(1, (60 - z) / 40);
+        return (
+          <sprite key={`db${i}`} position={[b.x + Math.sin(simT * 0.3 + i) * 10, b.y, z]} scale={[b.s, b.s * 0.8, 1]}>
+            <spriteMaterial map={glow} color={b.c < 0.5 ? "#9c8466" : "#7d6a55"} transparent opacity={0.6 * Math.min(1, p.storm) * near} depthWrite={false} />
+          </sprite>
+        );
+      })}
+      {/* airburst: fireball ~2 km out (beyond fog: fog off), rising smoke column under it */}
+      {p.plume > 0.01 && [0, 1, 2, 3, 4, 5, 6, 7].map((k) => {
+        const h = (k / 7) * Math.max(200, p.fireball_y) * p.plume;
+        const sz = (260 + k * 70 + 60 * Math.sin(simT * 0.3 + k)) * (0.4 + 0.6 * p.plume);
+        return (
+          <sprite key={`pl${k}`} position={[Math.sin(simT * 0.05 + k) * 20, h, -2000]} scale={[sz, sz, 1]}>
+            <spriteMaterial map={glow} color={k < 2 ? "#4a3a30" : "#5c524c"} transparent opacity={0.85 * Math.min(1, p.plume)} depthWrite={false} fog={false} />
+          </sprite>
+        );
+      })}
+      {p.fireball > 0.01 && (
+        <group position={[0, p.fireball_y, -2000]}>
+          <sprite renderOrder={5} scale={[1000 * Math.min(p.fireball, 1.4), 1000 * Math.min(p.fireball, 1.4), 1]}>
+            <spriteMaterial map={glow} color="#fff6e0" transparent opacity={Math.min(1, p.fireball)} depthWrite={false} fog={false} depthTest={false} blending={THREE.AdditiveBlending} toneMapped={false} />
+          </sprite>
+          <sprite renderOrder={5} scale={[2800 * p.fireball, 2800 * p.fireball, 1]}>
+            <spriteMaterial map={glow} color="#ff9a3c" transparent opacity={0.75 * Math.min(1, p.fireball)} depthWrite={false} fog={false} depthTest={false} blending={THREE.AdditiveBlending} toneMapped={false} />
+          </sprite>
+          <sprite renderOrder={5} scale={[6500 * p.fireball, 6500 * p.fireball, 1]}>
+            <spriteMaterial map={glow} color="#ff5a1f" transparent opacity={0.35 * Math.min(1, p.fireball)} depthWrite={false} fog={false} depthTest={false} blending={THREE.AdditiveBlending} toneMapped={false} />
+          </sprite>
+          <pointLight intensity={4e6 * p.fireball} distance={6000} decay={2} color="#ffd9a0" />
+        </group>
+      )}
       {p.speck > 0.01 && (
         <group position={[0, Math.max(0.3, p.speck_y), -30]}>
           <sprite scale={[3.5 * p.speck, 3.5 * p.speck, 1]}>
@@ -384,14 +450,17 @@ export const City: React.FC<{ p: ParamValues; seed: number; simT: number }> = ({
 
       {data.walkers.map((w, i) => {
         if (w.vis > p.life) return null;
+        // halt_t: everyone freezes mid-step at the flash
+        const tw = Math.min(t, p.halt_t);
+        const stopped = t > p.halt_t;
         const dx = Math.cos(w.ang), dz = Math.sin(w.ang);
-        const x = wrap(w.x0 + dx * w.speed * t, -200, 200);
-        const z = wrap(w.z0 + dz * w.speed * t, -380, 65);
+        const x = wrap(w.x0 + dx * w.speed * tw, -200, 200);
+        const z = wrap(w.z0 + dz * w.speed * tw, -380, 65);
         if (p.hole > 0.01 && Math.hypot(x - 0, z + 30) < 11 * p.hole) return null;
         // never walk through the POV's standing spot (camera lives around x 0, z 10)
         if (Math.hypot(x, z - 10) < 4.5) return null;
         const sl = p.slide;
-        const bob = w.sit || sl > 0.2 ? 0 : Math.abs(Math.sin(t * w.speed * 3.4 + i)) * 0.06;
+        const bob = w.sit || sl > 0.2 || stopped ? 0 : Math.abs(Math.sin(tw * w.speed * 3.4 + i)) * 0.06;
         const hh = w.sit ? w.h * 0.62 : w.h;
         // friction gone: glide along a random heading, and a growing share of people tip over
         const ga = w.vis * 40 + i;
@@ -399,25 +468,37 @@ export const City: React.FC<{ p: ParamValues; seed: number; simT: number }> = ({
         const gx = Math.cos(ga) * gk, gz = Math.sin(ga) * gk;
         // only people mid-stride lose their footing; seated/standing-still people stay put
         const fall = w.sit ? 0 : THREE.MathUtils.clamp((sl - w.vis * 0.8) / 0.25, 0, 1);
+        // the flash: crouch and turn away; the blast: thrown down and pushed away from ground zero (+z)
+        const kn = THREE.MathUtils.clamp((p.knock - w.vis * 0.35) / 0.4, 0, 1);
+        // thrown down: the crouch straightens out so the body lies flat
+        const cw = p.cower * (w.sit ? 0.4 : 1) * (1 - kn);
+        const push = kn * (1.5 + w.vis * 4);
+        const char = new THREE.Color("#17110d");
+        const body = w.color.clone().lerp(ICE, frost * 0.5).lerp(char, Math.min(1, p.burn * (0.9 + 0.1 * w.vis) + 0.2 * kn * p.burn));
+        const skin = new THREE.Color("#c99a78").lerp(new THREE.Color("#2a1a12"), p.burn);
+        const legPhase = (sd: number) => (sl > 0.2 || stopped ? 0 : Math.sin(tw * w.speed * 3.4 + i + (sd > 0 ? Math.PI : 0)) * 0.12);
         return (
-          <group key={i} position={[x + gx, bob, z + gz]} rotation-y={-w.ang + Math.PI / 2} rotation-x={-fall * Math.PI / 2}>
-            <mesh position={[0, w.sit ? hh * 0.42 : hh * 0.58, 0]} castShadow>
-              <boxGeometry args={[0.48, w.sit ? hh * 0.6 : hh * 0.42, 0.3]} />
-              <meshStandardMaterial color={w.color.clone().lerp(ICE, frost * 0.5)} roughness={0.9} flatShading />
-            </mesh>
-            {!w.sit && [-1, 1].map((sd) => (
-              <mesh key={sd} position={[sd * 0.11, hh * 0.19, sl > 0.2 ? 0 : Math.sin(t * w.speed * 3.4 + i + (sd > 0 ? Math.PI : 0)) * 0.12]} material={mats.dark}>
-                <boxGeometry args={[0.15, hh * 0.38, 0.17]} />
+          <group key={i} position={[x + gx, bob + kn * 0.12, z + gz + push]} rotation-x={-fall * Math.PI / 2 + kn * Math.PI * 0.5}>
+            <group rotation-y={-w.ang + Math.PI / 2} scale={[1, 1 - 0.38 * cw, 1]}>
+              <mesh position={[0, w.sit ? hh * 0.42 : hh * 0.58, 0]} rotation-x={cw * 0.45} castShadow>
+                <boxGeometry args={[0.48, w.sit ? hh * 0.6 : hh * 0.42, 0.3]} />
+                <meshStandardMaterial color={body} roughness={0.95} flatShading />
               </mesh>
-            ))}
-            {w.sit && (
-              <mesh position={[0, 0.1, 0.25]} material={mats.dark}>
-                <boxGeometry args={[0.4, 0.18, 0.55]} />
+              {!w.sit && [-1, 1].map((sd) => (
+                <mesh key={sd} position={[sd * 0.11, hh * 0.19, legPhase(sd)]} material={mats.dark}>
+                  <boxGeometry args={[0.15, hh * 0.38, 0.17]} />
+                </mesh>
+              ))}
+              {w.sit && (
+                <mesh position={[0, 0.1, 0.25]} material={mats.dark}>
+                  <boxGeometry args={[0.4, 0.18, 0.55]} />
+                </mesh>
+              )}
+              <mesh position={[0, (w.sit ? hh * 0.78 : hh * 0.88) - cw * 0.12, cw * 0.12]}>
+                <icosahedronGeometry args={[0.14, 1]} />
+                <meshStandardMaterial color={skin} roughness={0.9} />
               </mesh>
-            )}
-            <mesh position={[0, w.sit ? hh * 0.78 : hh * 0.88, 0]} material={mats.skin}>
-              <icosahedronGeometry args={[0.14, 1]} />
-            </mesh>
+            </group>
           </group>
         );
       })}

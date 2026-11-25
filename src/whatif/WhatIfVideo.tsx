@@ -6,6 +6,7 @@ import * as THREE from "three";
 import { loadFont as loadSerif } from "@remotion/google-fonts/Newsreader";
 import { loadFont as loadInter } from "@remotion/google-fonts/Inter";
 import { loadFont as loadMono } from "@remotion/google-fonts/JetBrainsMono";
+import { loadFont as loadMontserrat } from "@remotion/google-fonts/Montserrat";
 import type { HudItem, WhatIfProps, WhatIfTimeline } from "./types";
 import { sampleAll, sampleCamera, simTimeTable, type CamState, type ParamValues } from "./world/params";
 import { Sky, SUN_DIR } from "./world/Sky";
@@ -18,6 +19,7 @@ const serif = loadSerif("normal", { weights: ["400", "500"], subsets: ["latin"] 
 loadSerif("italic", { weights: ["400", "500"], subsets: ["latin"] });
 const inter = loadInter("normal", { weights: ["500", "600"], subsets: ["latin"] }).fontFamily;
 const mono = loadMono("normal", { weights: ["400"], subsets: ["latin"] }).fontFamily;
+const capFont = loadMontserrat("normal", { weights: ["800"], subsets: ["latin"] }).fontFamily;
 
 const KITS: Record<string, React.FC<{ p: ParamValues; seed: number; simT: number }>> = { city: City };
 
@@ -122,18 +124,40 @@ const hudValue = (h: HudItem, frame: number, fps: number) => {
   return v.text;
 };
 
+/**
+ * Reading order inside a beat: the HUD block first (label -> value -> sub word by word),
+ * then the caption word by word. timeline.py delays each caption until its HUD is done (same constants).
+ */
+const WORD_F = 14; // caption: frames per word (~0.47 s), calm reading pace
+const SUB_WORD_F = 8; // HUD sub: frames per word
+const VALUE_AT = 14; // HUD value appears 14 frames after the label
+const SUB_AT = 34; // HUD sub starts 34 frames after the label
+
 const Hud: React.FC<{ tl: WhatIfTimeline; frame: number }> = ({ tl, frame }) => {
   const items = tl.hud.filter((h) => frame >= h.from && frame < h.to);
   return (
-    <div style={{ position: "absolute", left: 72, top: 600, display: "flex", flexDirection: "column", gap: 34 }}>
+    <div style={{ position: "absolute", left: 56, top: 560, display: "flex", flexDirection: "column", gap: 24 }}>
       {items.map((h, i) => {
-        const fade = Math.min(1, h.joinPrev ? 1 : (frame - h.from) / 8, h.joinNext ? 1 : (h.to - frame) / 8);
-        const sub = [...(h.subs ?? [])].reverse().find(([f]) => frame >= f)?.[1] ?? h.sub;
+        const out = Math.min(1, h.joinNext ? 1 : (h.to - frame) / 18);
+        const labelIn = h.joinPrev ? 1 : Math.min(1, (frame - h.from) / 12);
+        const valIn = h.joinPrev ? 1 : Math.min(1, Math.max(0, (frame - h.from - VALUE_AT) / 12));
+        const subEntry = [...(h.subs ?? [])].reverse().find(([f]) => frame >= f);
+        const sub = subEntry?.[1] ?? h.sub;
+        // a continued block only re-reveals its sub line; a new block reveals everything in order
+        const subStart = subEntry ? subEntry[0] + 10 : h.joinPrev ? null : h.from + SUB_AT;
+        const subWords = (sub ?? "").split(/\s+/);
         return (
-          <div key={i} style={{ opacity: fade, color: "#f7f4ee", background: "rgba(8,10,16,0.55)", borderLeft: "6px solid #ffcf6e", borderRadius: 10, padding: "18px 26px 20px 24px", maxWidth: 900, boxShadow: "0 8px 30px rgba(0,0,0,0.25)" }}>
-            <div style={{ fontFamily: inter, fontWeight: 700, fontSize: 30, letterSpacing: 3, color: "#ffcf6e" }}>{h.label}</div>
-            <div style={{ fontFamily: serif, fontWeight: 500, fontSize: 80, lineHeight: 1.02, marginTop: 6, fontVariantNumeric: "tabular-nums" }}>{hudValue(h, frame, tl.fps)}</div>
-            {sub && <div style={{ fontFamily: inter, fontWeight: 600, fontSize: 32, letterSpacing: 1.5, opacity: 0.95, marginTop: 10, lineHeight: 1.3 }}>{sub}</div>}
+          <div key={i} style={{ opacity: out * labelIn, color: "#f7f4ee", background: "rgba(8,9,14,0.68)", backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)", borderLeft: "4px solid #ffcf6e", borderRadius: 8, padding: "12px 18px 14px 16px", maxWidth: 620, boxShadow: "0 6px 24px rgba(0,0,0,0.22)" }}>
+            <div style={{ fontFamily: inter, fontWeight: 700, fontSize: 21, letterSpacing: 2.5, color: "#ffcf6e" }}>{h.label}</div>
+            <div style={{ fontFamily: serif, fontWeight: 500, fontSize: 54, lineHeight: 1.04, marginTop: 4, fontVariantNumeric: "tabular-nums", opacity: valIn, transform: `translateY(${(1 - valIn) * 6}px)` }}>{hudValue(h, frame, tl.fps)}</div>
+            {sub && (
+              <div style={{ fontFamily: inter, fontWeight: 600, fontSize: 22, letterSpacing: 1.2, marginTop: 8, lineHeight: 1.3 }}>
+                {subWords.map((w, k) => {
+                  const o = subStart === null ? 1 : Math.min(1, Math.max(0, (frame - subStart - k * SUB_WORD_F) / 10));
+                  return <span key={k} style={{ opacity: 0.95 * o }}>{w}{k < subWords.length - 1 ? " " : ""}</span>;
+                })}
+              </div>
+            )}
           </div>
         );
       })}
@@ -250,15 +274,37 @@ const Strip: React.FC<{ tl: WhatIfTimeline; frame: number }> = ({ tl, frame }) =
   );
 };
 
+/**
+ * Caption colours (no box, no white): warm yellow base, numbers/times in orange,
+ * writer-marked *emphasis* words in cyan. A thick dark outline + soft shadow keeps every
+ * colour readable over bright sky, the white flash, fire glow or dust.
+ */
+const CAP_BASE = "#ffe45c";
+const CAP_NUM = "#ff9a3c";
+const CAP_EMPH = "#5ce1ff";
+const capColor = (w: string, emph: boolean) => (emph ? CAP_EMPH : /\d/.test(w) ? CAP_NUM : CAP_BASE);
+
 const Captions: React.FC<{ tl: WhatIfTimeline; frame: number }> = ({ tl, frame }) => {
   if (tl.endCard && frame >= tl.endCard.from) return null;
   const c = tl.captions.find((x) => frame >= x.from && frame < x.to);
   if (!c) return null;
-  const fade = Math.min(1, (frame - c.from) / 9, (c.to - frame) / 9);
-  const rise = interpolate(frame - c.from, [0, 12], [10, 0], { extrapolateRight: "clamp" });
+  // gentle in, long hold after the last word (timeline guarantees it), slow fade out
+  const out = Math.min(1, (c.to - frame) / 20);
+  const words = c.text.split(/\s+/);
+  let inEmph = false; // *one word* or *several words* = emphasis
   return (
-    <div style={{ position: "absolute", left: 90, right: 90, top: 1150, textAlign: "center", opacity: fade, transform: `translateY(${rise}px)` }}>
-      <span style={{ fontFamily: serif, fontStyle: "italic", fontWeight: 500, fontSize: 64, lineHeight: 1.3, color: "#fffdf8", background: "rgba(8,10,16,0.42)", padding: "6px 22px", borderRadius: 14, boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone", textShadow: "0 2px 14px rgba(0,0,0,0.6)" }}>{c.text}</span>
+    <div style={{ position: "absolute", left: 90, right: 90, top: 1170, display: "flex", justifyContent: "center", opacity: out }}>
+      <div style={{ maxWidth: 860, textAlign: "center", fontFamily: capFont, fontWeight: 800, fontSize: 48, lineHeight: 1.3, letterSpacing: 0.5, WebkitTextStroke: "9px rgba(6,7,12,0.92)", paintOrder: "stroke fill", textShadow: "0 3px 10px rgba(0,0,0,0.75), 0 0 2px rgba(0,0,0,0.9)" }}>
+        {words.map((raw, i) => {
+          const opens = raw.startsWith("*");
+          const closes = raw.length > 1 && /\*[^\w]*$/.test(raw);
+          const emph = inEmph || opens;
+          inEmph = (inEmph || opens) && !closes;
+          const w = raw.replace(/\*/g, "");
+          const k = Math.min(1, Math.max(0, (frame - c.from - i * WORD_F) / 12));
+          return <span key={i} style={{ opacity: k, display: "inline-block", color: capColor(w, emph), transform: `translateY(${(1 - k) * 6}px)`, marginRight: i < words.length - 1 ? "0.28em" : 0 }}>{w}</span>;
+        })}
+      </div>
     </div>
   );
 };
@@ -269,8 +315,8 @@ const Title: React.FC<{ card: WhatIfTimeline["title"]; frame: number; solid?: bo
   const parts = card.keyword ? card.text.split(card.keyword) : [card.text];
   return (
     <AbsoluteFill style={{ background: solid ? "#101113" : "transparent", opacity: solid ? Math.min(1, (frame - card.from) / 10) : 1 }}>
-      <div style={{ position: "absolute", left: 70, right: 70, top: solid ? 760 : 360, textAlign: "center", opacity: fade }}>
-        <div style={{ fontFamily: serif, fontWeight: 500, fontSize: 96, lineHeight: 1.12, color: "#fffdf8", textShadow: solid ? "none" : "0 3px 26px rgba(0,0,0,0.75), 0 0 8px rgba(0,0,0,0.45)" }}>
+      <div style={{ position: "absolute", left: 70, right: 70, top: solid ? 760 : 300, textAlign: "center", opacity: fade }}>
+        <div style={{ fontFamily: serif, fontWeight: 500, fontSize: 76, lineHeight: 1.12, color: "#fffdf8", textShadow: solid ? "none" : "0 3px 26px rgba(0,0,0,0.75), 0 0 8px rgba(0,0,0,0.45)" }}>
           {parts[0]}
           {card.keyword && <span style={{ color: "#ffcf6e" }}>{card.keyword}</span>}
           {parts[1]}

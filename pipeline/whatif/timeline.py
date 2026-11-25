@@ -16,7 +16,22 @@ FPS = 30
 _PTS = (Path(__file__).resolve().parents[2] / "src/whatif/world/params.ts").read_text()
 DEFAULTS = {m.group(1): float(m.group(2)) for m in re.finditer(r"^\s+(\w+): \{ def: ([-\d.e]+),", _PTS, re.M)}
 W, H = 1080, 1920
-MIN_READ = lambda words: 0.9 + 0.33 * words  # noqa: E731  seconds a caption needs on screen
+MIN_READ = lambda words: (14 * words + 12) / 30 + 2.0 + 0.7  # noqa: E731  reveal (14 f/word) + 2 s hold after the last word + slow fade
+# HUD reveal (frames; same constants as WhatIfVideo.tsx): label, value at +8, sub at +20 then 5 frames per word
+VALUE_AT, SUB_AT, SUB_WORD_F = 14, 34, 8
+
+
+def hud_lead(beat):
+    """Seconds until the beat's HUD block has finished revealing; the caption starts after it."""
+    lead = 0.0
+    for h in beat.get("hud") or []:
+        n = _words(h.get("sub"))
+        if h.get("continue"):
+            f = (10 + n * SUB_WORD_F + 10) if h.get("sub") else 0
+        else:
+            f = SUB_AT + n * SUB_WORD_F + 12 if n else VALUE_AT + 16
+        lead = max(lead, f / FPS)
+    return lead + 0.4 if lead else 0.4
 
 
 def _words(s):
@@ -86,10 +101,10 @@ def build(topic):
         # caption
         cap = b.get("caption")
         if cap:
-            lead = float(w.get("caption_delay_s", 0.25))
-            cf0, cf1 = fr(t + lead), f1 - 4
-            if dur < MIN_READ(_words(cap)) - 0.05:
-                raise StageError(f"beat {b['id']}: caption needs {MIN_READ(_words(cap)):.1f}s, beat is {dur:.1f}s")
+            lead = float(w.get("caption_delay_s", hud_lead(b)))
+            cf0, cf1 = fr(t + lead), f1 - 2
+            if dur < lead + MIN_READ(_words(cap)) - 0.05:
+                raise StageError(f"beat {b['id']}: HUD + caption need {lead + MIN_READ(_words(cap)):.1f}s, beat is {dur:.1f}s")
             captions.append({"from": cf0, "to": cf1, "text": cap})
         # HUD (continue = extend the previous item with the same label)
         for h in b.get("hud") or []:

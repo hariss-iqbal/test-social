@@ -5,6 +5,7 @@ spoken words, then joined with the beat's pause_after_ms. Word timings come from
 the TTS engine itself (ElevenLabs /with-timestamps or edge-tts WordBoundary), so
 captions and cuts match the audio exactly - no Whisper, no misspelled names."""
 import asyncio
+import time
 import base64
 import hashlib
 import json
@@ -92,12 +93,14 @@ def _tts_edge(text, voice, path):
                     ws.append({"text": ch["text"], "start": s, "end": s + ch["duration"] / 1e7})
         return ws
 
-    for attempt in range(3):
+    for attempt in range(6):
         try:
-            return asyncio.run(go())
-        except Exception as ex:  # noqa: BLE001 - network hiccups
-            if attempt == 2:
-                raise StageError(f"edge-tts failed: {ex}")
+            # The service sometimes stalls without closing the socket; never wait on it forever.
+            return asyncio.run(asyncio.wait_for(go(), timeout=90))
+        except Exception as ex:  # noqa: BLE001 - network hiccups, stalls
+            if attempt == 5:
+                raise StageError(f"edge-tts failed: {ex!r}")
+            time.sleep(4 * (attempt + 1))
     return []
 
 

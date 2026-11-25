@@ -89,7 +89,23 @@ def topic_path(arg):
         p = (ROOT / p) if (ROOT / p).exists() or str(p).startswith("topics") else ROOT / "topics" / p
     if not p.exists():
         raise StageError(f"topic dir not found: {p}")
+    _apply_limits(p)
     return p
+
+
+def _apply_limits(topic):
+    """Optional topics/<slug>/limits.json overrides config constants for that topic only
+    (e.g. a ~3 min long-form short: {"WORDS_MAX": 520, "DURATION_MAX": 180})."""
+    f = topic / "limits.json"
+    if not f.exists():
+        return
+    from . import config as C
+    for k, v in json.loads(f.read_text()).items():
+        if k.startswith("_"):
+            continue
+        if not hasattr(C, k):
+            raise StageError(f"{f.name}: unknown config constant {k!r}")
+        setattr(C, k, v)
 
 
 def die(msg):

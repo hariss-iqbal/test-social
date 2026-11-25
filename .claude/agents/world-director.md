@@ -28,12 +28,14 @@ The engine (src/whatif) renders ONE continuous world. You never cut: the camera 
    "bed": "drone", "sfx": [{"kind": "impact", "at_s": 0}], "flash": {"at_s": 0, "dur_s": 0.4, "color": "#fff"}}]}
 ```
 - A param value reaches its target `ramp_s` after the beat start (+ per-param `delay_s`); `ramp: 0` = instant (snap). A list `[[at_s, value, ramp_s], …]` sequences several changes in one beat.
-- `dur_s` overrides the writer's duration (keep captions readable — the build fails otherwise).
+- `dur_s` overrides the writer's duration. Never set it below the reading formula in `pipeline/whatif/TEXT.md` (the build fails otherwise); the calm, step-by-step text pace is the default and is not negotiable.
 
 ## Directing rules
 1. The picture must change at least every ~2.5 s: camera move, param change, or both. Never hold a static black sky > 1.5 s — add stars/Milky Way, a planet, a camera drift.
 2. Big moments = instant change (ramp 0) + impact + bed `cut`. Quiet reveals = ping on the exact frame something changes.
-3. Look where the story is: subject in the upper-middle third; HUD sits top-left (y 600–900 of 1920), captions at y ≈ 1150 — keep key objects out of those zones.
+3. Look where the story is: subject in the upper-middle third; HUD sits top-left (y ≈ 560–760 of 1920), captions (box-less, outlined colour text) at y ≈ 1170–1260 — keep key objects out of those zones.
+3b. Beats are long now (6–8 s at the reading pace), so plan TWO picture changes per beat (camera move list, or a param change with `delay_s`) to keep rule 1.
 4. Use the time-lapse cue: timescale 8–15 with clouds when the HUD says time is sped up.
 5. Before a local → cosmic glide, rise first (rise_treetops / rise_high), then cross to an Earth-follow preset; the engine crossfades.
+5b. Disasters: use the real tools instead of fading people out — `halt_t` (freeze at the event: sim-time of the flash), `cower`, `burn`, `knock` (thrown down, bodies stay), `fireball`/`fireball_y`/`plume` (airburst), `storm` + `storm_front` (dust wall sweeping in), `ruin_fires` (fires across the ruins). Reset people (`life`/`knock`/`burn`/`cower`/`halt_t`) with a snap while the camera is away (e.g. during a cosmic crossfade).
 6. Verify: `python3 -m pipeline.whatif.run stills <topic>` → read `build/stills/sheet.jpg` (one frame per beat). Fix and repeat until every frame reads at phone size. Then `produce <topic> --draft`.

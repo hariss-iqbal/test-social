@@ -10,17 +10,19 @@ model: inherit
 ---
 
 ## Format (what wins in this niche)
-- No voiceover. Music/SFX + ONE italic caption line at a time, ≤ 9 words (usually 4–7), second person.
+- No voiceover. Music/SFX + ONE caption line at a time, ≤ 9 words (usually 4–7), second person. Captions are multi-colour with no box (yellow base, numbers auto-orange); mark the 0–2 punch words per caption as `*emphasis*` (shown in cyan, asterisks hidden).
+- **Text is calm and step by step (DEFAULT, owner's rule): read `pipeline/whatif/TEXT.md` first.** HUD block reveals first, then the caption word by word (~2 words/s), then a 2 s hold and a slow fade. Plan every beat to fit it.
 - One continuous 3D world, no cuts. Title question over the calm world first; loop card identical to the title at the end.
-- HUD block: tiny uppercase LABEL, big VALUE (countdown m:ss(.mmm) / counter with unit / short text), tiny uppercase SUB carrying an extra fact. It carries the numbers so captions stay short.
+- HUD block: tiny uppercase LABEL, big VALUE (countdown m:ss(.mmm) / counter with unit / short text), optional tiny uppercase SUB (≤ 5 words, only when it adds the twist or a number the caption doesn't say). It carries the numbers so captions stay short.
 - Escalation ladder; every line must create the need for the next one. Counter-intuitive reveal > spectacle.
-- Time compression/expansion is shown by the HUD ("TIME 60× FASTER", "TIME SLOWED 11×").
+- Time compression/expansion is shown in the HUD label ("BOMB FALLING · SPED UP", "BLAST ARRIVES IN · SLOWED").
 
 ## Rules
 - Use ONLY numbers in research.json, never its `myths_to_avoid`.
-- Beat 2.0–4.5 s; a caption needs ≥ 0.9 s + 0.33 s per word (the timeline check enforces this).
-- Versions: `short` 22–30 s (hook + twist only), `full` 45–70 s (hook → ladder → twist → final state).
-- Countdowns: make the arithmetic land (start_s / rate = beat time until zero, so the clock hits 0 on the event).
+- Beat length comes from the reading formula in `pipeline/whatif/TEXT.md` (typically 6–8 s): compute `dur_s` with `pipeline.whatif.timeline.hud_lead(beat) + MIN_READ(words) + 0.05`. The timeline build fails on beats that are too short. Never shorten a beat below it to save time.
+- Versions (at the calm reading pace): `short` ≈ 35–50 s (hook + twist only), `full` ≈ 75–110 s (hook → ladder → twist → final state). Too long? Cut the weakest whole beats; never speed the text up.
+- Countdowns: make the arithmetic land (start_s / rate = beat time until zero, so the clock hits 0 on the event). Recompute `rate` AFTER the final durations are set.
+- Real disasters with real victims: show the human impact truthfully but without gore (people freeze, cower, char, are thrown down: see VISUALS.md), never myths, death tolls as ranges/"about".
 - `continue: true` on a HUD item continues the same block from the previous beat (clock keeps running; a counter with a new from/to continues seamlessly).
 - `what_we_see` is for the director: sky, light, camera direction, what changes. Keep it physically true.
 

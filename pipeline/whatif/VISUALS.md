@@ -27,6 +27,14 @@ The kit is a big downtown park with open sky and a skyline around it. The POV st
 - a dust or debris haze (`dust`) and ground or camera shake (`shake`)
 - friction loss (`slide`): people and cars glide without walking or rolling and drift away
 - a tiny blinding speck (`speck`) falling to the lawn, and a hole or crater it punches (`hole`)
+- an airburst fireball beyond the skyline (`fireball`, height `fireball_y`) with a rising smoke column (`plume`); no mushroom-cloud model
+- a dust storm rolling toward the POV (`storm`), with a wall that sweeps in (`storm_front` ramped from -900 to 100)
+- fires burning across the city/ruins and in the park trees, with smoke (`ruin_fires`)
+
+**People reactions (real disasters, no gore)**
+- everyone freezes mid-step at the event (`halt_t` = sim-time of the event)
+- crouch/turn from heat or light (`cower`), clothes and skin char dark (`burn`)
+- thrown to the ground away from ground zero, one after another, and they stay down (`knock`)
 
 **Camera**
 - ground POV looking at the skyline or the people
@@ -52,7 +60,7 @@ The solar system at diagram scale.
 - the 8 planets, the golden last-light shell (`shell`, `shell_r`)
 - orbit ring and straight path line
 
-## Text
+## Text (calm, step by step: rules in `TEXT.md`)
 - Title question with a coloured keyword, and a loop end card (solid, or over the scene)
-- One italic caption line at a time
+- One caption line at a time (multi-colour outlined words, no box; `*emphasis*` = cyan)
 - HUD block: label, big value (countdown, counter, or text), and a sub line

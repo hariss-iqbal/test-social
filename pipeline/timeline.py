@@ -252,7 +252,8 @@ def stage_timeline(topic):
             src = topic / "materials" / mat
         if mat not in prepped:
             prepped[mat] = (*(_prep_video if m["type"] == "video" else _prep_image)(src, media_dir),
-                            _autocrop(src, m["type"]))
+                            # generated cards are designed full-frame on a near-black bg: never "border"-crop them
+                            None if m.get("rights") == "generated" else _autocrop(src, m["type"]))
         pth, pw, ph, orig, auto = prepped[mat]
         if not s.get("crop") and auto:
             s["crop"] = auto

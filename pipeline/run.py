@@ -129,7 +129,9 @@ def stage_export(topic, vdir):
     lines += ["", "## Platform notes", "",
               "- One file for all three: 1080x1920, H.264, AAC, -14 LUFS. Shorts/TikTok/Reels all accept it as-is.",
               "- Narration is a synthetic (AI) voice: tick the platform's AI/altered-content disclosure where required.",
-              "- Footage includes news/police material: keep commentary framing; expect possible claims on news clips.",
+              ("- Footage includes news/police material: keep commentary framing; expect possible claims on news clips."
+               if any(m.get("rights") == "news_media" for m in credits)
+               else "- Visuals are public-domain/archival or CC-licensed (credits above); keep the credits in the description."),
               f"- Cover: {cover_note}."]
     (vdir / "publish.md").write_text("\n".join(lines) + "\n")
     log("export", f"cover.jpg + publish.md -> {vdir.relative_to(ROOT)}")
